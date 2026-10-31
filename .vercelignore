@@ -1,0 +1,7 @@
+_backup_ncertsolved/
+*.bak
+*.bak2
+*.bak_*
+scratch/
+build-ssg.ps1
+

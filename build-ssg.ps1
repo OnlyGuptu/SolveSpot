@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Static Site Generator (SSG) for NCERTSolved (https://ncertsolved.in)
+    Static Site Generator (SSG) for SimpleSolved (https://simplesolved.in)
     Pre-renders all subjects, book parts, branches, chapters, exercise sets,
     and policy pages into static index.html files with full SEO metadata and Q&A HTML.
 #>
@@ -414,13 +414,13 @@ public class SsgBuilder {
     ) {
         string cleanRoute = (routePath ?? "").Trim('/');
         string canonicalUrl = string.IsNullOrEmpty(cleanRoute)
-            ? "https://ncertsolved.in/"
-            : "https://ncertsolved.in/" + cleanRoute;
+            ? "https://simplesolved.in/"
+            : "https://simplesolved.in/" + cleanRoute;
 
         string html = masterTemplate;
 
         html = html.Replace(
-            "<title>Class 9 NCERT Solved Hub \u2022 Simple, Direct & Exam-Ready Solutions</title>",
+            "<title>Class 9 SimpleSolved Hub \u2022 Simple, Direct & Exam-Ready Solutions</title>",
             "<title>" + EscapeAttr(seoTitle) + "</title>"
         );
         html = html.Replace(
@@ -428,15 +428,15 @@ public class SsgBuilder {
             "<meta name=\"description\" content=\"" + EscapeAttr(seoDesc) + "\">"
         );
         html = html.Replace(
-            "<link rel=\"canonical\" href=\"https://ncertsolved.in/\">",
+            "<link rel=\"canonical\" href=\"https://simplesolved.in/\">",
             "<link rel=\"canonical\" href=\"" + canonicalUrl + "\">"
         );
         html = html.Replace(
-            "<meta property=\"og:url\" content=\"https://ncertsolved.in/\">",
+            "<meta property=\"og:url\" content=\"https://simplesolved.in/\">",
             "<meta property=\"og:url\" content=\"" + canonicalUrl + "\">"
         );
         html = html.Replace(
-            "<meta property=\"og:title\" content=\"Class 9 NCERT Solved Hub \u2022 Simple & Direct Textbook Solutions\">",
+            "<meta property=\"og:title\" content=\"Class 9 SimpleSolved Hub \u2022 Simple & Direct Textbook Solutions\">",
             "<meta property=\"og:title\" content=\"" + EscapeAttr(seoTitle) + "\">"
         );
         html = html.Replace(
@@ -444,7 +444,7 @@ public class SsgBuilder {
             "<meta property=\"og:description\" content=\"" + EscapeAttr(seoDesc) + "\">"
         );
         html = html.Replace(
-            "<meta name=\"twitter:title\" content=\"Class 9 NCERT Solved Hub \u2022 Simple & Direct Textbook Solutions\">",
+            "<meta name=\"twitter:title\" content=\"Class 9 SimpleSolved Hub \u2022 Simple & Direct Textbook Solutions\">",
             "<meta name=\"twitter:title\" content=\"" + EscapeAttr(seoTitle) + "\">"
         );
         html = html.Replace(
@@ -544,26 +544,26 @@ public class SsgBuilder {
         // 2. Policy Pages
         WriteRoutePage("about", BuildPageHtml(
             "about",
-            "About Us & Editorial Policy - NCERT Solved Hub",
-            "Learn about NCERTSolved, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
+            "About Us & Editorial Policy - SimpleSolved Hub",
+            "Learn about SimpleSolved, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
             "none", "about-view"
         ));
         WriteRoutePage("privacy", BuildPageHtml(
             "privacy",
-            "Privacy Policy - NCERT Solved Hub",
-            "Read the Privacy Policy for NCERTSolved (ncertsolved.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
+            "Privacy Policy - SimpleSolved Hub",
+            "Read the Privacy Policy for SimpleSolved (simplesolved.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
             "none", "privacy-view"
         ));
         WriteRoutePage("terms", BuildPageHtml(
             "terms",
-            "Terms of Service - NCERT Solved Hub",
-            "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using NCERTSolved Class 9 textbook solutions.",
+            "Terms of Service - SimpleSolved Hub",
+            "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using SimpleSolved Class 9 textbook solutions.",
             "none", "terms-view"
         ));
         WriteRoutePage("contact", BuildPageHtml(
             "contact",
-            "Contact Us - NCERT Solved Hub",
-            "Get in touch with the NCERTSolved academic team to report textbook errata, request solution clarifications, or send feedback.",
+            "Contact Us - SimpleSolved Hub",
+            "Get in touch with the SimpleSolved academic team to report textbook errata, request solution clarifications, or send feedback.",
             "none", "contact-view"
         ));
 
@@ -630,7 +630,7 @@ public class SsgBuilder {
                         <div class=""branch-text-wrapper"">
                             <span class=""chap-btn-title"" style=""font-size: 1.12rem; font-weight: 700;"">Social Science (Part 1)</span>
                             <span class=""branch-chap-count"" style=""margin-top: 4px; color: #475569; font-size: 0.86rem; line-height: 1.45;"">Geography (Earth's Surface & Climate), History (Early Civilisations), Political Science & Economics.</span>
-                            <span style=""display: inline-block; margin-top: 6px; font-size: 0.76rem; font-weight: 700; color: #f59e0b; background: #fef3c7; padding: 2px 8px; border-radius: 9999px;"">4 Branches " + "\u2022" + @" 8 Solved Chapters</span>
+                            <span style=""display: inline-block; margin-top: 6px; font-size: 0.76rem; font-weight: 700; color: #f59e0b; background: #fef3c7; padding: 2px 8px; border-radius: 9999px;"">4 Branches &bull; 8 Solved Chapters</span>
                         </div>
                     </div>
                 </a>
@@ -640,14 +640,14 @@ public class SsgBuilder {
                         <div class=""branch-text-wrapper"">
                             <span class=""chap-btn-title"" style=""font-size: 1.12rem; font-weight: 700;"">Social Science (Part 2)</span>
                             <span class=""branch-chap-count"" style=""margin-top: 4px; color: #475569; font-size: 0.86rem; line-height: 1.45;"">Geography (Oceans and Life, Marine Resources, Blue Economy), History, Political Science & Economics.</span>
-                            <span style=""display: inline-block; margin-top: 6px; font-size: 0.76rem; font-weight: 700; color: #0284c7; background: #fef3c7; padding: 2px 8px; border-radius: 9999px;"">4 Branches " + "\u2022" + @" New Syllabus</span>
+                            <span style=""display: inline-block; margin-top: 6px; font-size: 0.76rem; font-weight: 700; color: #0284c7; background: #fef3c7; padding: 2px 8px; border-radius: 9999px;"">4 Branches &bull; New Syllabus</span>
                         </div>
                     </div>
                 </a>");
 
             string sstHtml = BuildPageHtml(
                 "subject/sst",
-                "Social Science (Parts 1 & 2) - Class 9 NCERT Solved Hub",
+                "Social Science (Parts 1 & 2) - Class 9 SimpleSolved Hub",
                 "NCERT Class 9 Social Science textbook solutions for both Part 1 and Part 2: Geography, History, Political Science, and Economics.",
                 "sst", "chapter-view", "/", "\u2190 Back to Subjects", data.GetStr("title"), grid.ToString()
             );
@@ -673,37 +673,37 @@ public class SsgBuilder {
                     branchName = "Ganita Prakash (Part 1)";
                     branchIcon = "\U0001F4D0";
                     branchDesc = "Coordinates, Linear Polynomials, Number Systems, Algebraic Identities, Perimeter & Area, Probability & Sequences.";
-                    badgeText = "Part 1 \u2022 8 Solved Chapters";
+                    badgeText = "Part 1 &bull; 8 Solved Chapters";
                     borderColor = "#7c3aed"; badgeColor = "#7c3aed"; badgeBg = "#ede9fe";
                 } else if (subKey == "maths" && index == 1) {
                     branchName = "Ganita Prakash (Part 2)";
                     branchIcon = "\U0001F4CA";
                     branchDesc = "Propositions, Understanding Data, Algorithms, Quadrilaterals, Linear Equations & Surface Areas and Volumes.";
-                    badgeText = "Part 2 \u2022 6 Solved Chapters";
+                    badgeText = "Part 2 &bull; 6 Solved Chapters";
                     borderColor = "#0284c7"; badgeColor = "#0284c7"; badgeBg = "#e0f2fe";
                 } else if (subKey == "english" && index == 0) {
                     branchName = "Prose (Chapters)";
                     branchIcon = "\U0001F4D6";
                     branchDesc = "Grandmother to Read, The Pot Maker, Winds of Change, Vitamin-M, Limitless Possibilities, Twin Melodies & Follow That Dream.";
-                    badgeText = "Prose \u2022 8 Solved Chapters";
+                    badgeText = "Prose &bull; 8 Solved Chapters";
                     borderColor = "#0284c7"; badgeColor = "#0284c7"; badgeBg = "#e0f2fe";
                 } else if (subKey == "english" && index == 1) {
                     branchName = "Poetry (Poems)";
                     branchIcon = "\U0001FAB6";
                     branchDesc = "Bharat Our Land, Gifts of Grace, Canvas of Soil, I Cannot Remember My Mother, Nine Gold Medals, Words & Believe in Yourself.";
-                    badgeText = "Poetry \u2022 8 Solved Poems";
+                    badgeText = "Poetry &bull; 8 Solved Poems";
                     borderColor = "#f59e0b"; badgeColor = "#f59e0b"; badgeBg = "#fef3c7";
                 } else if (subKey == "hindi" && index == 0) {
                     branchName = "\u0917\u0926\u094D\u092F \u0916\u0902\u0921 (Gadya Khand)";
                     branchIcon = "\U0001F4DA";
                     branchDesc = "\u0926\u094B \u092C\u0948\u0932\u094B\u0902 \u0915\u0940 \u0915\u0925\u093E, \u0915\u094D\u092F\u093E \u0932\u093F\u0916\u0942\u0901?, \u0938\u0902\u0935\u093E\u0926\u0939\u0940\u0928, \u0910\u0938\u0940 \u092D\u0940 \u092C\u093E\u0924\u0947\u0902 \u0939\u094B\u0924\u0940 \u0939\u0948\u0902, \u0906\u0916\u093F\u0930\u0940 \u091A\u091F\u094D\u091F\u093E\u0928 \u0924\u0915, \u0930\u0940\u0922\u093C \u0915\u0940 \u0939\u0921\u094D\u0921\u0940 \u0935 \u092E\u0948\u0902 \u0914\u0930 \u092E\u0947\u0930\u093E \u0926\u0947\u0936\u0964";
-                    badgeText = "\u0917\u0926\u094D\u092F \u0916\u0902\u0921 \u2022 7 \u0938\u0902\u092A\u0942\u0930\u094D\u0923 \u092A\u093E\u0920";
+                    badgeText = "\u0917\u0926\u094D\u092F \u0916\u0902\u0921 &bull; 7 \u0938\u0902\u092A\u0942\u0930\u094D\u0923 \u092A\u093E\u0920";
                     borderColor = "#e11d48"; badgeColor = "#e11d48"; badgeBg = "#ffe4e6";
                 } else if (subKey == "hindi" && index == 1) {
                     branchName = "\u092A\u0926\u094D\u092F \u0916\u0902\u0921 (Padya Khand)";
                     branchIcon = "\U0001FAB6";
                     branchDesc = "\u0930\u0948\u0926\u093E\u0938 (\u092A\u0926), \u0930\u093E\u092E-\u0932\u0915\u094D\u0937\u094D\u092E\u0923-\u092A\u0930\u0936\u0941\u0930\u093E\u092E \u0938\u0902\u0935\u093E\u0926, \u092D\u093E\u0930\u0924\u093F \u091C\u092F \u0935\u093F\u091C\u092F\u0915\u0930\u0947, \u091D\u093E\u0901\u0938\u0940 \u0915\u0940 \u0930\u093E\u0928\u0940 \u0935 \u0918\u0930 \u0915\u0940 \u092F\u093E\u0926\u0964";
-                    badgeText = "\u092A\u0926\u094D\u092F \u0916\u0902\u0921 \u2022 5 \u0938\u0902\u092A\u0942\u0930\u094D\u0923 \u092A\u093E\u0920";
+                    badgeText = "\u092A\u0926\u094D\u092F \u0916\u0902\u0921 &bull; 5 \u0938\u0902\u092A\u0942\u0930\u094D\u0923 \u092A\u093E\u0920";
                     borderColor = "#f59e0b"; badgeColor = "#f59e0b"; badgeBg = "#fef3c7";
                 }
 
@@ -729,16 +729,16 @@ public class SsgBuilder {
                 bool noEx = IsChapterWithoutExercises(chapter, index, subKey, null);
                 if (noEx) {
                     grid.AppendFormat(@"
-                    <div class=""chapter-select-btn chapter-no-exercises"" onclick=""showToast('No exercises in this chapter \u2014 it is an introductory reading module.', 'info')"" title=""No exercises in this chapter"" tabindex=""0"">
+                    <div class=""chapter-select-btn chapter-no-exercises"" onclick=""showToast('No exercises in this chapter - it is an introductory reading module.', 'info')"" title=""No exercises in this chapter"" tabindex=""0"">
                         <div class=""chap-btn-content"">
                             <span class=""chap-icon-badge"">{0}</span>
                             <div class=""branch-text-wrapper"">
                                 <span class=""chap-btn-title"">{1}</span>
-                                <span class=""branch-chap-count"">Introductory Reading " + "\u2022" + @" No textbook questions</span>
+                                <span class=""branch-chap-count"">Introductory Reading &bull; No textbook questions</span>
                             </div>
                         </div>
                         <div class=""no-ex-hover-badge"">
-                            <span class=""no-ex-icon"">" + "\u2139\uFE0F" + @"</span>
+                            <span class=""no-ex-icon"">i </span>
                             <span class=""no-ex-label"">No exercises in this chapter</span>
                         </div>
                     </div>", chapIcon, cleanTitle);
@@ -758,7 +758,7 @@ public class SsgBuilder {
         string subCleanName = Regex.Replace(Regex.Replace(subTitle, @" Sections?", "", RegexOptions.IgnoreCase), @" Chapters?", "", RegexOptions.IgnoreCase);
         string pageHtml = BuildPageHtml(
             "subject/" + subKey,
-            subTitle + " - Class 9 NCERT Solved Hub",
+            subTitle + " - Class 9 SimpleSolved Hub",
             "Complete NCERT Class 9 " + subCleanName + " textbook solutions. Browse all chapters, exercise sets, formulas, and verified step-by-step exam answers.",
             subKey, "chapter-view", "/", "\u2190 Back to Subjects", subTitle, grid.ToString()
         );
@@ -797,7 +797,7 @@ public class SsgBuilder {
         string route = "subject/sst/part/" + partNum;
         string html = BuildPageHtml(
             route,
-            bookTitle + " - Class 9 NCERT Solved Hub",
+            bookTitle + " - Class 9 SimpleSolved Hub",
             "NCERT Class 9 " + bookTitle + " solutions across Geography, History, Political Science, and Economics with chapter solutions.",
             "sst", "chapter-view", "/subject/sst/", "\u2190 Back to SST Books", headingHtml, grid.ToString()
         );
@@ -835,16 +835,16 @@ public class SsgBuilder {
 
             if (noEx) {
                 grid.AppendFormat(@"
-                    <div class=""chapter-select-btn chapter-no-exercises"" onclick=""showToast('No exercises in this chapter \u2014 it is an introductory reading module.', 'info')"" title=""No exercises in this chapter"" tabindex=""0"">
+                    <div class=""chapter-select-btn chapter-no-exercises"" onclick=""showToast('No exercises in this chapter - it is an introductory reading module.', 'info')"" title=""No exercises in this chapter"" tabindex=""0"">
                         <div class=""chap-btn-content"">
                             <span class=""chap-icon-badge"">{0}</span>
                             <div class=""branch-text-wrapper"">
                                 <span class=""chap-btn-title"">{1}</span>
-                                <span class=""branch-chap-count"">Introductory Reading " + "\u2022" + @" No textbook questions</span>
+                                <span class=""branch-chap-count"">Introductory Reading &bull; No textbook questions</span>
                             </div>
                         </div>
                         <div class=""no-ex-hover-badge"">
-                            <span class=""no-ex-icon"">" + "\u2139\uFE0F" + @"</span>
+                            <span class=""no-ex-icon"">i </span>
                             <span class=""no-ex-label"">No exercises in this chapter</span>
                         </div>
                     </div>", chapIcon, cleanTitle);
@@ -852,7 +852,7 @@ public class SsgBuilder {
                 int exCount = chapter.GetArr("exercises") != null ? chapter.GetArr("exercises").Count : 0;
                 int qCount = chapter.GetArr("solutions") != null ? chapter.GetArr("solutions").Count : 0;
                 string subtitleHtml = exCount > 0
-                    ? string.Format("<span class=\"branch-chap-count\">{0} Exercise Set{1} \u2022 {2} Solved Questions</span>", exCount, exCount != 1 ? "s" : "", qCount)
+                    ? string.Format("<span class=\"branch-chap-count\">{0} Exercise Set{1} &bull; {2} Solved Questions</span>", exCount, exCount != 1 ? "s" : "", qCount)
                     : "";
                 grid.AppendFormat(@"
                     <a class=""chapter-select-btn"" href=""/subject/{0}/branch/{1}/chapter/{2}/"">
@@ -871,7 +871,7 @@ public class SsgBuilder {
         string subClean = Regex.Replace(data.GetStr("title"), @" Sections?", "", RegexOptions.IgnoreCase);
         string html = BuildPageHtml(
             route,
-            branchName + " Chapters - Class 9 NCERT Solved Hub",
+            branchName + " Chapters - Class 9 SimpleSolved Hub",
             string.Format("NCERT Class 9 {0} ({1}) chapter-wise textbook solutions across {2} chapters with step-by-step answers and hints.", branchName, subClean, chapTotal),
             subKey, "chapter-view", backHref, backText, headingHtml, grid.ToString()
         );
@@ -911,7 +911,7 @@ public class SsgBuilder {
                     <span class=""chap-icon-badge exercise-icon-badge"">{4}</span>
                     <div class=""branch-text-wrapper"">
                         <span class=""chap-btn-title"">{5}</span>
-                        <span class=""branch-chap-count"">{6} Solved Question{7} " + "\u2022" + @" Step-by-Step + Hints</span>
+                        <span class=""branch-chap-count"">{6} Solved Question{7} &bull; Step-by-Step + Hints</span>
                     </div>
                 </div>
             </a>", subKey, branchIndex + 1, chapNum, Uri.EscapeDataString(exId), exIcon, displayTitle, qCount, qCount != 1 ? "s" : "");
@@ -924,7 +924,7 @@ public class SsgBuilder {
                     <span class=""chap-icon-badge exercise-icon-badge"">" + "\U0001F4DA" + @"</span>
                     <div class=""branch-text-wrapper"">
                         <span class=""chap-btn-title"">View All Chapter Exercises Together</span>
-                        <span class=""branch-chap-count"">All {3} Exercise Sets " + "\u2022" + @" {4} Solved Questions</span>
+                        <span class=""branch-chap-count"">All {3} Exercise Sets &bull; {4} Solved Questions</span>
                     </div>
                 </div>
             </a>", subKey, branchIndex + 1, chapNum, exercises.Count, totalQuestions);
@@ -932,7 +932,7 @@ public class SsgBuilder {
 
         string route = string.Format("subject/{0}/branch/{1}/chapter/{2}", subKey, branchIndex + 1, chapNum);
         string subDisplay = subKey.ToUpperInvariant() == "SST" ? "Social Science" : (char.ToUpperInvariant(subKey[0]) + subKey.Substring(1));
-        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} Exercises | NCERTSolved", subDisplay, cleanTitle);
+        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} Exercises | SimpleSolved", subDisplay, cleanTitle);
         string seoDesc = string.Format("NCERT Class 9 {0} {1} textbook solutions: {2} exercise sets and {3} step-by-step solved questions with hints.", branchData.GetStr("name"), cleanTitle, exercises.Count, totalQuestions);
 
         string html = BuildPageHtml(route, seoTitle, seoDesc, subKey, "chapter-view", backHref, backText, headingHtml, grid.ToString());
@@ -1052,7 +1052,7 @@ public class SsgBuilder {
             seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}", subKey, branchIndex + 1, chapNum);
         }
 
-        string seoTitle = string.Format("{0}{1} Solutions | NCERT Solved Hub", cleanTitle, activeExObj != null ? " - " + activeExObj.GetStr("name") : "");
+        string seoTitle = string.Format("{0}{1} Solutions | SimpleSolved Hub", cleanTitle, activeExObj != null ? " - " + activeExObj.GetStr("name") : "");
         string seoDesc = string.Format("NCERT Class 9 {0} {1}{2} step-by-step solutions ({3} Q&As). {4}",
             branchData.GetStr("name"),
             cleanTitle,
@@ -1131,7 +1131,7 @@ public class SsgBuilder {
         }
 
         string route = string.Format("subject/{0}/chapter/{1}", subKey, chapNum);
-        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} | NCERTSolved", subTitle, cleanTitle);
+        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} | SimpleSolved", subTitle, cleanTitle);
         string seoDesc = string.Format("NCERT Class 9 {0} {1} textbook solutions ({2} solved questions). {3}",
             subTitle, cleanTitle, solutions.Count, !string.IsNullOrEmpty(firstQStd) ? "Includes: " + firstQStd + "..." : "").Trim();
 
@@ -1144,7 +1144,7 @@ public class SsgBuilder {
         sb.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         sb.AppendLine("<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">");
         foreach (string r in GeneratedRoutes) {
-            string loc = string.IsNullOrEmpty(r) ? "https://ncertsolved.in/" : ("https://ncertsolved.in/" + r);
+            string loc = string.IsNullOrEmpty(r) ? "https://simplesolved.in/" : ("https://simplesolved.in/" + r);
             string priority = "0.85";
             string changefreq = "weekly";
             if (string.IsNullOrEmpty(r)) {
@@ -1193,6 +1193,6 @@ $builder = New-Object SsgBuilder($workspaceDir, $templateHtml, $db)
 $builder.GenerateAll()
 
 Write-Host "[4/4] Updating sitemap.xml..."
-$builder.WriteSitemap("2026-10-29")
+$builder.WriteSitemap("2026-10-31")
 
 Write-Host ("SSG Build Complete! Generated {0} static HTML files and {1} canonical sitemap URLs." -f $builder.TotalFilesWritten, $builder.GeneratedRoutes.Count)

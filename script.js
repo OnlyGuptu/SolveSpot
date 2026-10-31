@@ -16454,7 +16454,7 @@ function findChapterIndex(chapters, cNum) {
 function updateSeoMeta(title, description, routePath = '') {
     document.title = title;
     const cleanRoute = (routePath || '').replace(/^\/+|\/+$/g, '');
-    const canonicalUrl = cleanRoute ? `https://ncertsolved.in/${cleanRoute}` : 'https://ncertsolved.in/';
+    const canonicalUrl = cleanRoute ? `https://simplesolved.in/${cleanRoute}` : 'https://simplesolved.in/';
 
     let canonicalEl = document.querySelector('link[rel="canonical"]');
     if (!canonicalEl) {
@@ -16567,7 +16567,7 @@ function handleRoute() {
     if (segments.length === 0 || segments[0] === '' || segments[0] === 'home') {
         goToHomeUI();
         updateSeoMeta(
-            "Class 9 NCERT Solved Hub \u2022 Simple, Direct & Exam-Ready Solutions",
+            "Class 9 SimpleSolved Hub \u2022 Simple, Direct & Exam-Ready Solutions",
             "Free, verified NCERT Class 9 textbook solutions for Science, Mathematics, Social Science, English, and Hindi. Clean step-by-step answers, formulas, hints, and exam notes.",
             ""
         );
@@ -16581,8 +16581,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('about-view');
         updateSeoMeta(
-            "About Us & Editorial Policy - NCERT Solved Hub",
-            "Learn about NCERTSolved, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
+            "About Us & Editorial Policy - SimpleSolved Hub",
+            "Learn about SimpleSolved, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
             "about"
         );
         return;
@@ -16592,8 +16592,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('privacy-view');
         updateSeoMeta(
-            "Privacy Policy - NCERT Solved Hub",
-            "Read the Privacy Policy for NCERTSolved (ncertsolved.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
+            "Privacy Policy - SimpleSolved Hub",
+            "Read the Privacy Policy for SimpleSolved (simplesolved.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
             "privacy"
         );
         return;
@@ -16603,8 +16603,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('terms-view');
         updateSeoMeta(
-            "Terms of Service - NCERT Solved Hub",
-            "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using NCERTSolved Class 9 textbook solutions.",
+            "Terms of Service - SimpleSolved Hub",
+            "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using SimpleSolved Class 9 textbook solutions.",
             "terms"
         );
         return;
@@ -16614,8 +16614,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('contact-view');
         updateSeoMeta(
-            "Contact Us - NCERT Solved Hub",
-            "Get in touch with the NCERTSolved academic team to report textbook errata, request solution clarifications, or send feedback.",
+            "Contact Us - SimpleSolved Hub",
+            "Get in touch with the SimpleSolved academic team to report textbook errata, request solution clarifications, or send feedback.",
             "contact"
         );
         return;
@@ -16991,7 +16991,7 @@ function renderSubjectView(subjectKey) {
                 name: "Social Science (Part 1)",
                 icon: "\u{1F4DA}",
                 desc: "Geography (Earth's Surface & Climate), History (Early Civilisations), Political Science & Economics.",
-                badge: "4 Branches â€¢ 8 Solved Chapters",
+                badge: "4 Branches &bull; 8 Solved Chapters",
                 color: "#f59e0b"
             },
             {
@@ -16999,7 +16999,7 @@ function renderSubjectView(subjectKey) {
                 name: "Social Science (Part 2)",
                 icon: "\u{1F30A}",
                 desc: "Geography (Oceans and Life, Marine Resources, Blue Economy), History, Political Science & Economics.",
-                badge: "4 Branches â€¢ New Syllabus",
+                badge: "4 Branches &bull; New Syllabus",
                 color: "#0284c7"
             }
         ];
@@ -17021,7 +17021,7 @@ function renderSubjectView(subjectKey) {
 
         showLayer('chapter-view');
         updateSeoMeta(
-            "Social Science (Parts 1 & 2) - Class 9 NCERT Solved Hub",
+            "Social Science (Parts 1 & 2) - Class 9 SimpleSolved Hub",
             "NCERT Class 9 Social Science textbook solutions for both Part 1 and Part 2: Geography, History, Political Science, and Economics.",
             "subject/sst"
         );
@@ -17120,16 +17120,16 @@ function renderSubjectView(subjectKey) {
             const noEx = isChapterWithoutExercises(chapter, index, subjectKey);
             if (noEx) {
                 grid.innerHTML += `
-                    <div class="chapter-select-btn chapter-no-exercises" onclick="showToast('No exercises in this chapter â€” it is an introductory reading module.', 'info')" title="No exercises in this chapter" tabindex="0">
+                    <div class="chapter-select-btn chapter-no-exercises" onclick="showToast('No exercises in this chapter  -  it is an introductory reading module.', 'info')" title="No exercises in this chapter" tabindex="0">
                         <div class="chap-btn-content">
                             <span class="chap-icon-badge">${chapIcon}</span>
                             <div class="branch-text-wrapper">
                                 <span class="chap-btn-title">${cleanTitle}</span>
-                                <span class="branch-chap-count">Introductory Reading â€¢ No textbook questions</span>
+                                <span class="branch-chap-count">Introductory Reading &bull; No textbook questions</span>
                             </div>
                         </div>
                         <div class="no-ex-hover-badge">
-                            <span class="no-ex-icon">â„¹ï¸</span>
+                            <span class="no-ex-icon">i </span>
                             <span class="no-ex-label">No exercises in this chapter</span>
                         </div>
                     </div>
@@ -17150,7 +17150,7 @@ function renderSubjectView(subjectKey) {
     showLayer('chapter-view');
     const subCleanName = data.title.replace(/ Sections?/i, '').replace(/ Chapters?/i, '');
     updateSeoMeta(
-        `${data.title} - Class 9 NCERT Solved Hub`,
+        `${data.title} - Class 9 SimpleSolved Hub`,
         `Complete NCERT Class 9 ${subCleanName} textbook solutions. Browse all chapters, exercise sets, formulas, and verified step-by-step exam answers.`,
         `subject/${subjectKey}`
     );
@@ -17205,7 +17205,7 @@ function renderSstPartView(partNum) {
 
     showLayer('chapter-view');
     updateSeoMeta(
-        `${bookTitle} - Class 9 NCERT Solved Hub`,
+        `${bookTitle} - Class 9 SimpleSolved Hub`,
         `NCERT Class 9 ${bookTitle} solutions across Geography, History, Political Science, and Economics with chapter solutions.`,
         `subject/sst/part/${partNum}`
     );
@@ -17257,16 +17257,16 @@ function renderBranchView(subjectKey, branchIndex) {
             const noEx = isChapterWithoutExercises(chapter, index, subjectKey, branchIndex);
             if (noEx) {
                 grid.innerHTML += `
-                    <div class="chapter-select-btn chapter-no-exercises" onclick="showToast('No exercises in this chapter â€” it is an introductory reading module.', 'info')" title="No exercises in this chapter" tabindex="0">
+                    <div class="chapter-select-btn chapter-no-exercises" onclick="showToast('No exercises in this chapter  -  it is an introductory reading module.', 'info')" title="No exercises in this chapter" tabindex="0">
                         <div class="chap-btn-content">
                             <span class="chap-icon-badge">${chapIcon}</span>
                             <div class="branch-text-wrapper">
                                 <span class="chap-btn-title">${cleanTitle}</span>
-                                <span class="branch-chap-count">Introductory Reading â€¢ No textbook questions</span>
+                                <span class="branch-chap-count">Introductory Reading &bull; No textbook questions</span>
                             </div>
                         </div>
                         <div class="no-ex-hover-badge">
-                            <span class="no-ex-icon">â„¹ï¸</span>
+                            <span class="no-ex-icon">i </span>
                             <span class="no-ex-label">No exercises in this chapter</span>
                         </div>
                     </div>
@@ -17295,7 +17295,7 @@ function renderBranchView(subjectKey, branchIndex) {
     showLayer('chapter-view');
     const chapTotal = Array.isArray(branchData.chapters) ? branchData.chapters.length : 0;
     updateSeoMeta(
-        `${branchData.name} Chapters - Class 9 NCERT Solved Hub`,
+        `${branchData.name} Chapters - Class 9 SimpleSolved Hub`,
         `NCERT Class 9 ${branchData.name} (${data.title.replace(/ Sections?/i, '')}) chapter-wise textbook solutions across ${chapTotal} chapters with step-by-step answers and hints.`,
         `subject/${subjectKey}/branch/${branchIndex + 1}`
     );
@@ -17370,7 +17370,7 @@ function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex) {
 
     showLayer('chapter-view');
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subjectKey.toUpperCase() === "SST" ? "Social Science" : (subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1))} ${cleanTitle} Exercises | NCERTSolved`,
+        `NCERT Solutions for Class 9 ${subjectKey.toUpperCase() === "SST" ? "Social Science" : (subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1))} ${cleanTitle} Exercises | SimpleSolved`,
         `NCERT Class 9 ${branchData.name} ${cleanTitle} textbook solutions: ${chapterData.exercises.length} exercise sets and ${totalQuestions} step-by-step solved questions with hints.`,
         `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`
     );
@@ -17488,7 +17488,7 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
             ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/all`
             : `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`);
     updateSeoMeta(
-        `${cleanTitle}${activeExObj ? ' - ' + activeExObj.name : ''} Solutions | NCERT Solved Hub`,
+        `${cleanTitle}${activeExObj ? ' - ' + activeExObj.name : ''} Solutions | SimpleSolved Hub`,
         `NCERT Class 9 ${branchData.name} ${cleanTitle}${activeExObj ? ' (' + activeExObj.name + ')' : ''} step-by-step solutions (${listToRender.length} Q&As). ${firstQSnippet ? 'Includes: ' + firstQSnippet + '...' : ''}`.trim(),
         seoRoute
     );
@@ -17565,7 +17565,7 @@ function renderChapter(subjectKey, chapterIndex, questionTarget = null) {
     const subTitle = subjectData.title.replace(' Section', '').replace(' Chapters', '');
     const firstQStd = chapterData.solutions.length > 0 ? stripHtmlForSeo(chapterData.solutions[0].q).slice(0, 95) : '';
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subTitle} ${cleanTitle} | NCERTSolved`,
+        `NCERT Solutions for Class 9 ${subTitle} ${cleanTitle} | SimpleSolved`,
         `NCERT Class 9 ${subTitle} ${cleanTitle} textbook solutions (${chapterData.solutions.length} solved questions). ${firstQStd ? 'Includes: ' + firstQStd + '...' : ''}`.trim(),
         `subject/${subjectKey}/chapter/${chapNum}`
     );
@@ -17925,20 +17925,20 @@ function updateOfflineStatusUI() {
         btnEl.style.color = isOffline ? '#059669' : '';
     }
     if (badgeEl) {
-        badgeEl.innerHTML = isOffline
-            ? '\u2713 You are Offline \u2022 All 1,000+ Solutions Working!'
-            : '\u2713 All 1,000+ Solutions Loaded in Memory';
+        badgeEl.textContent = isOffline
+            ? '✓ You are Offline &bull; All 1,000+ Solutions Working!'
+            : '✓ All 1,000+ Solutions Loaded in Memory';
     }
 }
 
 window.addEventListener('offline', () => {
     updateOfflineStatusUI();
-    showToast("Internet turned off â€” Offline Mode active! You can keep browsing all chapters.", "success");
+    showToast("Internet disconnected: Offline Mode active. You can keep studying all chapters!", "success");
 });
 
 window.addEventListener('online', () => {
     updateOfflineStatusUI();
-    showToast("Back online!", "info");
+    showToast("Internet reconnected: You are back online!", "info");
 });
 
 window.addEventListener('scroll', () => {

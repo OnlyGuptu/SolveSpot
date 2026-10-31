@@ -13,4 +13,9 @@ Thumbs.db
 
 # PowerShell scratch & logs
 *.log
+scratch/
+
+# Full NCERTSolved brand backup (isolated from main SimpleSolved website)
+_backup_ncertsolved/
+
 

@@ -7,5 +7,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://ncertsolved.in/sitemap.xml
-
+Sitemap: https://simplesolved.in/sitemap.xml
