@@ -401,6 +401,45 @@ public class SsgBuilder {
         return "\U0001F4D8";
     }
 
+    private string EscapeJson(string str) {
+        if (string.IsNullOrEmpty(str)) return "";
+        StringBuilder sb = new StringBuilder(str.Length + 16);
+        foreach (char c in str) {
+            switch (c) {
+                case '\\': sb.Append("\\\\"); break;
+                case '"': sb.Append("\\\""); break;
+                case '\r': break;
+                case '\n': sb.Append(" "); break;
+                case '\t': sb.Append(" "); break;
+                default:
+                    if (c < 32) sb.Append(' ');
+                    else sb.Append(c);
+                    break;
+            }
+        }
+        return sb.ToString().Trim();
+    }
+
+    private string BuildFaqJsonLd(List<JsValue> questions) {
+        if (questions == null || questions.Count == 0) return "";
+        int limit = Math.Min(questions.Count, 25);
+        StringBuilder sb = new StringBuilder();
+        sb.Append("\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n");
+        int added = 0;
+        for (int i = 0; i < limit; i++) {
+            string qText = EscapeJson(StripHtmlForSeo(questions[i].GetStr("q", "")));
+            string aText = EscapeJson(StripHtmlForSeo(questions[i].GetStr("a", "")));
+            if (string.IsNullOrEmpty(qText) || string.IsNullOrEmpty(aText)) continue;
+            if (qText.Length > 280) qText = qText.Substring(0, 280) + "...";
+            if (aText.Length > 900) aText = aText.Substring(0, 900) + "...";
+            if (added > 0) sb.Append(",\n");
+            sb.Append("        {\n          \"@type\": \"Question\",\n          \"name\": \"" + qText + "\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"" + aText + "\"\n          }\n        }");
+            added++;
+        }
+        sb.Append("\n      ]\n    }\n    </script>");
+        return added > 0 ? sb.ToString() : "";
+    }
+
     private string BuildPageHtml(
         string routePath,
         string seoTitle,
@@ -410,7 +449,8 @@ public class SsgBuilder {
         string backHref = "/",
         string backText = "&larr; Back to Subjects",
         string headingHtml = "",
-        string bodyInnerHtml = ""
+        string bodyInnerHtml = "",
+        string extraHeadHtml = ""
     ) {
         string cleanRoute = (routePath ?? "").Trim('/');
         string canonicalUrl = string.IsNullOrEmpty(cleanRoute)
@@ -513,6 +553,10 @@ public class SsgBuilder {
             }
         }
 
+        if (!string.IsNullOrEmpty(extraHeadHtml)) {
+            html = html.Replace("</head>", extraHeadHtml + "\r\n</head>");
+        }
+
         return html;
     }
 
@@ -565,6 +609,12 @@ public class SsgBuilder {
             "Contact Us - SimpleSolved Hub",
             "Get in touch with the SimpleSolved academic team to report textbook errata, request solution clarifications, or send feedback.",
             "none", "contact-view"
+        ));
+        WriteRoutePage("formulas", BuildPageHtml(
+            "formulas",
+            "Class 9 Maths & Science Formulas Cheat Sheet | SimpleSolved Hub",
+            "Complete NCERT Class 9 Mathematics (Ganita Prakash) and Science (Physics & Chemistry) formula sheet: algebraic identities, mensuration tables, motion equations, gravitation, work-energy, and sound formulas.",
+            "formulas", "formulas-view"
         ));
 
         // 3. Subjects, Parts, Branches, Chapters, and Exercises
@@ -1000,12 +1050,23 @@ public class SsgBuilder {
         var listToRender = activeExObj != null ? activeExObj.GetArr("questions") : chapterData.GetArr("solutions");
         if (listToRender == null) listToRender = new List<JsValue>();
 
+        string seoRoute;
+        if (activeExObj != null) {
+            seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}/exercise/{3}", subKey, branchIndex + 1, chapNum, Uri.EscapeDataString(activeExObj.GetStr("id")));
+        } else if (hasExercises) {
+            seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}/exercise/all", subKey, branchIndex + 1, chapNum);
+        } else {
+            seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}", subKey, branchIndex + 1, chapNum);
+        }
+
         for (int idx = 0; idx < listToRender.Count; idx++) {
             var sol = listToRender[idx];
             int globalIdx = sol["globalIndex"] != null ? (int)sol["globalIndex"].Num : idx;
             string uniqueId = "ans-branch-" + globalIdx;
             string hintId = "hint-branch-" + globalIdx;
             string badgeLabel = !string.IsNullOrEmpty(sol.GetStr("qNum")) ? sol.GetStr("qNum") : ("Q" + (idx + 1));
+            string safeBadge = badgeLabel.Replace("'", "\\'");
+            string qLinkRoute = seoRoute + "/?q=" + (globalIdx + 1);
             string hintHtml = FixAssetPaths(sol.GetStr("hint", sol.GetStr("hints", "")));
             string qHtml = FixAssetPaths(sol.GetStr("q", ""));
             string aHtml = FixAssetPaths(sol.GetStr("a", ""));
@@ -1023,6 +1084,8 @@ public class SsgBuilder {
                 <div class=""card-actions-bar"">
                     {7}
                     {8}
+                    <button class=""btn-copy-solution"" onclick=""copyQuestionLink('{9}', this)"" title=""Copy direct link to this question""><span>&#128279;</span> Copy Link</button>
+                    <button class=""btn-copy-solution"" onclick=""shareQuestionWhatsApp('{9}', '{10}')"" title=""Share this solution on WhatsApp""><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>",
                 globalIdx,
@@ -1033,7 +1096,9 @@ public class SsgBuilder {
                 uniqueId,
                 aHtml,
                 !string.IsNullOrEmpty(hintHtml) ? string.Format("<button class=\"btn-toggle-hint\" onclick=\"toggleHint('{0}', this)\" title=\"Show or hide hint / critical formula\"><span>" + "\U0001F4A1" + "</span> Show Hint / Formula</button>", hintId) : "",
-                hasExercises ? string.Format("<button class=\"btn-toggle-solution active\" onclick=\"toggleSolution('{0}', this)\" title=\"Show or hide step-by-step solution\"><span>" + "\U0001F441\uFE0F" + "</span> Hide Solution</button>", uniqueId) : ""
+                hasExercises ? string.Format("<button class=\"btn-toggle-solution active\" onclick=\"toggleSolution('{0}', this)\" title=\"Show or hide step-by-step solution\"><span>" + "\U0001F441\uFE0F" + "</span> Hide Solution</button>", uniqueId) : "",
+                qLinkRoute,
+                safeBadge
             );
         }
 
@@ -1041,15 +1106,6 @@ public class SsgBuilder {
         if (listToRender.Count > 0) {
             firstQSnippet = StripHtmlForSeo(listToRender[0].GetStr("q", ""));
             if (firstQSnippet.Length > 95) firstQSnippet = firstQSnippet.Substring(0, 95);
-        }
-
-        string seoRoute;
-        if (activeExObj != null) {
-            seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}/exercise/{3}", subKey, branchIndex + 1, chapNum, Uri.EscapeDataString(activeExObj.GetStr("id")));
-        } else if (hasExercises) {
-            seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}/exercise/all", subKey, branchIndex + 1, chapNum);
-        } else {
-            seoRoute = string.Format("subject/{0}/branch/{1}/chapter/{2}", subKey, branchIndex + 1, chapNum);
         }
 
         string seoTitle = string.Format("{0}{1} Solutions | SimpleSolved Hub", cleanTitle, activeExObj != null ? " - " + activeExObj.GetStr("name") : "");
@@ -1061,7 +1117,8 @@ public class SsgBuilder {
             !string.IsNullOrEmpty(firstQSnippet) ? "Includes: " + firstQSnippet + "..." : ""
         ).Trim();
 
-        string html = BuildPageHtml(seoRoute, seoTitle, seoDesc, subKey, "solution-view", backHref, backText, headingHtml, stack.ToString());
+        string faqSchema = BuildFaqJsonLd(listToRender);
+        string html = BuildPageHtml(seoRoute, seoTitle, seoDesc, subKey, "solution-view", backHref, backText, headingHtml, stack.ToString(), faqSchema);
         WriteRoutePage(seoRoute, html, true);
 
         if (writeDirectChapterAlias) {
@@ -1089,11 +1146,15 @@ public class SsgBuilder {
         var solutions = chapterData.GetArr("solutions");
         if (solutions == null) solutions = new List<JsValue>();
 
+        string route = string.Format("subject/{0}/chapter/{1}", subKey, chapNum);
+
         for (int idx = 0; idx < solutions.Count; idx++) {
             var sol = solutions[idx];
             string uniqueId = "ans-std-" + idx;
             string hintId = "hint-std-" + idx;
             string badgeLabel = !string.IsNullOrEmpty(sol.GetStr("qNum")) ? sol.GetStr("qNum") : ("Q" + (idx + 1));
+            string safeBadge = badgeLabel.Replace("'", "\\'");
+            string qLinkRoute = route + "/?q=" + (idx + 1);
             string hintHtml = FixAssetPaths(sol.GetStr("hint", sol.GetStr("hints", "")));
             string qHtml = FixAssetPaths(sol.GetStr("q", ""));
             string aHtml = FixAssetPaths(sol.GetStr("a", ""));
@@ -1110,6 +1171,8 @@ public class SsgBuilder {
                 <div id=""{5}"" class=""answer-text"">{6}</div>
                 <div class=""card-actions-bar"">
                     {7}
+                    <button class=""btn-copy-solution"" onclick=""copyQuestionLink('{8}', this)"" title=""Copy direct link to this question""><span>&#128279;</span> Copy Link</button>
+                    <button class=""btn-copy-solution"" onclick=""shareQuestionWhatsApp('{8}', '{9}')"" title=""Share this solution on WhatsApp""><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>",
                 idx,
@@ -1119,7 +1182,9 @@ public class SsgBuilder {
                 !string.IsNullOrEmpty(hintHtml) ? string.Format("<div id=\"{0}\" class=\"hint-box hidden\">{1}</div>", hintId, hintHtml) : "",
                 uniqueId,
                 aHtml,
-                !string.IsNullOrEmpty(hintHtml) ? string.Format("<button class=\"btn-toggle-hint\" onclick=\"toggleHint('{0}', this)\" title=\"Show or hide hint / critical formula\"><span>" + "\U0001F4A1" + "</span> Show Hint / Formula</button>", hintId) : ""
+                !string.IsNullOrEmpty(hintHtml) ? string.Format("<button class=\"btn-toggle-hint\" onclick=\"toggleHint('{0}', this)\" title=\"Show or hide hint / critical formula\"><span>" + "\U0001F4A1" + "</span> Show Hint / Formula</button>", hintId) : "",
+                qLinkRoute,
+                safeBadge
             );
         }
 
@@ -1130,12 +1195,12 @@ public class SsgBuilder {
             if (firstQStd.Length > 95) firstQStd = firstQStd.Substring(0, 95);
         }
 
-        string route = string.Format("subject/{0}/chapter/{1}", subKey, chapNum);
         string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} | SimpleSolved", subTitle, cleanTitle);
         string seoDesc = string.Format("NCERT Class 9 {0} {1} textbook solutions ({2} solved questions). {3}",
             subTitle, cleanTitle, solutions.Count, !string.IsNullOrEmpty(firstQStd) ? "Includes: " + firstQStd + "..." : "").Trim();
 
-        string html = BuildPageHtml(route, seoTitle, seoDesc, subKey, "solution-view", backHref, backText, headingHtml, stack.ToString());
+        string faqSchema = BuildFaqJsonLd(solutions);
+        string html = BuildPageHtml(route, seoTitle, seoDesc, subKey, "solution-view", backHref, backText, headingHtml, stack.ToString(), faqSchema);
         WriteRoutePage(route, html, true);
     }
 

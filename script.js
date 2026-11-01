@@ -16621,6 +16621,19 @@ function handleRoute() {
         return;
     }
 
+    if (first === 'formulas') {
+        updateActiveTab('formulas');
+        showLayer('formulas-view');
+        updateSeoMeta(
+            "Class 9 Maths & Science Formulas Cheat Sheet | SimpleSolved Hub",
+            "Complete NCERT Class 9 Mathematics (Ganita Prakash) and Science (Physics & Chemistry) formula sheet: algebraic identities, mensuration tables, motion equations, gravitation, work-energy, and sound formulas.",
+            "formulas"
+        );
+        const fView = document.getElementById('formulas-view');
+        if (fView) renderMathInContainer(fView);
+        return;
+    }
+
     // 3. Subject-specific routes: /subject/:subjectKey/...
     if (first === 'subject' && segments[1]) {
         const subKey = segments[1].toLowerCase();
@@ -17448,12 +17461,19 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
     }
 
     const listToRender = activeExObj ? activeExObj.questions : (chapterData.solutions || []);
+    const seoRoute = activeExObj
+        ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/${encodeURIComponent(activeExObj.id)}`
+        : (hasExercises
+            ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/all`
+            : `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`);
 
     listToRender.forEach((sol, idx) => {
         const globalIdx = (sol.globalIndex !== undefined) ? sol.globalIndex : idx;
         const uniqueId = `ans-branch-${globalIdx}`;
         const hintId = `hint-branch-${globalIdx}`;
         const badgeLabel = sol.qNum || `Q${idx + 1}`;
+        const safeBadge = String(badgeLabel).replace(/'/g, "\\'");
+        const qLinkRoute = `${seoRoute}/?q=${globalIdx + 1}`;
         const hintHtml = fixAssetPaths(sol.hint || sol.hints || '');
         const qHtml = fixAssetPaths(sol.q);
         const aHtml = fixAssetPaths(sol.a);
@@ -17475,6 +17495,8 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
                     </button>` : ''}
                     ${hasExercises ? `
                     <button class="btn-toggle-solution active" onclick="toggleSolution('${uniqueId}', this)" title="Show or hide step-by-step solution"><span>\u{1F441}\uFE0F</span> Hide Solution</button>` : ''}
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('${qLinkRoute}', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('${qLinkRoute}', '${safeBadge}')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
         `;
@@ -17482,11 +17504,6 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
 
     showLayer('solution-view');
     const firstQSnippet = listToRender.length > 0 ? stripHtmlForSeo(listToRender[0].q).slice(0, 95) : '';
-    const seoRoute = activeExObj
-        ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/${encodeURIComponent(activeExObj.id)}`
-        : (hasExercises
-            ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/all`
-            : `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`);
     updateSeoMeta(
         `${cleanTitle}${activeExObj ? ' - ' + activeExObj.name : ''} Solutions | SimpleSolved Hub`,
         `NCERT Class 9 ${branchData.name} ${cleanTitle}${activeExObj ? ' (' + activeExObj.name + ')' : ''} step-by-step solutions (${listToRender.length} Q&As). ${firstQSnippet ? 'Includes: ' + firstQSnippet + '...' : ''}`.trim(),
@@ -17538,6 +17555,8 @@ function renderChapter(subjectKey, chapterIndex, questionTarget = null) {
         const uniqueId = `ans-std-${idx}`;
         const hintId = `hint-std-${idx}`;
         const badgeLabel = sol.qNum || `Q${idx + 1}`;
+        const safeBadge = String(badgeLabel).replace(/'/g, "\\'");
+        const qLinkRoute = `subject/${subjectKey}/chapter/${chapNum}/?q=${idx + 1}`;
         const hintHtml = fixAssetPaths(sol.hint || sol.hints || '');
         const qHtml = fixAssetPaths(sol.q);
         const aHtml = fixAssetPaths(sol.a);
@@ -17556,6 +17575,8 @@ function renderChapter(subjectKey, chapterIndex, questionTarget = null) {
                     <button class="btn-toggle-hint" onclick="toggleHint('${hintId}', this)" title="Show or hide hint / critical formula">
                         <span>\u{1F4A1}</span> Show Hint / Formula
                     </button>` : ''}
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('${qLinkRoute}', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('${qLinkRoute}', '${safeBadge}')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
         `;
@@ -17589,8 +17610,17 @@ function navigateToRoute(routePath) {
     const clean = (routePath || '').replace(/^#?\/+/, '').replace(/\/+$/, '');
     const [p, q] = clean.split('?');
     const targetUrl = p ? ('/' + p + '/' + (q ? '?' + q : '')) : ('/' + (q ? '?' + q : ''));
-    if (window.location.protocol === 'file:' || !navigator.onLine) {
+    if (window.location.protocol === 'file:') {
         window.location.hash = '#/' + clean;
+    } else if (window.history && window.history.pushState) {
+        const currentFull = window.location.pathname + window.location.search;
+        if (currentFull !== targetUrl) {
+            window.history.pushState(null, '', targetUrl);
+        }
+        handleRoute();
+        if (!targetUrl.includes('?q=')) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
     } else {
         window.location.href = targetUrl;
     }
@@ -17652,10 +17682,20 @@ function copyTextToClipboard(elementId, buttonElement) {
     });
 }
 
+function shareQuestionWhatsApp(relativeRoute, badgeLabel) {
+    const clean = (relativeRoute || '').replace(/^#?\/+/, '');
+    const [p, q] = clean.split('?');
+    const baseOrigin = (window.location.origin && window.location.origin !== 'null' && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://simplesolved.in';
+    const fullUrl = baseOrigin + '/' + p.replace(/\/+$/, '') + '/' + (q ? '?' + q : '');
+    const text = `Check out this Class 9 NCERT solution (${badgeLabel || 'Question'}) on SimpleSolved: ${fullUrl}`;
+    window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(text), '_blank', 'noopener,noreferrer');
+}
+
 function copyQuestionLink(relativeRoute, buttonElement) {
     const clean = (relativeRoute || '').replace(/^#?\/+/, '');
     const [p, q] = clean.split('?');
-    const fullUrl = window.location.origin + '/' + p.replace(/\/+$/, '') + '/' + (q ? '?' + q : '');
+    const baseOrigin = (window.location.origin && window.location.origin !== 'null' && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://simplesolved.in';
+    const fullUrl = baseOrigin + '/' + p.replace(/\/+$/, '') + '/' + (q ? '?' + q : '');
     navigator.clipboard.writeText(fullUrl).then(() => {
         const originalContent = buttonElement.innerHTML;
         buttonElement.innerHTML = "<span>\u2705</span> Copied!";
@@ -17948,21 +17988,38 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intercept internal links when Offline (Zero-Data Mode) or on file:// protocol
+// Instant client-side SPA navigation for all internal links (0ms transitions)
 document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href]');
     if (!link) return;
+
+    // Allow user to open in new tab (Ctrl/Cmd/middle click, target="_blank")
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (link.target && link.target !== '_self') return;
+
     const href = link.getAttribute('href');
-    if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#')) return;
-    if (!navigator.onLine || window.location.protocol === 'file:') {
-        e.preventDefault();
+    if (!href) return;
+
+    // Ignore external URLs, javascript:, mailto:, tel:, #anchors
+    if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('//') ||
+        href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:') || href.startsWith('#')) return;
+
+    e.preventDefault();
+
+    if (window.location.protocol === 'file:') {
         const clean = href.replace(/^\/+|\/+$/g, '');
-        if (window.history && window.history.pushState && window.location.protocol !== 'file:') {
+        window.location.hash = '#/' + clean;
+    } else if (window.history && window.history.pushState) {
+        const currentFull = window.location.pathname + window.location.search;
+        if (currentFull !== href) {
             window.history.pushState(null, '', href);
-            handleRoute();
-        } else {
-            window.location.hash = '#/' + clean;
         }
+        handleRoute();
+        if (!href.includes('?q=')) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+    } else {
+        window.location.href = href;
     }
 });
 
@@ -17986,17 +18043,30 @@ window.addEventListener('keydown', (e) => {
 /* ============================================================ */
 /* ROUTER & EVENT LISTENERS INITIALIZATION                      */
 /* ============================================================ */
-normalizeDatabaseExercises();
-window.addEventListener('hashchange', handleRoute);
-window.addEventListener('popstate', handleRoute);
-window.addEventListener('DOMContentLoaded', () => {
+let appInitialized = false;
+function initApp() {
+    if (appInitialized) return;
+    appInitialized = true;
     normalizeDatabaseExercises();
     updateOfflineStatusUI();
     updateThemeUI(getTheme());
     handleRoute();
-});
+}
+
+window.addEventListener('hashchange', handleRoute);
+window.addEventListener('popstate', handleRoute);
+window.addEventListener('DOMContentLoaded', initApp);
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    updateOfflineStatusUI();
-    updateThemeUI(getTheme());
-    handleRoute();
+    initApp();
+}
+function filterFormulaHub(category, btnEl) {
+    const container = document.getElementById('formulas-view');
+    if (!container) return;
+    container.querySelectorAll('.exercise-pill').forEach(p => p.classList.remove('active'));
+    if (btnEl) btnEl.classList.add('active');
+    container.querySelectorAll('.formula-hub-card').forEach(card => {
+        const cat = card.getAttribute('data-fcat');
+        card.classList.toggle('hidden', category !== 'all' && cat !== category);
+    });
+    renderMathInContainer(container);
 }

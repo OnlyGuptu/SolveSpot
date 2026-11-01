@@ -71,6 +71,135 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps precisely; do not perform any action that is not explicitly mentioned. Are you able to obtain the correct result?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Let's add 4567 and 8924 using the algorithm: 1. Align right to left: &nbsp;&nbsp;4567 + 8924 2. Rightmost digits: 7 + 4 = 11. More than 10. Write 1. Carry = 1. 3. Next column (tens): 6 + 2 + 1 (carry) = 9. Less than 10. Write 9. Carry = 0. 4. Repeat (hundreds): 5 + 9 + 0 = 14. More than 10. Write 4. Carry = 1. 5. Repeat (thousands): 4 + 8 + 1 (carry) = 13. More than 10. Write 3. Carry = 1. 6. No more digits on left. Step 5: Carry is 1, so write 1 to the left. Result: 13491. Yes, the correct result is obtained."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if you add a 5-digit number to a 3-digit number. Do our steps handle this situation correctly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Our steps, as strictly written, do not explicitly mention what to do when one number runs out of digits while the other still has digits left. To handle this correctly, we must assume that the missing columns of the 3-digit number are filled with leading zeros so that the \"add the two digits\" instruction in Step 3 still applies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is it important to align the columns from right to left?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Aligning from right to left ensures that digits of the same place value (units with units, tens with tens, hundreds with hundreds) are added together. If aligned left to right, we might mistakenly add thousands to hundreds or tens, resulting in an incorrect sum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "In Step 3, why cannot the value of carry be more than 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: The maximum single digit is 9. If we add two 9s and a previous carry of 1, the maximum possible sum in any column is . Since 19 is less than 20, the tens digit (which becomes the new carry) can never exceed 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if we do not include the fifth step in the algorithm above? Give examples where the algorithm will work correctly and where it will fail to work.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Step 5 adds the final leftover carry to the front of the answer. Where it works correctly: It works for . The final column is (carry 0). Since carry is not 1, Step 5 wouldn't trigger anyway. Where it fails: It fails for . - Units: , carry = 0. - Tens: . Write 2, carry = 1. Without Step 5, the algorithm ends and gives the answer as 27 instead of 127."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suppose List 1 and List 2 are two lists of numbers in increasing order. (i) Write an algorithm to find elements in List 1 that are not present in List 2. (ii) Write an algorithm to find elements in List 2 that are not present in List 1.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: (i) Algorithm for elements in List 1 not in List 2: 1. Start with an empty list called 'difference-list'. 2. For each number x in List 1: &nbsp;&nbsp;&nbsp;&nbsp;If x does not appear in List 2, add x to 'difference-list'. 3. Report 'difference-list'. (ii) Algorithm for elements in List 2 not in List 1: 1. Start with an empty list called 'difference-list'. 2. For each number y in List 2: &nbsp;&nbsp;&nbsp;&nbsp;If y does not appear in List 1, add y to 'difference-list'. 3. Report 'difference-list'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Describe an algorithm to compute the least common multiple (lcm) of two numbers.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Algorithm to find lcm(m, n): 1. Set a variable 'multiple' to the value of the larger number between m and n. 2. Check if 'multiple' is divisible by the smaller number. 3. If it is divisible, report 'multiple' as the lcm. 4. If it is not divisible, add the larger number to 'multiple' and repeat Step 2."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Divisors occur in pairs. For instance, the divisors of 18 are (1, 18), (2, 9) and (3, 6). (i) If we write out divisors in pairs, how many numbers do we have to examine between 1 and n to find all the divisors of n? (ii) If we list out the divisors in pairs, will our gcd algorithm...",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: (i) We only need to examine numbers from 1 up to the square root of n (i.e., ). For every divisor , its pair is . (ii) The original gcd algorithm assumes the generated divisor lists are in strictly increasing order to simply pick the \"rightmost\" element at the end. If we append both and at the same time, the list won't be strictly increasing unless we sort it afterwards. If we sort it, the algorithm works perfectly; if not, we must modify the last step to search the entire common-divisors list for the maximum value rather than just taking the rightmost element."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How would our original algorithm change if we computed the divisors of n by examining the numbers from 1 to n in reverse order, from n down to 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: The list of divisors would be generated in strictly decreasing order instead of increasing order. Consequently, the list of common divisors would also be in decreasing order. Therefore, Step 5 of the original algorithm would need to change: instead of reporting the rightmost element (which would now be 1), it must report the leftmost element (the first and largest common divisor found)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about the last algorithm described above? What happens when we look at common divisors starting from and work backwards to 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: If we start from and work backwards to 1, the very first common divisor we encounter will be the greatest common divisor. This drastically improves efficiency because we can stop the loop immediately upon finding the first number that divides both m and n, rather than scanning all the way to and constantly updating the most-recent-common-divisor ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Compute the following using the improved version of Euclid's algorithm (Āryabhaṭa's Division Algorithm). (i) gcd(375, 825) (ii) gcd(51000, 81000) (iii) gcd(1789287, 237656) (iv) gcd(2587392, 157656)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Using repeated division to find the remainder (): (i) gcd(375, 825): 825 ÷ 375 = 2 remainder 75. 375 ÷ 75 = 5 remainder 0. gcd = 75. (ii) gcd(51000, 81000): 81000 ÷ 51000 = 1 remainder 30000. 51000 ÷ 30000 = 1 remainder 21000. 30000 ÷ 21000 = 1 remainder 9000. 21000 ÷ 9000 = 2 remainder 3000. 9000 ÷ 3000 = 3 remainder 0. gcd = 3000. (iii) gcd(1789287, 237656): 1789287 ÷ 237656 = 7 remainder 125695. 237656 ÷ 125695 = 1 remainder 111961. 125695 ÷ 111961 = 1 remainder 13734. 111961 ÷ 13734 = 8 remainder 2089. 13734 ÷ 2089 = 6 remainder 1200. 2089 ÷ 1200 = 1 remainder 889. 1200 ÷ 889 = 1 remainder 311. 889 ÷ 311 = 2 remainder 267. 311 ÷ 267 = 1 remainder 44. 267 ÷ 44 = 6 remainder 3. 44 ÷ 3 = 14 remainder 2. 3 ÷ 2 = 1 remainder 1. 2 ÷ 1 = 2 remainder 0. gcd = 1. (iv) gcd(2587392, 157656): 2587392 ÷ 157656 = 16 remainder 64896. 157656 ÷ 64896 = 2 remainder 27864. 64896 ÷ 27864 = 2 rem..."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Assume that . Verify that divides and if and only if divides both and .",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Let . By the division algorithm, we can write , where is the quotient. Therefore, . Part 1 (Forward): Assume divides and . Then and for some integers . Substituting these into , we get . Since is an integer, divides (which is ). So, divides both and . Part 2 (Backward): Assume divides and (). Then and for some integers . Substituting these into , we get . Since is an integer, divides . So, divides both and ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Write an algorithm prime(n) to check if n is prime.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Algorithm prime(n): 1. Let list-of-divisors be the list obtained by computing divisors(n). 2. Count the number of elements in list-of-divisors. 3. If the count is exactly 2, report \"Prime\". 4. Otherwise, report \"Not Prime\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Write an algorithm primedivisors(n) to compute the list of divisors of n that are prime numbers.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Algorithm primedivisors(n): 1. Let list-of-divisors be the list obtained by computing divisors(n). 2. Start with an empty list called 'prime-divisors-list'. 3. For each number x in list-of-divisors: &nbsp;&nbsp;&nbsp;&nbsp;Execute prime(x) (from Exercise 3). &nbsp;&nbsp;&nbsp;&nbsp;If prime(x) reports \"Prime\", add x to 'prime-divisors-list'. 4. Report 'prime-divisors-list'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "We can also find the gcd of two numbers by computing prime factorisation of both the numbers. Try to write an algorithm to compute the prime factorisation of a number. (i) The prime factorisation of 180 is . How would you represent this? (ii) How would you compare the prime facto...",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer: Algorithm for Prime Factorisation of n: 1. Create an empty list called 'factors'. 2. Set (the smallest prime). 3. While : &nbsp;&nbsp;&nbsp;&nbsp;If is divisible by : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to 'factors'. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set . &nbsp;&nbsp;&nbsp;&nbsp;Else: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase by 1. 4. Report 'factors'. (i) Representation: It can be represented as a list of base-exponent pairs (e.g., [(2, 2), (3, 2), (5, 1)]) or just a flat list of primes [2, 2, 3, 3, 5]. (ii) Comparing factorisations to find GCD: To find the GCD, identify the prime bases that appear in both factorisations. For each common prime base, take the minimum of the exponents it has in the two representations. Multiply these resulting prime powers together to get the GCD."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Fallback Content for Automated Web Crawlers and Non-JS Visitors -->
@@ -129,6 +258,9 @@
             </a>
             <a class="nav-tab" data-tab="hindi" href="/subject/hindi/">
                 <span class="tab-icon">&#129718;</span> हिन्दी
+            </a>
+            <a class="nav-tab" data-tab="formulas" href="/formulas/">
+                <span class="tab-icon">&#128208;</span> Formulas Hub
             </a>
         </div>
     </div>
@@ -313,6 +445,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-0', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=1', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=1', 'Q1')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-1">
@@ -326,6 +460,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-1', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=2', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=2', 'Q2')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-2">
@@ -339,6 +475,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-2', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=3', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=3', 'Q3')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-3">
@@ -352,6 +490,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-3', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=4', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=4', 'Q4')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-4">
@@ -370,6 +510,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-4', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=5', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=5', 'Q5')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-5">
@@ -395,6 +537,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-5', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=6', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=6', 'Q1')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-6">
@@ -413,6 +557,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-6', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=7', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=7', 'Q2')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-7">
@@ -430,6 +576,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-7', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=8', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=8', 'Q3')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-8">
@@ -443,6 +591,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-8', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=9', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=9', 'Q1')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-9">
@@ -456,6 +606,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-9', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=10', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=10', 'Q2')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-10">
@@ -510,6 +662,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-10', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=11', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=11', 'Q1')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-11">
@@ -525,6 +679,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-11', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=12', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=12', 'Q2')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-12">
@@ -543,6 +699,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-12', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=13', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=13', 'Q3')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-13">
@@ -563,6 +721,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-13', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=14', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=14', 'Q4')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             <div class="solution-card" id="card-branch-14">
@@ -590,6 +750,8 @@
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-14', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
+                    <button class="btn-copy-solution" onclick="copyQuestionLink('subject/maths/branch/2/chapter/11/exercise/all/?q=15', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('subject/maths/branch/2/chapter/11/exercise/all/?q=15', 'Q5')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
                 </div>
             </div>
             </div>
@@ -605,6 +767,322 @@
 
     <!-- Toast Notification Container -->
     <div id="toast-container" class="toast-container"></div>
+
+    <!-- ========================================== -->
+    <!-- FORMULA & CHEAT-SHEET HUB LAYER (/formulas/) -->
+    <!-- ========================================== -->
+    <div id="formulas-view" class="view-layer hidden container">
+        <div class="navigation-crumbs">
+            <a class="btn-back" href="/">&larr; Back to Subjects</a>
+        </div>
+        <div class="hero-section" style="margin-bottom: 1.5rem;">
+            <div class="hero-pill">
+                <span class="pill-dot"></span> Class 9 Exam Revision Cheat-Sheet
+            </div>
+            <h1 class="hero-title" style="font-size: 2rem; margin-bottom: 0.5rem;">
+                Master <span class="gradient-text">Formula &amp; SI Unit Hub</span>
+            </h1>
+            <p class="hero-subtitle" style="margin-bottom: 1.25rem;">
+                Every essential Class 9 Mathematics (Ganita Prakash) and Science (Physics &amp; Chemistry) formula, algebraic identity, mensuration table, and SI unit in one place.
+            </p>
+            <div class="exercise-switcher-bar" style="justify-content: center; max-width: 680px; margin: 0 auto;">
+                <button class="exercise-pill active" onclick="filterFormulaHub('all', this)" style="border: none; cursor: pointer; font-family: inherit;">All Formulas <span class="pill-count">11</span></button>
+                <button class="exercise-pill" onclick="filterFormulaHub('maths', this)" style="border: none; cursor: pointer; font-family: inherit;">&#128208; Mathematics <span class="pill-count">6</span></button>
+                <button class="exercise-pill" onclick="filterFormulaHub('science', this)" style="border: none; cursor: pointer; font-family: inherit;">&#128300; Science <span class="pill-count">5</span></button>
+                <button class="btn-copy-solution" onclick="window.print()" title="Print or Save Formula Sheet as PDF" style="margin-left: auto;"><span>&#128424;</span> Print / Save PDF</button>
+            </div>
+        </div>
+
+        <div class="solutions-stack" id="formulas-cards-stack">
+            <!-- MATHS 1: ALGEBRAIC IDENTITIES -->
+            <div class="solution-card formula-hub-card" data-fcat="maths" id="fcard-1">
+                <div class="card-question-header">
+                    <span class="q-badge">Maths &bull; 01</span>
+                    <div class="question-text">Polynomials &amp; All 10 Standard Algebraic Identities</div>
+                </div>
+                <div class="answer-text" id="fans-1">
+                    <ul>
+                        <li><strong>Identity I (Square of a Binomial Sum):</strong> \((a + b)^2 = a^2 + 2ab + b^2\)</li>
+                        <li><strong>Identity II (Square of a Binomial Difference):</strong> \((a - b)^2 = a^2 - 2ab + b^2\)</li>
+                        <li><strong>Identity III (Difference of Squares):</strong> \(a^2 - b^2 = (a + b)(a - b)\)</li>
+                        <li><strong>Identity IV (Product with Common Term):</strong> \((x + a)(x + b) = x^2 + (a + b)x + ab\)</li>
+                        <li><strong>Identity V (Square of a Trinomial):</strong> \((a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca\)</li>
+                        <li><strong>Identity VI (Cube of a Sum):</strong> \((a + b)^3 = a^3 + b^3 + 3ab(a + b) = a^3 + 3a^2b + 3ab^2 + b^3\)</li>
+                        <li><strong>Identity VII (Cube of a Difference):</strong> \((a - b)^3 = a^3 - b^3 - 3ab(a - b) = a^3 - 3a^2b + 3ab^2 - b^3\)</li>
+                        <li><strong>Identity VIII (Sum of Cubes):</strong> \(a^3 + b^3 = (a + b)(a^2 - ab + b^2)\)</li>
+                        <li><strong>Identity IX (Difference of Cubes):</strong> \(a^3 - b^3 = (a - b)(a^2 + ab + b^2)\)</li>
+                        <li><strong>Identity X (Gauss / Trinomial Cube Identity):</strong> \(a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)\)</li>
+                        <li><strong>Special Exam Shortcut:</strong> If \(a + b + c = 0\), then \(a^3 + b^3 + c^3 = 3abc\).</li>
+                        <li><strong>Remainder Theorem:</strong> When a polynomial \(p(x)\) of degree \(\ge 1\) is divided by \((x - a)\), the remainder is \(p(a)\). If \(p(a) = 0\), then \((x - a)\) is a factor of \(p(x)\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-1', this)"><span>&#128203;</span> Copy Formulas</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('formulas', 'Algebraic Identities Cheat Sheet')"><span>&#128172;</span> WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- MATHS 2: 3D SURFACE AREAS & VOLUMES -->
+            <div class="solution-card formula-hub-card" data-fcat="maths" id="fcard-2">
+                <div class="card-question-header">
+                    <span class="q-badge">Maths &bull; 02</span>
+                    <div class="question-text">3D Surface Areas &amp; Volumes Master Table (Mensuration)</div>
+                </div>
+                <div class="answer-text" id="fans-2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>3D Solid Shape</th>
+                                <th>Curved / Lateral Surface Area (CSA / LSA)</th>
+                                <th>Total Surface Area (TSA)</th>
+                                <th>Volume (\(V\))</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cuboid</strong> (\(l, b, h\))</td>
+                                <td>\(2h(l + b)\)</td>
+                                <td>\(2(lb + bh + hl)\)</td>
+                                <td>\(l \times b \times h\) &nbsp; (Diagonal \(= \sqrt{l^2+b^2+h^2}\))</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cube</strong> (edge \(a\))</td>
+                                <td>\(4a^2\)</td>
+                                <td>\(6a^2\)</td>
+                                <td>\(a^3\) &nbsp; (Diagonal \(= \sqrt{3}a\))</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Right Circular Cylinder</strong> (\(r, h\))</td>
+                                <td>\(2\pi r h\)</td>
+                                <td>\(2\pi r(h + r)\)</td>
+                                <td>\(\pi r^2 h\)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Right Circular Cone</strong> (\(r, h, l\))</td>
+                                <td>\(\pi r l\) &nbsp; where \(l = \sqrt{r^2 + h^2}\)</td>
+                                <td>\(\pi r(l + r)\)</td>
+                                <td>\(\frac{1}{3}\pi r^2 h\)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sphere</strong> (radius \(r\))</td>
+                                <td>\(4\pi r^2\)</td>
+                                <td>\(4\pi r^2\)</td>
+                                <td>\(\frac{4}{3}\pi r^3\)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hemisphere</strong> (radius \(r\))</td>
+                                <td>\(2\pi r^2\)</td>
+                                <td>\(3\pi r^2\)</td>
+                                <td>\(\frac{2}{3}\pi r^3\)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 8px;"><strong>Unit Conversions:</strong> \(1\text{ m}^3 = 1000\text{ Litres}\), &nbsp; \(1\text{ Litre} = 1000\text{ cm}^3\), &nbsp; \(\pi \approx \frac{22}{7} \approx 3.1416\).</p>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-2', this)"><span>&#128203;</span> Copy Formulas</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('formulas', 'Surface Area and Volume Table')"><span>&#128172;</span> WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- MATHS 3: COORDINATE GEOMETRY & LINEAR EQUATIONS -->
+            <div class="solution-card formula-hub-card" data-fcat="maths" id="fcard-3">
+                <div class="card-question-header">
+                    <span class="q-badge">Maths &bull; 03</span>
+                    <div class="question-text">Coordinate Geometry &amp; Linear Equations in Two Variables</div>
+                </div>
+                <div class="answer-text" id="fans-3">
+                    <ul>
+                        <li><strong>Quadrant Sign Rules \((x, y)\):</strong> Quadrant I: \((+, +)\) &bull; Quadrant II: \((-, +)\) &bull; Quadrant III: \((-, -)\) &bull; Quadrant IV: \((+, -)\).</li>
+                        <li><strong>Points on Axes:</strong> Any point on the \(x\)-axis is \((x, 0)\); any point on the \(y\)-axis is \((0, y)\); the Origin is \((0, 0)\).</li>
+                        <li><strong>Distance Formula:</strong> Distance between \(P(x_1, y_1)\) and \(Q(x_2, y_2)\) is \(PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\).</li>
+                        <li><strong>Distance from Origin:</strong> Distance of \(P(x, y)\) from \((0, 0)\) is \(\sqrt{x^2 + y^2}\).</li>
+                        <li><strong>Midpoint Formula:</strong> The midpoint of segment joining \((x_1, y_1)\) and \((x_2, y_2)\) is \(M = \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)\).</li>
+                        <li><strong>Standard Linear Equation in Two Variables:</strong> \(ax + by + c = 0\) (where \(a, b\) are not both zero). Its graph is a straight line with infinitely many solutions.</li>
+                        <li><strong>Slope-Intercept Form:</strong> \(y = mx + c\), where \(m = \frac{y_2 - y_1}{x_2 - x_1}\) is the slope (rate of change) and \(c\) is the \(y\)-intercept.</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-3', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- MATHS 4: NUMBER SYSTEMS, EXPONENTS & SURDS -->
+            <div class="solution-card formula-hub-card" data-fcat="maths" id="fcard-4">
+                <div class="card-question-header">
+                    <span class="q-badge">Maths &bull; 04</span>
+                    <div class="question-text">Number Systems, Laws of Exponents &amp; Surds</div>
+                </div>
+                <div class="answer-text" id="fans-4">
+                    <ul>
+                        <li><strong>Product &amp; Quotient of Powers:</strong> \(a^m \cdot a^n = a^{m+n}\) &nbsp; and &nbsp; \(\frac{a^m}{a^n} = a^{m-n}\) (\(a \ne 0\)).</li>
+                        <li><strong>Power of a Power &amp; Product:</strong> \((a^m)^n = a^{mn}\) &nbsp; and &nbsp; \((ab)^m = a^m b^m\).</li>
+                        <li><strong>Zero, Negative &amp; Fractional Exponents:</strong> \(a^0 = 1\), &nbsp; \(a^{-n} = \frac{1}{a^n}\), &nbsp; \(a^{m/n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m\).</li>
+                        <li><strong>Laws of Radicals (Surds):</strong> \(\sqrt{ab} = \sqrt{a}\sqrt{b}\), &nbsp; \(\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}\), &nbsp; \((\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = a - b\).</li>
+                        <li><strong>Rationalising the Denominator:</strong> Multiply numerator and denominator of \(\frac{1}{a + b\sqrt{x}}\) by its conjugate \((a - b\sqrt{x})\) so the denominator becomes \(a^2 - b^2x\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-4', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- MATHS 5: 2D AREA, PERIMETER, HERON'S FORMULA & GEOMETRY -->
+            <div class="solution-card formula-hub-card" data-fcat="maths" id="fcard-5">
+                <div class="card-question-header">
+                    <span class="q-badge">Maths &bull; 05</span>
+                    <div class="question-text">2D Perimeter, Area, Heron's Formula &amp; Polygon Geometry</div>
+                </div>
+                <div class="answer-text" id="fans-5">
+                    <ul>
+                        <li><strong>Baudh&#257;yana-Pythagoras Theorem:</strong> In a right-angled triangle with legs \(a, b\) and hypotenuse \(c\): \(a^2 + b^2 = c^2\).</li>
+                        <li><strong>Heron's Formula (Any Triangle with sides \(a, b, c\)):</strong> Semi-perimeter \(s = \frac{a + b + c}{2}\); &nbsp; \(\text{Area} = \sqrt{s(s - a)(s - b)(s - c)}\).</li>
+                        <li><strong>Equilateral Triangle (side \(a\)):</strong> \(\text{Area} = \frac{\sqrt{3}}{4}a^2\), &nbsp; Altitude \(h = \frac{\sqrt{3}}{2}a\), &nbsp; Perimeter \(= 3a\).</li>
+                        <li><strong>Quadrilaterals:</strong> Parallelogram Area \(= \text{base} \times \text{height}\); &nbsp; Rhombus Area \(= \frac{1}{2} \times d_1 \times d_2\); &nbsp; Trapezium Area \(= \frac{1}{2}(a + b) \times h\).</li>
+                        <li><strong>Circle, Sector &amp; Ring:</strong> Circumference \(= 2\pi r\), &nbsp; Area \(= \pi r^2\), &nbsp; Annulus (Ring) Area \(= \pi(R^2 - r^2)\), &nbsp; Sector Area \(= \frac{\theta}{360^\circ}\pi r^2\).</li>
+                        <li><strong>Polygons (\(n\) sides):</strong> Sum of interior angles \(= (n - 2) \times 180^\circ\); &nbsp; Sum of exterior angles \(= 360^\circ\); &nbsp; Number of diagonals \(= \frac{n(n - 3)}{2}\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-5', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- MATHS 6: PROBABILITY, STATISTICS & SEQUENCES -->
+            <div class="solution-card formula-hub-card" data-fcat="maths" id="fcard-6">
+                <div class="card-question-header">
+                    <span class="q-badge">Maths &bull; 06</span>
+                    <div class="question-text">Probability, Statistics (Data) &amp; Number Sequences</div>
+                </div>
+                <div class="answer-text" id="fans-6">
+                    <ul>
+                        <li><strong>Empirical / Classical Probability:</strong> \(P(E) = \frac{\text{Number of outcomes favourable to } E}{\text{Total number of possible outcomes}}\), where \(0 \le P(E) \le 1\).</li>
+                        <li><strong>Complementary Event:</strong> \(P(\text{not } E) = P(\bar{E}) = 1 - P(E)\).</li>
+                        <li><strong>Arithmetic Mean (Average):</strong> \(\bar{x} = \frac{\sum x_i}{n}\) &nbsp; (or for frequency table: \(\bar{x} = \frac{\sum f_i x_i}{\sum f_i}\)).</li>
+                        <li><strong>Median (Sorted Data of size \(n\)):</strong> If \(n\) is odd, \(\text{Median} = \left(\frac{n+1}{2}\right)^{\text{th}}\) term; &nbsp; if \(n\) is even, \(\text{Median} = \text{Average of } \left(\frac{n}{2}\right)^{\text{th}} \text{ and } \left(\frac{n}{2}+1\right)^{\text{th}}\) terms.</li>
+                        <li><strong>Mode &amp; Range:</strong> Mode \(=\) most frequently occurring observation; &nbsp; \(\text{Range} = \text{Maximum Value} - \text{Minimum Value}\).</li>
+                        <li><strong>Linear / Arithmetic Sequence:</strong> \(n^{\text{th}}\) term \(T_n = a + (n - 1)d\); &nbsp; Sum of first \(n\) natural numbers \(= \frac{n(n + 1)}{2}\); &nbsp; Sum of first \(n\) odd numbers \(= n^2\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-6', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- SCIENCE 1: KINEMATICS & EQUATIONS OF MOTION -->
+            <div class="solution-card formula-hub-card" data-fcat="science" id="fcard-7">
+                <div class="card-question-header">
+                    <span class="q-badge">Science &bull; 01</span>
+                    <div class="question-text">Physics: Describing Motion &amp; Three Equations of Motion</div>
+                </div>
+                <div class="answer-text" id="fans-7">
+                    <ul>
+                        <li><strong>Speed &amp; Velocity:</strong> \(\text{Speed} = \frac{\text{Distance}}{\text{Time}}\) (Scalar, \(\text{m/s}\)); &nbsp; \(\text{Velocity} = \frac{\text{Displacement}}{\text{Time}}\) (Vector, \(\text{m/s}\)).</li>
+                        <li><strong>Conversion Shortcut:</strong> \(\text{km/h} \xrightarrow{\times \frac{5}{18}} \text{m/s}\) &nbsp; and &nbsp; \(\text{m/s} \xrightarrow{\times \frac{18}{5}} \text{km/h}\).</li>
+                        <li><strong>Average Speed &amp; Uniform Acceleration Velocity:</strong> \(v_{\text{avg}} = \frac{\text{Total Distance}}{\text{Total Time}}\); &nbsp; for uniform acceleration, \(v_{\text{avg}} = \frac{u + v}{2}\).</li>
+                        <li><strong>Acceleration:</strong> \(a = \frac{v - u}{t}\) &nbsp; (SI Unit: \(\text{m/s}^2\); negative acceleration is retardation/deceleration).</li>
+                        <li><strong>1st Equation of Motion (Velocity-Time):</strong> \(v = u + at\)</li>
+                        <li><strong>2nd Equation of Motion (Position-Time):</strong> \(s = ut + \frac{1}{2}at^2\)</li>
+                        <li><strong>3rd Equation of Motion (Position-Velocity):</strong> \(v^2 - u^2 = 2as\) &nbsp; (or \(v^2 = u^2 + 2as\))</li>
+                        <li><strong>Uniform Circular Motion Speed:</strong> \(v = \frac{2\pi r}{t}\) (speed is constant, velocity changes continuously due to changing direction).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-7', this)"><span>&#128203;</span> Copy Formulas</button>
+                    <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('formulas', 'Physics Equations of Motion Cheat Sheet')"><span>&#128172;</span> WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- SCIENCE 2: FORCE, LAWS OF MOTION & GRAVITATION -->
+            <div class="solution-card formula-hub-card" data-fcat="science" id="fcard-8">
+                <div class="card-question-header">
+                    <span class="q-badge">Science &bull; 02</span>
+                    <div class="question-text">Physics: Force, Laws of Motion, Gravitation &amp; Pressure</div>
+                </div>
+                <div class="answer-text" id="fans-8">
+                    <ul>
+                        <li><strong>Linear Momentum:</strong> \(p = m \times v\) &nbsp; (SI Unit: \(\text{kg}\cdot\text{m/s}\)).</li>
+                        <li><strong>Newton's Second Law of Motion:</strong> \(F = \frac{\Delta p}{t} = \frac{m(v - u)}{t} = m \times a\) &nbsp; (SI Unit: \(\text{Newton (N)} = \text{kg}\cdot\text{m/s}^2\)).</li>
+                        <li><strong>Impulse:</strong> \(J = F \times t = m(v - u) = \Delta p\) (Change in momentum).</li>
+                        <li><strong>Law of Conservation of Momentum:</strong> \(m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2\) &nbsp; (Recoil velocity of gun: \(V = -\frac{mv}{M}\)).</li>
+                        <li><strong>Universal Law of Gravitation:</strong> \(F = G\frac{M \cdot m}{d^2}\), where \(G = 6.673 \times 10^{-11}\text{ N}\cdot\text{m}^2/\text{kg}^2\).</li>
+                        <li><strong>Acceleration due to Gravity &amp; Weight:</strong> \(g = \frac{GM}{R^2} \approx 9.8\text{ m/s}^2\); &nbsp; \(\text{Weight } W = m \times g\); &nbsp; \(W_{\text{Moon}} = \frac{1}{6}W_{\text{Earth}}\).</li>
+                        <li><strong>Free Fall Equations (downward \(+g\), upward \(-g\)):</strong> \(v = u + gt\), &nbsp; \(h = ut + \frac{1}{2}gt^2\), &nbsp; \(v^2 = u^2 + 2gh\).</li>
+                        <li><strong>Pressure, Density &amp; Buoyancy:</strong> \(P = \frac{\text{Thrust (F)}}{\text{Area (A)}}\) (\(\text{Pa} = \text{N/m}^2\)); &nbsp; \(\text{Density } \rho = \frac{\text{Mass}}{\text{Volume}}\) (\(\text{kg/m}^3\)); &nbsp; \(\text{Relative Density} = \frac{\rho_{\text{substance}}}{\rho_{\text{water}}}\) (No unit).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-8', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- SCIENCE 3: WORK, ENERGY, POWER & SIMPLE MACHINES -->
+            <div class="solution-card formula-hub-card" data-fcat="science" id="fcard-9">
+                <div class="card-question-header">
+                    <span class="q-badge">Science &bull; 03</span>
+                    <div class="question-text">Physics: Work, Energy, Power &amp; Simple Machines</div>
+                </div>
+                <div class="answer-text" id="fans-9">
+                    <ul>
+                        <li><strong>Work Done by a Constant Force:</strong> \(W = F \times s\) (when force is along displacement; \(W = 0\) if \(\theta = 90^\circ\) or \(s = 0\)). SI Unit: \(\text{Joule (J)} = 1\text{ N}\cdot\text{m}\).</li>
+                        <li><strong>Kinetic Energy:</strong> \(E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m}\); &nbsp; <strong>Work-Energy Theorem:</strong> \(W = \frac{1}{2}mv^2 - \frac{1}{2}mu^2\).</li>
+                        <li><strong>Gravitational Potential Energy:</strong> \(E_p = m \times g \times h\).</li>
+                        <li><strong>Law of Conservation of Mechanical Energy:</strong> \(E_k + E_p = \frac{1}{2}mv^2 + mgh = \text{Constant}\).</li>
+                        <li><strong>Power:</strong> \(P = \frac{\text{Work (W)}}{\text{Time (t)}} = F \times v\) &nbsp; (SI Unit: \(\text{Watt (W)} = \text{J/s}\); &nbsp; \(1\text{ kW} = 1000\text{ W}\), &nbsp; \(1\text{ hp} \approx 746\text{ W}\)).</li>
+                        <li><strong>Commercial Unit of Electrical Energy:</strong> \(1\text{ Unit} = 1\text{ kWh} = 3.6 \times 10^6\text{ Joules}\).</li>
+                        <li><strong>Simple Machines &amp; Levers:</strong> \(\text{Mechanical Advantage (MA)} = \frac{\text{Load (L)}}{\text{Effort (E)}} = \frac{\text{Effort Arm}}{\text{Load Arm}}\); &nbsp; \(\text{Efficiency } \eta = \frac{\text{Work Output}}{\text{Work Input}} \times 100\%\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-9', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- SCIENCE 4: SOUND WAVES & ECHO -->
+            <div class="solution-card formula-hub-card" data-fcat="science" id="fcard-10">
+                <div class="card-question-header">
+                    <span class="q-badge">Science &bull; 04</span>
+                    <div class="question-text">Physics: Sound Waves, Frequency, Echo &amp; SONAR</div>
+                </div>
+                <div class="answer-text" id="fans-10">
+                    <ul>
+                        <li><strong>Frequency &amp; Time Period Relation:</strong> \(\nu = \frac{1}{T}\) and \(T = \frac{1}{\nu}\) &nbsp; (Frequency SI Unit: \(\text{Hertz (Hz)} = \text{s}^{-1}\)).</li>
+                        <li><strong>Wave Velocity Equation:</strong> \(v = \lambda \times \nu = \frac{\lambda}{T}\) &nbsp; (where \(v =\) wave speed, \(\lambda =\) wavelength, \(\nu =\) frequency).</li>
+                        <li><strong>Echo &amp; SONAR Ranging Formula:</strong> Total distance travelled by sound \(= 2d = v \times t \implies d = \frac{v \times t}{2}\).</li>
+                        <li><strong>Minimum Distance for Distinct Echo in Air:</strong> Since persistence of hearing is \(0.1\text{ s}\) and \(v_{\text{air}} \approx 344\text{ m/s}\) at \(22^\circ\text{C}\), \(d_{\min} = \frac{344 \times 0.1}{2} = 17.2\text{ m}\).</li>
+                        <li><strong>Frequency Ranges:</strong> Infrasonic: \(&lt; 20\text{ Hz}\) &bull; Human Audible Range: \(20\text{ Hz}\text{ to }20,000\text{ Hz}\) (\(20\text{ kHz}\)) &bull; Ultrasonic: \(&gt; 20\text{ kHz}\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-10', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+
+            <!-- SCIENCE 5: CHEMISTRY FORMULAS & ATOMIC STRUCTURE -->
+            <div class="solution-card formula-hub-card" data-fcat="science" id="fcard-11">
+                <div class="card-question-header">
+                    <span class="q-badge">Science &bull; 05</span>
+                    <div class="question-text">Chemistry: Solution Concentration, Atomic Structure &amp; Mole Concept</div>
+                </div>
+                <div class="answer-text" id="fans-11">
+                    <ul>
+                        <li><strong>Mass by Mass % of a Solution:</strong> \(\frac{\text{Mass of Solute}}{\text{Mass of Solution}} \times 100 = \frac{\text{Mass of Solute}}{\text{Mass of Solute} + \text{Mass of Solvent}} \times 100\).</li>
+                        <li><strong>Mass by Volume % of a Solution:</strong> \(\frac{\text{Mass of Solute}}{\text{Volume of Solution}} \times 100\).</li>
+                        <li><strong>Volume by Volume % of a Solution:</strong> \(\frac{\text{Volume of Solute}}{\text{Volume of Solution}} \times 100\).</li>
+                        <li><strong>Temperature Scale Conversions:</strong> \(T(\text{K}) = T(^\circ\text{C}) + 273.15\) &nbsp; and &nbsp; \(^\circ\text{F} = \frac{9}{5}(^\circ\text{C}) + 32\).</li>
+                        <li><strong>Atomic Number (\(Z\)) &amp; Mass Number (\(A\)):</strong> \(Z = \text{Number of protons } (p^+)\); &nbsp; \(A = \text{Protons } (Z) + \text{Neutrons } (n^0) \implies n^0 = A - Z\).</li>
+                        <li><strong>Bohr-Bury Shell Capacity Rule:</strong> Maximum electrons in orbit \(n = 2n^2\) &nbsp; (\(K=2,\; L=8,\; M=18,\; N=32\); outermost shell holds at most \(8\) electrons).</li>
+                        <li><strong>Average Atomic Mass of Isotopes:</strong> \(M_{\text{avg}} = \frac{(M_1 \times p_1) + (M_2 \times p_2)}{100}\) &nbsp; (e.g., Chlorine: \(35 \times \frac{75}{100} + 37 \times \frac{25}{100} = 35.5\text{ u}\)).</li>
+                        <li><strong>Mole &amp; Avogadro's Constant:</strong> \(\text{Number of Moles } (n) = \frac{\text{Given Mass } (m)}{\text{Molar Mass } (M)} = \frac{\text{Number of Particles } (N)}{N_A}\), where \(N_A = 6.022 \times 10^{23}\text{ mol}^{-1}\).</li>
+                    </ul>
+                </div>
+                <div class="card-actions-bar">
+                    <button class="btn-copy-solution" onclick="copyTextToClipboard('fans-11', this)"><span>&#128203;</span> Copy Formulas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ========================================== -->
     <!-- PRIVACY POLICY LAYER                       -->
     <!-- ========================================== -->
@@ -739,6 +1217,7 @@
    <footer style="text-align: center; padding: 1.25rem 1rem; border-top: 1px solid #e2e8f0; margin-top: 2rem; font-size: 0.88rem; color: #64748b; background: #ffffff;">
         <p style="font-weight: 600; color: #334155;">&copy; 2026 SimpleSolved &bull; Independent Educational Resource for Class 9 Students</p>
         <p style="margin-top: 0.4rem;">
+            <a href="/formulas/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Formulas Hub</a> | 
             <a href="/about/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">About Us</a> | 
             <a href="/privacy/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Privacy Policy</a> | 
             <a href="/terms/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Terms of Service</a> | 
@@ -776,6 +1255,6 @@
             window.location.hash = '#/' + initialParams.get('route');
         }
     </script>
-    <script src="/script.js?v=3.0" charset="UTF-8"></script>
+    <script src="/script.js?v=3.2" charset="UTF-8"></script>
 </body>
 </html>

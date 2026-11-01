@@ -31,6 +31,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://simplesolved.in/formulas</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://simplesolved.in/subject/science</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
