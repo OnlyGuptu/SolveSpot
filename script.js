@@ -16454,7 +16454,7 @@ function findChapterIndex(chapters, cNum) {
 function updateSeoMeta(title, description, routePath = '') {
     document.title = title;
     const cleanRoute = (routePath || '').replace(/^\/+|\/+$/g, '');
-    const canonicalUrl = cleanRoute ? `https://simplesolved.in/${cleanRoute}` : 'https://simplesolved.in/';
+    const canonicalUrl = cleanRoute ? `https://solvespot.in/${cleanRoute}` : 'https://solvespot.in/';
 
     let canonicalEl = document.querySelector('link[rel="canonical"]');
     if (!canonicalEl) {
@@ -16567,7 +16567,7 @@ function handleRoute() {
     if (segments.length === 0 || segments[0] === '' || segments[0] === 'home') {
         goToHomeUI();
         updateSeoMeta(
-            "Class 9 SimpleSolved Hub \u2022 Simple, Direct & Exam-Ready Solutions",
+            "Class 9 SolveSpot Hub \u2022 Simple, Direct & Exam-Ready Solutions",
             "Free, verified NCERT Class 9 textbook solutions for Science, Mathematics, Social Science, English, and Hindi. Clean step-by-step answers, formulas, hints, and exam notes.",
             ""
         );
@@ -16581,8 +16581,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('about-view');
         updateSeoMeta(
-            "About Us & Editorial Policy - SimpleSolved Hub",
-            "Learn about SimpleSolved, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
+            "About Us & Editorial Policy - SolveSpot Hub",
+            "Learn about SolveSpot, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
             "about"
         );
         return;
@@ -16592,8 +16592,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('privacy-view');
         updateSeoMeta(
-            "Privacy Policy - SimpleSolved Hub",
-            "Read the Privacy Policy for SimpleSolved (simplesolved.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
+            "Privacy Policy - SolveSpot Hub",
+            "Read the Privacy Policy for SolveSpot (solvespot.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
             "privacy"
         );
         return;
@@ -16603,8 +16603,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('terms-view');
         updateSeoMeta(
-            "Terms of Service - SimpleSolved Hub",
-            "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using SimpleSolved Class 9 textbook solutions.",
+            "Terms of Service - SolveSpot Hub",
+            "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using SolveSpot Class 9 textbook solutions.",
             "terms"
         );
         return;
@@ -16614,8 +16614,8 @@ function handleRoute() {
         updateActiveTab('none');
         showLayer('contact-view');
         updateSeoMeta(
-            "Contact Us - SimpleSolved Hub",
-            "Get in touch with the SimpleSolved academic team to report textbook errata, request solution clarifications, or send feedback.",
+            "Contact Us - SolveSpot Hub",
+            "Get in touch with the SolveSpot academic team to report textbook errata, request solution clarifications, or send feedback.",
             "contact"
         );
         return;
@@ -16625,7 +16625,7 @@ function handleRoute() {
         updateActiveTab('formulas');
         showLayer('formulas-view');
         updateSeoMeta(
-            "Class 9 Maths & Science Formulas Cheat Sheet | SimpleSolved Hub",
+            "Class 9 Maths & Science Formulas Cheat Sheet | SolveSpot Hub",
             "Complete NCERT Class 9 Mathematics (Ganita Prakash) and Science (Physics & Chemistry) formula sheet: algebraic identities, mensuration tables, motion equations, gravitation, work-energy, and sound formulas.",
             "formulas"
         );
@@ -17034,7 +17034,7 @@ function renderSubjectView(subjectKey) {
 
         showLayer('chapter-view');
         updateSeoMeta(
-            "Social Science (Parts 1 & 2) - Class 9 SimpleSolved Hub",
+            "Social Science (Parts 1 & 2) - Class 9 SolveSpot Hub",
             "NCERT Class 9 Social Science textbook solutions for both Part 1 and Part 2: Geography, History, Political Science, and Economics.",
             "subject/sst"
         );
@@ -17163,7 +17163,7 @@ function renderSubjectView(subjectKey) {
     showLayer('chapter-view');
     const subCleanName = data.title.replace(/ Sections?/i, '').replace(/ Chapters?/i, '');
     updateSeoMeta(
-        `${data.title} - Class 9 SimpleSolved Hub`,
+        `${data.title} - Class 9 SolveSpot Hub`,
         `Complete NCERT Class 9 ${subCleanName} textbook solutions. Browse all chapters, exercise sets, formulas, and verified step-by-step exam answers.`,
         `subject/${subjectKey}`
     );
@@ -17218,7 +17218,7 @@ function renderSstPartView(partNum) {
 
     showLayer('chapter-view');
     updateSeoMeta(
-        `${bookTitle} - Class 9 SimpleSolved Hub`,
+        `${bookTitle} - Class 9 SolveSpot Hub`,
         `NCERT Class 9 ${bookTitle} solutions across Geography, History, Political Science, and Economics with chapter solutions.`,
         `subject/sst/part/${partNum}`
     );
@@ -17308,7 +17308,7 @@ function renderBranchView(subjectKey, branchIndex) {
     showLayer('chapter-view');
     const chapTotal = Array.isArray(branchData.chapters) ? branchData.chapters.length : 0;
     updateSeoMeta(
-        `${branchData.name} Chapters - Class 9 SimpleSolved Hub`,
+        `${branchData.name} Chapters - Class 9 SolveSpot Hub`,
         `NCERT Class 9 ${branchData.name} (${data.title.replace(/ Sections?/i, '')}) chapter-wise textbook solutions across ${chapTotal} chapters with step-by-step answers and hints.`,
         `subject/${subjectKey}/branch/${branchIndex + 1}`
     );
@@ -17383,7 +17383,7 @@ function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex) {
 
     showLayer('chapter-view');
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subjectKey.toUpperCase() === "SST" ? "Social Science" : (subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1))} ${cleanTitle} Exercises | SimpleSolved`,
+        `NCERT Solutions for Class 9 ${subjectKey.toUpperCase() === "SST" ? "Social Science" : (subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1))} ${cleanTitle} Exercises | SolveSpot`,
         `NCERT Class 9 ${branchData.name} ${cleanTitle} textbook solutions: ${chapterData.exercises.length} exercise sets and ${totalQuestions} step-by-step solved questions with hints.`,
         `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`
     );
@@ -17505,7 +17505,7 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
     showLayer('solution-view');
     const firstQSnippet = listToRender.length > 0 ? stripHtmlForSeo(listToRender[0].q).slice(0, 95) : '';
     updateSeoMeta(
-        `${cleanTitle}${activeExObj ? ' - ' + activeExObj.name : ''} Solutions | SimpleSolved Hub`,
+        `${cleanTitle}${activeExObj ? ' - ' + activeExObj.name : ''} Solutions | SolveSpot Hub`,
         `NCERT Class 9 ${branchData.name} ${cleanTitle}${activeExObj ? ' (' + activeExObj.name + ')' : ''} step-by-step solutions (${listToRender.length} Q&As). ${firstQSnippet ? 'Includes: ' + firstQSnippet + '...' : ''}`.trim(),
         seoRoute
     );
@@ -17586,7 +17586,7 @@ function renderChapter(subjectKey, chapterIndex, questionTarget = null) {
     const subTitle = subjectData.title.replace(' Section', '').replace(' Chapters', '');
     const firstQStd = chapterData.solutions.length > 0 ? stripHtmlForSeo(chapterData.solutions[0].q).slice(0, 95) : '';
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subTitle} ${cleanTitle} | SimpleSolved`,
+        `NCERT Solutions for Class 9 ${subTitle} ${cleanTitle} | SolveSpot`,
         `NCERT Class 9 ${subTitle} ${cleanTitle} textbook solutions (${chapterData.solutions.length} solved questions). ${firstQStd ? 'Includes: ' + firstQStd + '...' : ''}`.trim(),
         `subject/${subjectKey}/chapter/${chapNum}`
     );
@@ -17685,16 +17685,16 @@ function copyTextToClipboard(elementId, buttonElement) {
 function shareQuestionWhatsApp(relativeRoute, badgeLabel) {
     const clean = (relativeRoute || '').replace(/^#?\/+/, '');
     const [p, q] = clean.split('?');
-    const baseOrigin = (window.location.origin && window.location.origin !== 'null' && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://simplesolved.in';
+    const baseOrigin = (window.location.origin && window.location.origin !== 'null' && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://solvespot.in';
     const fullUrl = baseOrigin + '/' + p.replace(/\/+$/, '') + '/' + (q ? '?' + q : '');
-    const text = `Check out this Class 9 NCERT solution (${badgeLabel || 'Question'}) on SimpleSolved: ${fullUrl}`;
+    const text = `Check out this Class 9 NCERT solution (${badgeLabel || 'Question'}) on SolveSpot: ${fullUrl}`;
     window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(text), '_blank', 'noopener,noreferrer');
 }
 
 function copyQuestionLink(relativeRoute, buttonElement) {
     const clean = (relativeRoute || '').replace(/^#?\/+/, '');
     const [p, q] = clean.split('?');
-    const baseOrigin = (window.location.origin && window.location.origin !== 'null' && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://simplesolved.in';
+    const baseOrigin = (window.location.origin && window.location.origin !== 'null' && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://solvespot.in';
     const fullUrl = baseOrigin + '/' + p.replace(/\/+$/, '') + '/' + (q ? '?' + q : '');
     navigator.clipboard.writeText(fullUrl).then(() => {
         const originalContent = buttonElement.innerHTML;
