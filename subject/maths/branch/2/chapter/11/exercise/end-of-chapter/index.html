@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 11: The World of Algorithms - End-of-Chapter Exercises Solutions | SolveSpot Hub</title>
+    <title>NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (End-of-Chapter Exercises) - SolveSpot</title>
     <meta name="description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (End-of-Chapter Exercises) step-by-step solutions (5 Q&amp;As). Includes: Compute the following using the improved version of Euclid's algorithm (Āryabhaṭa's Division Al...">
     <meta name="keywords" content="NCERT Class 9 Solutions, Class 9 Maths Ganita Manjari, Class 9 Science, Class 9 Social Science, Class 9 English Beehive, Class 9 Hindi solutions">
     <meta name="author" content="SolveSpot Educational Team">
@@ -37,14 +37,14 @@
     <!-- Open Graph / Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solvespot.in/subject/maths/branch/2/chapter/11/exercise/end-of-chapter">
-    <meta property="og:title" content="Chapter 11: The World of Algorithms - End-of-Chapter Exercises Solutions | SolveSpot Hub">
+    <meta property="og:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (End-of-Chapter Exercises) - SolveSpot">
     <meta property="og:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (End-of-Chapter Exercises) step-by-step solutions (5 Q&amp;As). Includes: Compute the following using the improved version of Euclid's algorithm (Āryabhaṭa's Division Al...">
     <meta property="og:image" content="https://solvespot.in/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SolveSpot Class 9 Textbook Solutions">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chapter 11: The World of Algorithms - End-of-Chapter Exercises Solutions | SolveSpot Hub">
+    <meta name="twitter:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (End-of-Chapter Exercises) - SolveSpot">
     <meta name="twitter:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (End-of-Chapter Exercises) step-by-step solutions (5 Q&amp;As). Includes: Compute the following using the improved version of Euclid's algorithm (Āryabhaṭa's Division Al...">
     <meta name="twitter:image" content="https://solvespot.in/og-image.png">
 
@@ -90,7 +90,7 @@
           "name": "Assume that . Verify that divides and if and only if divides both and .",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Let . By the division algorithm, we can write , where is the quotient. Therefore, . Part 1 (Forward): Assume divides and . Then and for some integers . Substituting these into , we get . Since is an integer, divides (which is ). So, divides both and . Part 2 (Backward): Assume divides and (). Then and for some integers . Substituting these into , we get . Since is an integer, divides . So, divides both and ."
+            "text": "Answer: Let . By the division algorithm, for some integer quotient , which can also be written as . Part 1 (If divides and , then divides and ): Suppose divides both and . Then and for some integers and . Putting these into gives: Since is an integer, divides (i.e., ). Thus, divides both and . Part 2 (If divides and , then divides and ): Conversely, suppose divides both and . Then and for some integers and . Putting these into gives: Since is an integer, also divides . Thus, divides both and ."
           }
         },
         {
@@ -114,7 +114,7 @@
           "name": "We can also find the gcd of two numbers by computing prime factorisation of both the numbers. Try to write an algorithm to compute the prime factorisation of a number. (i) The prime factorisation of 180 is . How would you represent this? (ii) How would you compare the prime facto...",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Algorithm for Prime Factorisation of n: 1. Create an empty list called 'factors'. 2. Set (the smallest prime). 3. While : &nbsp;&nbsp;&nbsp;&nbsp;If is divisible by : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to 'factors'. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set . &nbsp;&nbsp;&nbsp;&nbsp;Else: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase by 1. 4. Report 'factors'. (i) Representation: It can be represented as a list of base-exponent pairs (e.g., [(2, 2), (3, 2), (5, 1)]) or just a flat list of primes [2, 2, 3, 3, 5]. (ii) Comparing factorisations to find GCD: To find the GCD, identify the prime bases that appear in both factorisations. For each common prime base, take the minimum of the exponents it has in the two representations. Multiply these resulting prime powers together to get the GCD."
+            "text": "Answer: Algorithm for Prime Factorisation of : 1. Start with an empty list called 'factors'. 2. Set (the smallest prime number). 3. While : &nbsp;&nbsp;&nbsp;&nbsp;If is divisible by : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to 'factors' and replace with . &nbsp;&nbsp;&nbsp;&nbsp;Otherwise: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase by 1. 4. Report 'factors'. (i) Representation: We can write it either as a list of all prime factors with repetition, like , or as pairs of (prime, exponent), like . (ii) Comparing factorisations to find the gcd: Pick all the prime factors that are common to both lists (or take the smaller power of each common prime factor) and multiply them together."
           }
         }
       ]
@@ -408,9 +408,15 @@
                 </div>
                 
                 
-                <div id="ans-branch-11" class="answer-text"><p><strong>Answer:</strong> Let $m \mod n = r$. By the division algorithm, we can write $m = qn + r$, where $q$ is the quotient. Therefore, $r = m - qn$.<br>
-          <strong>Part 1 (Forward):</strong> Assume $d$ divides $m$ and $n$. Then $m = ad$ and $n = bd$ for some integers $a, b$. Substituting these into $r = m - qn$, we get $r = ad - q(bd) = d(a - qb)$. Since $(a - qb)$ is an integer, $d$ divides $r$ (which is $m \mod n$). So, $d$ divides both $n$ and $m \mod n$.<br>
-          <strong>Part 2 (Backward):</strong> Assume $d$ divides $n$ and $r$ ($m \mod n$). Then $n = xd$ and $r = yd$ for some integers $x, y$. Substituting these into $m = qn + r$, we get $m = q(xd) + yd = d(qx + y)$. Since $(qx + y)$ is an integer, $d$ divides $m$. So, $d$ divides both $m$ and $n$.</p></div>
+                <div id="ans-branch-11" class="answer-text"><p><strong>Answer:</strong> Let $r = m \bmod n$. By the division algorithm, $m = qn + r$ for some integer quotient $q$, which can also be written as $r = m - qn$.<br>
+          <strong>Part 1 (If $d$ divides $m$ and $n$, then $d$ divides $n$ and $r$):</strong><br>
+          Suppose $d$ divides both $m$ and $n$. Then $m = ad$ and $n = bd$ for some integers $a$ and $b$. Putting these into $r = m - qn$ gives:<br>
+          $r = ad - q(bd) = d(a - qb)$<br>
+          Since $a - qb$ is an integer, $d$ divides $r$ (i.e., $m \bmod n$). Thus, $d$ divides both $n$ and $m \bmod n$.<br><br>
+          <strong>Part 2 (If $d$ divides $n$ and $r$, then $d$ divides $m$ and $n$):</strong><br>
+          Conversely, suppose $d$ divides both $n$ and $r$. Then $n = xd$ and $r = yd$ for some integers $x$ and $y$. Putting these into $m = qn + r$ gives:<br>
+          $m = q(xd) + yd = d(qx + y)$<br>
+          Since $qx + y$ is an integer, $d$ also divides $m$. Thus, $d$ divides both $m$ and $n$.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-11', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -470,18 +476,17 @@
                 
                 
                 <div id="ans-branch-14" class="answer-text"><p><strong>Answer:</strong><br>
-          <strong>Algorithm for Prime Factorisation of n:</strong><br>
-          1. Create an empty list called 'factors'.<br>
-          2. Set $d = 2$ (the smallest prime).<br>
+          <strong>Algorithm for Prime Factorisation of $n$:</strong><br>
+          1. Start with an empty list called 'factors'.<br>
+          2. Set $d = 2$ (the smallest prime number).<br>
           3. While $n > 1$:<br>
           &nbsp;&nbsp;&nbsp;&nbsp;If $n$ is divisible by $d$:<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add $d$ to 'factors'.<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set $n = n / d$.<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;Else:<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add $d$ to 'factors' and replace $n$ with $n / d$.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Otherwise:<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase $d$ by 1.<br>
           4. Report 'factors'.<br><br>
-          <strong>(i) Representation:</strong> It can be represented as a list of base-exponent pairs (e.g., [(2, 2), (3, 2), (5, 1)]) or just a flat list of primes [2, 2, 3, 3, 5].<br>
-          <strong>(ii) Comparing factorisations to find GCD:</strong> To find the GCD, identify the prime bases that appear in <strong>both</strong> factorisations. For each common prime base, take the <strong>minimum</strong> of the exponents it has in the two representations. Multiply these resulting prime powers together to get the GCD.</p></div>
+          <strong>(i) Representation:</strong> We can write it either as a list of all prime factors with repetition, like $[2, 2, 3, 3, 5]$, or as pairs of (prime, exponent), like $[(2, 2), (3, 2), (5, 1)]$.<br>
+          <strong>(ii) Comparing factorisations to find the gcd:</strong> Pick all the prime factors that are common to both lists (or take the smaller power of each common prime factor) and multiply them together.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-14', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -862,7 +867,7 @@
                 <p>SolveSpot prioritizes the protection of children using the internet. We encourage parents and guardians to observe, participate in, and/or monitor their online activity. SolveSpot does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you believe your child provided this kind of information on our website, please contact us immediately and we will promptly remove such records.</p>
                 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.15rem;">7. Contact Information</h3>
-                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>.</p>
+                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>.</p>
             </div>
         </div>
     </div>
@@ -924,7 +929,7 @@
                 </div>
 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.2rem;">4. Editorial Board &amp; Corrections</h3>
-                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
+                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
             </div>
         </div>
     </div>
@@ -940,7 +945,7 @@
             <h2 style="color: #0f172a; margin-bottom: 1rem; text-align: center;">Contact Us</h2>
             <p style="color: #64748b; text-align: center; margin-bottom: 2rem;">Have any queries or found an error in our solutions? We can also make a custom website for you on a fee. Drop us an email.</p>
             <div class="answer-text" style="border-left: none; padding-left: 0; text-align: center;">
-                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.solvespot@gmail.com</p>
+                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.ncertsolved@gmail.com</p>
                 <p style="color: #64748b; margin-top: 0.5rem;">We usually respond back within 24-48 working hours.</p>
             </div>
         </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 11: The World of Algorithms Solutions | SolveSpot Hub</title>
+    <title>NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms - SolveSpot</title>
     <meta name="description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms step-by-step solutions (15 Q&amp;As). Includes: Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps pr...">
     <meta name="keywords" content="NCERT Class 9 Solutions, Class 9 Maths Ganita Manjari, Class 9 Science, Class 9 Social Science, Class 9 English Beehive, Class 9 Hindi solutions">
     <meta name="author" content="SolveSpot Educational Team">
@@ -37,14 +37,14 @@
     <!-- Open Graph / Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solvespot.in/subject/maths/branch/2/chapter/11/exercise/all">
-    <meta property="og:title" content="Chapter 11: The World of Algorithms Solutions | SolveSpot Hub">
+    <meta property="og:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms - SolveSpot">
     <meta property="og:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms step-by-step solutions (15 Q&amp;As). Includes: Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps pr...">
     <meta property="og:image" content="https://solvespot.in/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SolveSpot Class 9 Textbook Solutions">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chapter 11: The World of Algorithms Solutions | SolveSpot Hub">
+    <meta name="twitter:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms - SolveSpot">
     <meta name="twitter:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms step-by-step solutions (15 Q&amp;As). Includes: Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps pr...">
     <meta name="twitter:image" content="https://solvespot.in/og-image.png">
 
@@ -90,7 +90,7 @@
           "name": "What happens if you add a 5-digit number to a 3-digit number. Do our steps handle this situation correctly?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Our steps, as strictly written, do not explicitly mention what to do when one number runs out of digits while the other still has digits left. To handle this correctly, we must assume that the missing columns of the 3-digit number are filled with leading zeros so that the \"add the two digits\" instruction in Step 3 still applies."
+            "text": "Answer: In the steps as written, there is no instruction for what to do when one number runs out of digits before the other. To make the algorithm work for a 5-digit and a 3-digit number, we need to treat the blank spaces on the left of the 3-digit number as zeros (for example, writing as ) so that Step 3 always has two digits to add in every column."
           }
         },
         {
@@ -98,7 +98,7 @@
           "name": "Why is it important to align the columns from right to left?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Aligning from right to left ensures that digits of the same place value (units with units, tens with tens, hundreds with hundreds) are added together. If aligned left to right, we might mistakenly add thousands to hundreds or tens, resulting in an incorrect sum."
+            "text": "Answer: Aligning from right to left lines up digits with the same place value — ones with ones, tens with tens, and hundreds with hundreds. If we aligned them from left to right when the numbers have different lengths, we would end up adding digits of different place values (like hundreds to thousands) and get a wrong answer."
           }
         },
         {
@@ -106,7 +106,7 @@
           "name": "In Step 3, why cannot the value of carry be more than 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: The maximum single digit is 9. If we add two 9s and a previous carry of 1, the maximum possible sum in any column is . Since 19 is less than 20, the tens digit (which becomes the new carry) can never exceed 1."
+            "text": "Answer: The largest single digit is 9. Even if we add two 9s along with a carry of 1 from the previous column, the largest possible sum is . Since 19 is less than 20, the tens digit of the sum — which becomes the new carry — can never be greater than 1."
           }
         },
         {
@@ -114,7 +114,7 @@
           "name": "What happens if we do not include the fifth step in the algorithm above? Give examples where the algorithm will work correctly and where it will fail to work.",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Step 5 adds the final leftover carry to the front of the answer. Where it works correctly: It works for . The final column is (carry 0). Since carry is not 1, Step 5 wouldn't trigger anyway. Where it fails: It fails for . - Units: , carry = 0. - Tens: . Write 2, carry = 1. Without Step 5, the algorithm ends and gives the answer as 27 instead of 127."
+            "text": "Answer: Step 5 writes down the final carry of 1 at the leftmost end if there is a carry left over after the last column. When it still works: It works whenever the leftmost column adds up to less than 10 (so the final carry is 0). For example, in , the tens column is with carry 0, so skipping Step 5 still gives 77. When it fails: It fails whenever the leftmost column produces a carry of 1. For example, in : - Ones column: , carry = 0. - Tens column: . Write 2, carry = 1. Without Step 5, the algorithm stops here and gives 27 instead of 127."
           }
         },
         {
@@ -138,7 +138,7 @@
           "name": "Divisors occur in pairs. For instance, the divisors of 18 are (1, 18), (2, 9) and (3, 6). (i) If we write out divisors in pairs, how many numbers do we have to examine between 1 and n to find all the divisors of n? (ii) If we list out the divisors in pairs, will our gcd algorithm...",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: (i) We only need to examine numbers from 1 up to the square root of n (i.e., ). For every divisor , its pair is . (ii) The original gcd algorithm assumes the generated divisor lists are in strictly increasing order to simply pick the \"rightmost\" element at the end. If we append both and at the same time, the list won't be strictly increasing unless we sort it afterwards. If we sort it, the algorithm works perfectly; if not, we must modify the last step to search the entire common-divisors list for the maximum value rather than just taking the rightmost element."
+            "text": "Answer: (i) We only need to check numbers from 1 up to . Every divisor automatically gives its partner divisor . (ii) Our original gcd algorithm assumes the divisor lists are in increasing order so that it can simply pick the last (rightmost) number in the common-divisors list. If we add pairs as we find them (like ), the list will not be in increasing order. So we must either sort the list in increasing order first, or change the final step to look for the largest number in the common-divisors list instead of just picking the rightmost one."
           }
         },
         {
@@ -146,7 +146,7 @@
           "name": "How would our original algorithm change if we computed the divisors of n by examining the numbers from 1 to n in reverse order, from n down to 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: The list of divisors would be generated in strictly decreasing order instead of increasing order. Consequently, the list of common divisors would also be in decreasing order. Therefore, Step 5 of the original algorithm would need to change: instead of reporting the rightmost element (which would now be 1), it must report the leftmost element (the first and largest common divisor found)."
+            "text": "Answer: The divisors of would be listed in decreasing order (from down to 1) instead of increasing order. Because of this, the list of common divisors would also be in decreasing order, with the largest common divisor at the very beginning and 1 at the end. So in Step 5, instead of reporting the rightmost element, we would have to report the leftmost element."
           }
         },
         {
@@ -154,7 +154,7 @@
           "name": "What about the last algorithm described above? What happens when we look at common divisors starting from and work backwards to 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: If we start from and work backwards to 1, the very first common divisor we encounter will be the greatest common divisor. This drastically improves efficiency because we can stop the loop immediately upon finding the first number that divides both m and n, rather than scanning all the way to and constantly updating the most-recent-common-divisor ."
+            "text": "Answer: If we start from and count backwards towards 1, the very first number we find that divides both and is guaranteed to be their greatest common divisor (gcd). This makes the algorithm much faster because we can stop and report the answer as soon as we find that first common divisor, without having to check the remaining smaller numbers."
           }
         },
         {
@@ -170,7 +170,7 @@
           "name": "Assume that . Verify that divides and if and only if divides both and .",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Let . By the division algorithm, we can write , where is the quotient. Therefore, . Part 1 (Forward): Assume divides and . Then and for some integers . Substituting these into , we get . Since is an integer, divides (which is ). So, divides both and . Part 2 (Backward): Assume divides and (). Then and for some integers . Substituting these into , we get . Since is an integer, divides . So, divides both and ."
+            "text": "Answer: Let . By the division algorithm, for some integer quotient , which can also be written as . Part 1 (If divides and , then divides and ): Suppose divides both and . Then and for some integers and . Putting these into gives: Since is an integer, divides (i.e., ). Thus, divides both and . Part 2 (If divides and , then divides and ): Conversely, suppose divides both and . Then and for some integers and . Putting these into gives: Since is an integer, also divides . Thus, divides both and ."
           }
         },
         {
@@ -194,7 +194,7 @@
           "name": "We can also find the gcd of two numbers by computing prime factorisation of both the numbers. Try to write an algorithm to compute the prime factorisation of a number. (i) The prime factorisation of 180 is . How would you represent this? (ii) How would you compare the prime facto...",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Algorithm for Prime Factorisation of n: 1. Create an empty list called 'factors'. 2. Set (the smallest prime). 3. While : &nbsp;&nbsp;&nbsp;&nbsp;If is divisible by : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to 'factors'. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set . &nbsp;&nbsp;&nbsp;&nbsp;Else: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase by 1. 4. Report 'factors'. (i) Representation: It can be represented as a list of base-exponent pairs (e.g., [(2, 2), (3, 2), (5, 1)]) or just a flat list of primes [2, 2, 3, 3, 5]. (ii) Comparing factorisations to find GCD: To find the GCD, identify the prime bases that appear in both factorisations. For each common prime base, take the minimum of the exponents it has in the two representations. Multiply these resulting prime powers together to get the GCD."
+            "text": "Answer: Algorithm for Prime Factorisation of : 1. Start with an empty list called 'factors'. 2. Set (the smallest prime number). 3. While : &nbsp;&nbsp;&nbsp;&nbsp;If is divisible by : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to 'factors' and replace with . &nbsp;&nbsp;&nbsp;&nbsp;Otherwise: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase by 1. 4. Report 'factors'. (i) Representation: We can write it either as a list of all prime factors with repetition, like , or as pairs of (prime, exponent), like . (ii) Comparing factorisations to find the gcd: Pick all the prime factors that are common to both lists (or take the smaller power of each common prime factor) and multiply them together."
           }
         }
       ]
@@ -456,7 +456,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-1" class="answer-text"><p><strong>Answer:</strong> Our steps, as strictly written, do not explicitly mention what to do when one number runs out of digits while the other still has digits left. To handle this correctly, we must assume that the missing columns of the 3-digit number are filled with leading zeros so that the "add the two digits" instruction in Step 3 still applies.</p></div>
+                <div id="ans-branch-1" class="answer-text"><p><strong>Answer:</strong> In the steps as written, there is no instruction for what to do when one number runs out of digits before the other. To make the algorithm work for a 5-digit and a 3-digit number, we need to treat the blank spaces on the left of the 3-digit number as zeros (for example, writing $345$ as $00345$) so that Step 3 always has two digits to add in every column.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-1', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -471,7 +471,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-2" class="answer-text"><p><strong>Answer:</strong> Aligning from right to left ensures that digits of the same place value (units with units, tens with tens, hundreds with hundreds) are added together. If aligned left to right, we might mistakenly add thousands to hundreds or tens, resulting in an incorrect sum.</p></div>
+                <div id="ans-branch-2" class="answer-text"><p><strong>Answer:</strong> Aligning from right to left lines up digits with the same place value — ones with ones, tens with tens, and hundreds with hundreds. If we aligned them from left to right when the numbers have different lengths, we would end up adding digits of different place values (like hundreds to thousands) and get a wrong answer.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-2', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -486,7 +486,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-3" class="answer-text"><p><strong>Answer:</strong> The maximum single digit is 9. If we add two 9s and a previous carry of 1, the maximum possible sum in any column is $9 + 9 + 1 = 19$. Since 19 is less than 20, the tens digit (which becomes the new carry) can never exceed 1.</p></div>
+                <div id="ans-branch-3" class="answer-text"><p><strong>Answer:</strong> The largest single digit is 9. Even if we add two 9s along with a carry of 1 from the previous column, the largest possible sum is $9 + 9 + 1 = 19$. Since 19 is less than 20, the tens digit of the sum — which becomes the new carry — can never be greater than 1.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-3', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -501,12 +501,12 @@
                 </div>
                 
                 
-                <div id="ans-branch-4" class="answer-text"><p><strong>Answer:</strong> Step 5 adds the final leftover carry to the front of the answer.<br>
-          <strong>Where it works correctly:</strong> It works for $32 + 45 = 77$. The final column is $3 + 4 = 7$ (carry 0). Since carry is not 1, Step 5 wouldn't trigger anyway.<br>
-          <strong>Where it fails:</strong> It fails for $85 + 42$.<br>
-          - Units: $5 + 2 = 7$, carry = 0.<br>
-          - Tens: $8 + 4 + 0 = 12$. Write 2, carry = 1.<br>
-          Without Step 5, the algorithm ends and gives the answer as 27 instead of 127.</p></div>
+                <div id="ans-branch-4" class="answer-text"><p><strong>Answer:</strong> Step 5 writes down the final carry of 1 at the leftmost end if there is a carry left over after the last column.<br>
+          <strong>When it still works:</strong> It works whenever the leftmost column adds up to less than 10 (so the final carry is 0). For example, in $32 + 45 = 77$, the tens column is $3 + 4 = 7$ with carry 0, so skipping Step 5 still gives 77.<br>
+          <strong>When it fails:</strong> It fails whenever the leftmost column produces a carry of 1. For example, in $85 + 42$:<br>
+          - Ones column: $5 + 2 = 7$, carry = 0.<br>
+          - Tens column: $8 + 4 + 0 = 12$. Write 2, carry = 1.<br>
+          Without Step 5, the algorithm stops here and gives 27 instead of 127.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-4', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -571,8 +571,8 @@
                 
                 
                 <div id="ans-branch-7" class="answer-text"><p><strong>Answer:</strong><br>
-          <strong>(i)</strong> We only need to examine numbers from 1 up to the square root of n (i.e., $\sqrt{n}$). For every divisor $d \le \sqrt{n}$, its pair is $n/d$.<br>
-          <strong>(ii)</strong> The original gcd algorithm assumes the generated divisor lists are in strictly increasing order to simply pick the "rightmost" element at the end. If we append both $d$ and $n/d$ at the same time, the list won't be strictly increasing unless we sort it afterwards. If we sort it, the algorithm works perfectly; if not, we must modify the last step to search the entire common-divisors list for the maximum value rather than just taking the rightmost element.</p></div>
+          <strong>(i)</strong> We only need to check numbers from 1 up to $\sqrt{n}$. Every divisor $d \le \sqrt{n}$ automatically gives its partner divisor $\frac{n}{d}$.<br>
+          <strong>(ii)</strong> Our original gcd algorithm assumes the divisor lists are in increasing order so that it can simply pick the last (rightmost) number in the common-divisors list. If we add pairs $(d, \frac{n}{d})$ as we find them (like $1, 18, 2, 9, 3, 6$), the list will not be in increasing order. So we must either sort the list in increasing order first, or change the final step to look for the largest number in the common-divisors list instead of just picking the rightmost one.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-7', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -587,7 +587,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-8" class="answer-text"><p><strong>Answer:</strong> The list of divisors would be generated in strictly <strong>decreasing order</strong> instead of increasing order. Consequently, the list of common divisors would also be in decreasing order. Therefore, Step 5 of the original algorithm would need to change: instead of reporting the rightmost element (which would now be 1), it must report the <strong>leftmost</strong> element (the first and largest common divisor found).</p></div>
+                <div id="ans-branch-8" class="answer-text"><p><strong>Answer:</strong> The divisors of $n$ would be listed in <strong>decreasing order</strong> (from $n$ down to 1) instead of increasing order. Because of this, the list of common divisors would also be in decreasing order, with the largest common divisor at the very beginning and 1 at the end. So in Step 5, instead of reporting the rightmost element, we would have to report the <strong>leftmost</strong> element.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-8', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -602,7 +602,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-9" class="answer-text"><p><strong>Answer:</strong> If we start from $min(m, n)$ and work backwards to 1, the <strong>very first</strong> common divisor we encounter will be the greatest common divisor. This drastically improves efficiency because we can stop the loop immediately upon finding the first number that divides both m and n, rather than scanning all the way to $min(m,n)$ and constantly updating the <code>most-recent-common-divisor</code>.</p></div>
+                <div id="ans-branch-9" class="answer-text"><p><strong>Answer:</strong> If we start from $\min(m, n)$ and count backwards towards 1, the <strong>very first</strong> number we find that divides both $m$ and $n$ is guaranteed to be their greatest common divisor (gcd). This makes the algorithm much faster because we can stop and report the answer as soon as we find that first common divisor, without having to check the remaining smaller numbers.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-9', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -673,9 +673,15 @@
                 </div>
                 
                 
-                <div id="ans-branch-11" class="answer-text"><p><strong>Answer:</strong> Let $m \mod n = r$. By the division algorithm, we can write $m = qn + r$, where $q$ is the quotient. Therefore, $r = m - qn$.<br>
-          <strong>Part 1 (Forward):</strong> Assume $d$ divides $m$ and $n$. Then $m = ad$ and $n = bd$ for some integers $a, b$. Substituting these into $r = m - qn$, we get $r = ad - q(bd) = d(a - qb)$. Since $(a - qb)$ is an integer, $d$ divides $r$ (which is $m \mod n$). So, $d$ divides both $n$ and $m \mod n$.<br>
-          <strong>Part 2 (Backward):</strong> Assume $d$ divides $n$ and $r$ ($m \mod n$). Then $n = xd$ and $r = yd$ for some integers $x, y$. Substituting these into $m = qn + r$, we get $m = q(xd) + yd = d(qx + y)$. Since $(qx + y)$ is an integer, $d$ divides $m$. So, $d$ divides both $m$ and $n$.</p></div>
+                <div id="ans-branch-11" class="answer-text"><p><strong>Answer:</strong> Let $r = m \bmod n$. By the division algorithm, $m = qn + r$ for some integer quotient $q$, which can also be written as $r = m - qn$.<br>
+          <strong>Part 1 (If $d$ divides $m$ and $n$, then $d$ divides $n$ and $r$):</strong><br>
+          Suppose $d$ divides both $m$ and $n$. Then $m = ad$ and $n = bd$ for some integers $a$ and $b$. Putting these into $r = m - qn$ gives:<br>
+          $r = ad - q(bd) = d(a - qb)$<br>
+          Since $a - qb$ is an integer, $d$ divides $r$ (i.e., $m \bmod n$). Thus, $d$ divides both $n$ and $m \bmod n$.<br><br>
+          <strong>Part 2 (If $d$ divides $n$ and $r$, then $d$ divides $m$ and $n$):</strong><br>
+          Conversely, suppose $d$ divides both $n$ and $r$. Then $n = xd$ and $r = yd$ for some integers $x$ and $y$. Putting these into $m = qn + r$ gives:<br>
+          $m = q(xd) + yd = d(qx + y)$<br>
+          Since $qx + y$ is an integer, $d$ also divides $m$. Thus, $d$ divides both $m$ and $n$.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-11', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -735,18 +741,17 @@
                 
                 
                 <div id="ans-branch-14" class="answer-text"><p><strong>Answer:</strong><br>
-          <strong>Algorithm for Prime Factorisation of n:</strong><br>
-          1. Create an empty list called 'factors'.<br>
-          2. Set $d = 2$ (the smallest prime).<br>
+          <strong>Algorithm for Prime Factorisation of $n$:</strong><br>
+          1. Start with an empty list called 'factors'.<br>
+          2. Set $d = 2$ (the smallest prime number).<br>
           3. While $n > 1$:<br>
           &nbsp;&nbsp;&nbsp;&nbsp;If $n$ is divisible by $d$:<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add $d$ to 'factors'.<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set $n = n / d$.<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;Else:<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add $d$ to 'factors' and replace $n$ with $n / d$.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Otherwise:<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increase $d$ by 1.<br>
           4. Report 'factors'.<br><br>
-          <strong>(i) Representation:</strong> It can be represented as a list of base-exponent pairs (e.g., [(2, 2), (3, 2), (5, 1)]) or just a flat list of primes [2, 2, 3, 3, 5].<br>
-          <strong>(ii) Comparing factorisations to find GCD:</strong> To find the GCD, identify the prime bases that appear in <strong>both</strong> factorisations. For each common prime base, take the <strong>minimum</strong> of the exponents it has in the two representations. Multiply these resulting prime powers together to get the GCD.</p></div>
+          <strong>(i) Representation:</strong> We can write it either as a list of all prime factors with repetition, like $[2, 2, 3, 3, 5]$, or as pairs of (prime, exponent), like $[(2, 2), (3, 2), (5, 1)]$.<br>
+          <strong>(ii) Comparing factorisations to find the gcd:</strong> Pick all the prime factors that are common to both lists (or take the smaller power of each common prime factor) and multiply them together.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-14', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -1127,7 +1132,7 @@
                 <p>SolveSpot prioritizes the protection of children using the internet. We encourage parents and guardians to observe, participate in, and/or monitor their online activity. SolveSpot does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you believe your child provided this kind of information on our website, please contact us immediately and we will promptly remove such records.</p>
                 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.15rem;">7. Contact Information</h3>
-                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>.</p>
+                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>.</p>
             </div>
         </div>
     </div>
@@ -1189,7 +1194,7 @@
                 </div>
 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.2rem;">4. Editorial Board &amp; Corrections</h3>
-                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
+                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
             </div>
         </div>
     </div>
@@ -1205,7 +1210,7 @@
             <h2 style="color: #0f172a; margin-bottom: 1rem; text-align: center;">Contact Us</h2>
             <p style="color: #64748b; text-align: center; margin-bottom: 2rem;">Have any queries or found an error in our solutions? We can also make a custom website for you on a fee. Drop us an email.</p>
             <div class="answer-text" style="border-left: none; padding-left: 0; text-align: center;">
-                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.solvespot@gmail.com</p>
+                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.ncertsolved@gmail.com</p>
                 <p style="color: #64748b; margin-top: 0.5rem;">We usually respond back within 24-48 working hours.</p>
             </div>
         </div>

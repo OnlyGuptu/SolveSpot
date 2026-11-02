@@ -460,7 +460,7 @@ public class SsgBuilder {
         string html = masterTemplate;
 
         html = html.Replace(
-            "<title>Class 9 SolveSpot Hub \u2022 Simple, Direct & Exam-Ready Solutions</title>",
+            "<title>NCERT Solutions for Class 9 - SolveSpot</title>",
             "<title>" + EscapeAttr(seoTitle) + "</title>"
         );
         html = html.Replace(
@@ -476,7 +476,7 @@ public class SsgBuilder {
             "<meta property=\"og:url\" content=\"" + canonicalUrl + "\">"
         );
         html = html.Replace(
-            "<meta property=\"og:title\" content=\"Class 9 SolveSpot Hub \u2022 Simple & Direct Textbook Solutions\">",
+            "<meta property=\"og:title\" content=\"NCERT Solutions for Class 9 - SolveSpot\">",
             "<meta property=\"og:title\" content=\"" + EscapeAttr(seoTitle) + "\">"
         );
         html = html.Replace(
@@ -484,7 +484,7 @@ public class SsgBuilder {
             "<meta property=\"og:description\" content=\"" + EscapeAttr(seoDesc) + "\">"
         );
         html = html.Replace(
-            "<meta name=\"twitter:title\" content=\"Class 9 SolveSpot Hub \u2022 Simple & Direct Textbook Solutions\">",
+            "<meta name=\"twitter:title\" content=\"NCERT Solutions for Class 9 - SolveSpot\">",
             "<meta name=\"twitter:title\" content=\"" + EscapeAttr(seoTitle) + "\">"
         );
         html = html.Replace(
@@ -588,31 +588,31 @@ public class SsgBuilder {
         // 2. Policy Pages
         WriteRoutePage("about", BuildPageHtml(
             "about",
-            "About Us & Editorial Policy - SolveSpot Hub",
+            "About Us & Editorial Policy - SolveSpot",
             "Learn about SolveSpot, our editorial verification process, and how we build step-by-step NCERT Class 9 textbook solutions for CBSE students.",
             "none", "about-view"
         ));
         WriteRoutePage("privacy", BuildPageHtml(
             "privacy",
-            "Privacy Policy - SolveSpot Hub",
+            "Privacy Policy - SolveSpot",
             "Read the Privacy Policy for SolveSpot (solvespot.in), detailing cookie usage, Google AdSense data policies, and student privacy protection.",
             "none", "privacy-view"
         ));
         WriteRoutePage("terms", BuildPageHtml(
             "terms",
-            "Terms of Service - SolveSpot Hub",
+            "Terms of Service - SolveSpot",
             "Review the Terms of Service, educational fair use guidelines, and intellectual property policies for using SolveSpot Class 9 textbook solutions.",
             "none", "terms-view"
         ));
         WriteRoutePage("contact", BuildPageHtml(
             "contact",
-            "Contact Us - SolveSpot Hub",
+            "Contact Us - SolveSpot",
             "Get in touch with the SolveSpot academic team to report textbook errata, request solution clarifications, or send feedback.",
             "none", "contact-view"
         ));
         WriteRoutePage("formulas", BuildPageHtml(
             "formulas",
-            "Class 9 Maths & Science Formulas Cheat Sheet | SolveSpot Hub",
+            "NCERT Solutions for Class 9 Maths & Science Formulas Cheat Sheet - SolveSpot",
             "Complete NCERT Class 9 Mathematics (Ganita Prakash) and Science (Physics & Chemistry) formula sheet: algebraic identities, mensuration tables, motion equations, gravitation, work-energy, and sound formulas.",
             "formulas", "formulas-view"
         ));
@@ -808,7 +808,7 @@ public class SsgBuilder {
         string subCleanName = Regex.Replace(Regex.Replace(subTitle, @" Sections?", "", RegexOptions.IgnoreCase), @" Chapters?", "", RegexOptions.IgnoreCase);
         string pageHtml = BuildPageHtml(
             "subject/" + subKey,
-            subTitle + " - Class 9 SolveSpot Hub",
+            string.Format("NCERT Solutions for Class 9 {0} - SolveSpot", subCleanName),
             "Complete NCERT Class 9 " + subCleanName + " textbook solutions. Browse all chapters, exercise sets, formulas, and verified step-by-step exam answers.",
             subKey, "chapter-view", "/", "\u2190 Back to Subjects", subTitle, grid.ToString()
         );
@@ -847,7 +847,7 @@ public class SsgBuilder {
         string route = "subject/sst/part/" + partNum;
         string html = BuildPageHtml(
             route,
-            bookTitle + " - Class 9 SolveSpot Hub",
+            string.Format("NCERT Solutions for Class 9 {0} - SolveSpot", bookTitle),
             "NCERT Class 9 " + bookTitle + " solutions across Geography, History, Political Science, and Economics with chapter solutions.",
             "sst", "chapter-view", "/subject/sst/", "\u2190 Back to SST Books", headingHtml, grid.ToString()
         );
@@ -921,7 +921,7 @@ public class SsgBuilder {
         string subClean = Regex.Replace(data.GetStr("title"), @" Sections?", "", RegexOptions.IgnoreCase);
         string html = BuildPageHtml(
             route,
-            branchName + " Chapters - Class 9 SolveSpot Hub",
+            string.Format("NCERT Solutions for Class 9 {0} ({1}) - SolveSpot", branchName, subClean),
             string.Format("NCERT Class 9 {0} ({1}) chapter-wise textbook solutions across {2} chapters with step-by-step answers and hints.", branchName, subClean, chapTotal),
             subKey, "chapter-view", backHref, backText, headingHtml, grid.ToString()
         );
@@ -982,7 +982,7 @@ public class SsgBuilder {
 
         string route = string.Format("subject/{0}/branch/{1}/chapter/{2}", subKey, branchIndex + 1, chapNum);
         string subDisplay = subKey.ToUpperInvariant() == "SST" ? "Social Science" : (char.ToUpperInvariant(subKey[0]) + subKey.Substring(1));
-        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} Exercises | SolveSpot", subDisplay, cleanTitle);
+        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} - SolveSpot", subDisplay, cleanTitle);
         string seoDesc = string.Format("NCERT Class 9 {0} {1} textbook solutions: {2} exercise sets and {3} step-by-step solved questions with hints.", branchData.GetStr("name"), cleanTitle, exercises.Count, totalQuestions);
 
         string html = BuildPageHtml(route, seoTitle, seoDesc, subKey, "chapter-view", backHref, backText, headingHtml, grid.ToString());
@@ -1108,7 +1108,9 @@ public class SsgBuilder {
             if (firstQSnippet.Length > 95) firstQSnippet = firstQSnippet.Substring(0, 95);
         }
 
-        string seoTitle = string.Format("{0}{1} Solutions | SolveSpot Hub", cleanTitle, activeExObj != null ? " - " + activeExObj.GetStr("name") : "");
+        string subDisplay = subKey.ToUpperInvariant() == "SST" ? "Social Science" : (char.ToUpperInvariant(subKey[0]) + subKey.Substring(1));
+        string exPart = activeExObj != null ? " (" + activeExObj.GetStr("name") + ")" : "";
+        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1}{2} - SolveSpot", subDisplay, cleanTitle, exPart);
         string seoDesc = string.Format("NCERT Class 9 {0} {1}{2} step-by-step solutions ({3} Q&As). {4}",
             branchData.GetStr("name"),
             cleanTitle,
@@ -1195,7 +1197,7 @@ public class SsgBuilder {
             if (firstQStd.Length > 95) firstQStd = firstQStd.Substring(0, 95);
         }
 
-        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} | SolveSpot", subTitle, cleanTitle);
+        string seoTitle = string.Format("NCERT Solutions for Class 9 {0} {1} - SolveSpot", subTitle, cleanTitle);
         string seoDesc = string.Format("NCERT Class 9 {0} {1} textbook solutions ({2} solved questions). {3}",
             subTitle, cleanTitle, solutions.Count, !string.IsNullOrEmpty(firstQStd) ? "Includes: " + firstQStd + "..." : "").Trim();
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 11: The World of Algorithms - Exercise Set 11.1 Solutions | SolveSpot Hub</title>
+    <title>NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (Exercise Set 11.1) - SolveSpot</title>
     <meta name="description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (Exercise Set 11.1) step-by-step solutions (5 Q&amp;As). Includes: Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps pr...">
     <meta name="keywords" content="NCERT Class 9 Solutions, Class 9 Maths Ganita Manjari, Class 9 Science, Class 9 Social Science, Class 9 English Beehive, Class 9 Hindi solutions">
     <meta name="author" content="SolveSpot Educational Team">
@@ -37,14 +37,14 @@
     <!-- Open Graph / Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solvespot.in/subject/maths/branch/2/chapter/11/exercise/11.1">
-    <meta property="og:title" content="Chapter 11: The World of Algorithms - Exercise Set 11.1 Solutions | SolveSpot Hub">
+    <meta property="og:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (Exercise Set 11.1) - SolveSpot">
     <meta property="og:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (Exercise Set 11.1) step-by-step solutions (5 Q&amp;As). Includes: Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps pr...">
     <meta property="og:image" content="https://solvespot.in/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SolveSpot Class 9 Textbook Solutions">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chapter 11: The World of Algorithms - Exercise Set 11.1 Solutions | SolveSpot Hub">
+    <meta name="twitter:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (Exercise Set 11.1) - SolveSpot">
     <meta name="twitter:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (Exercise Set 11.1) step-by-step solutions (5 Q&amp;As). Includes: Add two 4-digit numbers using the steps we have written down. Make sure you follow the steps pr...">
     <meta name="twitter:image" content="https://solvespot.in/og-image.png">
 
@@ -90,7 +90,7 @@
           "name": "What happens if you add a 5-digit number to a 3-digit number. Do our steps handle this situation correctly?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Our steps, as strictly written, do not explicitly mention what to do when one number runs out of digits while the other still has digits left. To handle this correctly, we must assume that the missing columns of the 3-digit number are filled with leading zeros so that the \"add the two digits\" instruction in Step 3 still applies."
+            "text": "Answer: In the steps as written, there is no instruction for what to do when one number runs out of digits before the other. To make the algorithm work for a 5-digit and a 3-digit number, we need to treat the blank spaces on the left of the 3-digit number as zeros (for example, writing as ) so that Step 3 always has two digits to add in every column."
           }
         },
         {
@@ -98,7 +98,7 @@
           "name": "Why is it important to align the columns from right to left?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Aligning from right to left ensures that digits of the same place value (units with units, tens with tens, hundreds with hundreds) are added together. If aligned left to right, we might mistakenly add thousands to hundreds or tens, resulting in an incorrect sum."
+            "text": "Answer: Aligning from right to left lines up digits with the same place value — ones with ones, tens with tens, and hundreds with hundreds. If we aligned them from left to right when the numbers have different lengths, we would end up adding digits of different place values (like hundreds to thousands) and get a wrong answer."
           }
         },
         {
@@ -106,7 +106,7 @@
           "name": "In Step 3, why cannot the value of carry be more than 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: The maximum single digit is 9. If we add two 9s and a previous carry of 1, the maximum possible sum in any column is . Since 19 is less than 20, the tens digit (which becomes the new carry) can never exceed 1."
+            "text": "Answer: The largest single digit is 9. Even if we add two 9s along with a carry of 1 from the previous column, the largest possible sum is . Since 19 is less than 20, the tens digit of the sum — which becomes the new carry — can never be greater than 1."
           }
         },
         {
@@ -114,7 +114,7 @@
           "name": "What happens if we do not include the fifth step in the algorithm above? Give examples where the algorithm will work correctly and where it will fail to work.",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: Step 5 adds the final leftover carry to the front of the answer. Where it works correctly: It works for . The final column is (carry 0). Since carry is not 1, Step 5 wouldn't trigger anyway. Where it fails: It fails for . - Units: , carry = 0. - Tens: . Write 2, carry = 1. Without Step 5, the algorithm ends and gives the answer as 27 instead of 127."
+            "text": "Answer: Step 5 writes down the final carry of 1 at the leftmost end if there is a carry left over after the last column. When it still works: It works whenever the leftmost column adds up to less than 10 (so the final carry is 0). For example, in , the tens column is with carry 0, so skipping Step 5 still gives 77. When it fails: It fails whenever the leftmost column produces a carry of 1. For example, in : - Ones column: , carry = 0. - Tens column: . Write 2, carry = 1. Without Step 5, the algorithm stops here and gives 27 instead of 127."
           }
         }
       ]
@@ -376,7 +376,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-1" class="answer-text"><p><strong>Answer:</strong> Our steps, as strictly written, do not explicitly mention what to do when one number runs out of digits while the other still has digits left. To handle this correctly, we must assume that the missing columns of the 3-digit number are filled with leading zeros so that the "add the two digits" instruction in Step 3 still applies.</p></div>
+                <div id="ans-branch-1" class="answer-text"><p><strong>Answer:</strong> In the steps as written, there is no instruction for what to do when one number runs out of digits before the other. To make the algorithm work for a 5-digit and a 3-digit number, we need to treat the blank spaces on the left of the 3-digit number as zeros (for example, writing $345$ as $00345$) so that Step 3 always has two digits to add in every column.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-1', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -391,7 +391,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-2" class="answer-text"><p><strong>Answer:</strong> Aligning from right to left ensures that digits of the same place value (units with units, tens with tens, hundreds with hundreds) are added together. If aligned left to right, we might mistakenly add thousands to hundreds or tens, resulting in an incorrect sum.</p></div>
+                <div id="ans-branch-2" class="answer-text"><p><strong>Answer:</strong> Aligning from right to left lines up digits with the same place value — ones with ones, tens with tens, and hundreds with hundreds. If we aligned them from left to right when the numbers have different lengths, we would end up adding digits of different place values (like hundreds to thousands) and get a wrong answer.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-2', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -406,7 +406,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-3" class="answer-text"><p><strong>Answer:</strong> The maximum single digit is 9. If we add two 9s and a previous carry of 1, the maximum possible sum in any column is $9 + 9 + 1 = 19$. Since 19 is less than 20, the tens digit (which becomes the new carry) can never exceed 1.</p></div>
+                <div id="ans-branch-3" class="answer-text"><p><strong>Answer:</strong> The largest single digit is 9. Even if we add two 9s along with a carry of 1 from the previous column, the largest possible sum is $9 + 9 + 1 = 19$. Since 19 is less than 20, the tens digit of the sum — which becomes the new carry — can never be greater than 1.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-3', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -421,12 +421,12 @@
                 </div>
                 
                 
-                <div id="ans-branch-4" class="answer-text"><p><strong>Answer:</strong> Step 5 adds the final leftover carry to the front of the answer.<br>
-          <strong>Where it works correctly:</strong> It works for $32 + 45 = 77$. The final column is $3 + 4 = 7$ (carry 0). Since carry is not 1, Step 5 wouldn't trigger anyway.<br>
-          <strong>Where it fails:</strong> It fails for $85 + 42$.<br>
-          - Units: $5 + 2 = 7$, carry = 0.<br>
-          - Tens: $8 + 4 + 0 = 12$. Write 2, carry = 1.<br>
-          Without Step 5, the algorithm ends and gives the answer as 27 instead of 127.</p></div>
+                <div id="ans-branch-4" class="answer-text"><p><strong>Answer:</strong> Step 5 writes down the final carry of 1 at the leftmost end if there is a carry left over after the last column.<br>
+          <strong>When it still works:</strong> It works whenever the leftmost column adds up to less than 10 (so the final carry is 0). For example, in $32 + 45 = 77$, the tens column is $3 + 4 = 7$ with carry 0, so skipping Step 5 still gives 77.<br>
+          <strong>When it fails:</strong> It fails whenever the leftmost column produces a carry of 1. For example, in $85 + 42$:<br>
+          - Ones column: $5 + 2 = 7$, carry = 0.<br>
+          - Tens column: $8 + 4 + 0 = 12$. Write 2, carry = 1.<br>
+          Without Step 5, the algorithm stops here and gives 27 instead of 127.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-4', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -807,7 +807,7 @@
                 <p>SolveSpot prioritizes the protection of children using the internet. We encourage parents and guardians to observe, participate in, and/or monitor their online activity. SolveSpot does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you believe your child provided this kind of information on our website, please contact us immediately and we will promptly remove such records.</p>
                 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.15rem;">7. Contact Information</h3>
-                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>.</p>
+                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>.</p>
             </div>
         </div>
     </div>
@@ -869,7 +869,7 @@
                 </div>
 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.2rem;">4. Editorial Board &amp; Corrections</h3>
-                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
+                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
             </div>
         </div>
     </div>
@@ -885,7 +885,7 @@
             <h2 style="color: #0f172a; margin-bottom: 1rem; text-align: center;">Contact Us</h2>
             <p style="color: #64748b; text-align: center; margin-bottom: 2rem;">Have any queries or found an error in our solutions? We can also make a custom website for you on a fee. Drop us an email.</p>
             <div class="answer-text" style="border-left: none; padding-left: 0; text-align: center;">
-                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.solvespot@gmail.com</p>
+                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.ncertsolved@gmail.com</p>
                 <p style="color: #64748b; margin-top: 0.5rem;">We usually respond back within 24-48 working hours.</p>
             </div>
         </div>

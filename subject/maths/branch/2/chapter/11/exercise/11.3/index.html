@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 11: The World of Algorithms - Exercise Set 11.3 Solutions | SolveSpot Hub</title>
+    <title>NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (Exercise Set 11.3) - SolveSpot</title>
     <meta name="description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (Exercise Set 11.3) step-by-step solutions (2 Q&amp;As). Includes: How would our original algorithm change if we computed the divisors of n by examining the numbe...">
     <meta name="keywords" content="NCERT Class 9 Solutions, Class 9 Maths Ganita Manjari, Class 9 Science, Class 9 Social Science, Class 9 English Beehive, Class 9 Hindi solutions">
     <meta name="author" content="SolveSpot Educational Team">
@@ -37,14 +37,14 @@
     <!-- Open Graph / Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solvespot.in/subject/maths/branch/2/chapter/11/exercise/11.3">
-    <meta property="og:title" content="Chapter 11: The World of Algorithms - Exercise Set 11.3 Solutions | SolveSpot Hub">
+    <meta property="og:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (Exercise Set 11.3) - SolveSpot">
     <meta property="og:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (Exercise Set 11.3) step-by-step solutions (2 Q&amp;As). Includes: How would our original algorithm change if we computed the divisors of n by examining the numbe...">
     <meta property="og:image" content="https://solvespot.in/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SolveSpot Class 9 Textbook Solutions">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chapter 11: The World of Algorithms - Exercise Set 11.3 Solutions | SolveSpot Hub">
+    <meta name="twitter:title" content="NCERT Solutions for Class 9 Maths Chapter 11: The World of Algorithms (Exercise Set 11.3) - SolveSpot">
     <meta name="twitter:description" content="NCERT Class 9 Ganita Prakash Part 2 Chapter 11: The World of Algorithms (Exercise Set 11.3) step-by-step solutions (2 Q&amp;As). Includes: How would our original algorithm change if we computed the divisors of n by examining the numbe...">
     <meta name="twitter:image" content="https://solvespot.in/og-image.png">
 
@@ -82,7 +82,7 @@
           "name": "How would our original algorithm change if we computed the divisors of n by examining the numbers from 1 to n in reverse order, from n down to 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: The list of divisors would be generated in strictly decreasing order instead of increasing order. Consequently, the list of common divisors would also be in decreasing order. Therefore, Step 5 of the original algorithm would need to change: instead of reporting the rightmost element (which would now be 1), it must report the leftmost element (the first and largest common divisor found)."
+            "text": "Answer: The divisors of would be listed in decreasing order (from down to 1) instead of increasing order. Because of this, the list of common divisors would also be in decreasing order, with the largest common divisor at the very beginning and 1 at the end. So in Step 5, instead of reporting the rightmost element, we would have to report the leftmost element."
           }
         },
         {
@@ -90,7 +90,7 @@
           "name": "What about the last algorithm described above? What happens when we look at common divisors starting from and work backwards to 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Answer: If we start from and work backwards to 1, the very first common divisor we encounter will be the greatest common divisor. This drastically improves efficiency because we can stop the loop immediately upon finding the first number that divides both m and n, rather than scanning all the way to and constantly updating the most-recent-common-divisor ."
+            "text": "Answer: If we start from and count backwards towards 1, the very first number we find that divides both and is guaranteed to be their greatest common divisor (gcd). This makes the algorithm much faster because we can stop and report the answer as soon as we find that first common divisor, without having to check the remaining smaller numbers."
           }
         }
       ]
@@ -328,7 +328,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-8" class="answer-text"><p><strong>Answer:</strong> The list of divisors would be generated in strictly <strong>decreasing order</strong> instead of increasing order. Consequently, the list of common divisors would also be in decreasing order. Therefore, Step 5 of the original algorithm would need to change: instead of reporting the rightmost element (which would now be 1), it must report the <strong>leftmost</strong> element (the first and largest common divisor found).</p></div>
+                <div id="ans-branch-8" class="answer-text"><p><strong>Answer:</strong> The divisors of $n$ would be listed in <strong>decreasing order</strong> (from $n$ down to 1) instead of increasing order. Because of this, the list of common divisors would also be in decreasing order, with the largest common divisor at the very beginning and 1 at the end. So in Step 5, instead of reporting the rightmost element, we would have to report the <strong>leftmost</strong> element.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-8', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -343,7 +343,7 @@
                 </div>
                 
                 
-                <div id="ans-branch-9" class="answer-text"><p><strong>Answer:</strong> If we start from $min(m, n)$ and work backwards to 1, the <strong>very first</strong> common divisor we encounter will be the greatest common divisor. This drastically improves efficiency because we can stop the loop immediately upon finding the first number that divides both m and n, rather than scanning all the way to $min(m,n)$ and constantly updating the <code>most-recent-common-divisor</code>.</p></div>
+                <div id="ans-branch-9" class="answer-text"><p><strong>Answer:</strong> If we start from $\min(m, n)$ and count backwards towards 1, the <strong>very first</strong> number we find that divides both $m$ and $n$ is guaranteed to be their greatest common divisor (gcd). This makes the algorithm much faster because we can stop and report the answer as soon as we find that first common divisor, without having to check the remaining smaller numbers.</p></div>
                 <div class="card-actions-bar">
                     
                     <button class="btn-toggle-solution active" onclick="toggleSolution('ans-branch-9', this)" title="Show or hide step-by-step solution"><span>👁️</span> Hide Solution</button>
@@ -724,7 +724,7 @@
                 <p>SolveSpot prioritizes the protection of children using the internet. We encourage parents and guardians to observe, participate in, and/or monitor their online activity. SolveSpot does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you believe your child provided this kind of information on our website, please contact us immediately and we will promptly remove such records.</p>
                 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.15rem;">7. Contact Information</h3>
-                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>.</p>
+                <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact our compliance team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>.</p>
             </div>
         </div>
     </div>
@@ -786,7 +786,7 @@
                 </div>
 
                 <h3 style="color: #1e40af; margin: 1.5rem 0 0.5rem 0; font-size: 1.2rem;">4. Editorial Board &amp; Corrections</h3>
-                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.solvespot@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
+                <p>We actively maintain and improve our curriculum database. If you spot a typographical error, a calculation discrepancy, or have an editorial suggestion, please reach out to our academic team at <strong style="color: #2563eb;">contact.ncertsolved@gmail.com</strong>. We commit to reviewing and updating verified corrections within 24 to 48 hours.</p>
             </div>
         </div>
     </div>
@@ -802,7 +802,7 @@
             <h2 style="color: #0f172a; margin-bottom: 1rem; text-align: center;">Contact Us</h2>
             <p style="color: #64748b; text-align: center; margin-bottom: 2rem;">Have any queries or found an error in our solutions? We can also make a custom website for you on a fee. Drop us an email.</p>
             <div class="answer-text" style="border-left: none; padding-left: 0; text-align: center;">
-                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.solvespot@gmail.com</p>
+                <p style="font-size: 1.2rem; font-weight: 600; color: #2563eb;">contact.ncertsolved@gmail.com</p>
                 <p style="color: #64748b; margin-top: 0.5rem;">We usually respond back within 24-48 working hours.</p>
             </div>
         </div>
