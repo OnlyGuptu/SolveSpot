@@ -78,13 +78,24 @@ body {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     font-size: 1.45rem;
     font-weight: 700;
     color: #0f172a;
     cursor: pointer;
     letter-spacing: -0.02em;
     text-decoration: none;
+}
+
+.brand-logo-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
     display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
 .logo span {
