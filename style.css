@@ -213,6 +213,7 @@ body {
 .gradient-text {
     background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
     -webkit-background-clip: text;
+    background-clip: text; /* Add this line to fix the warning */
     -webkit-text-fill-color: transparent;
 }
 
@@ -483,6 +484,19 @@ body {
     display: none !important;
 }
 
+#homepage-view.hidden,
+#homepage-view:not(:has(> .view-layer:not(.hidden))) {
+    display: none !important;
+}
+
+#formulas-view.container {
+    padding-top: 1rem;
+}
+
+#formulas-view .navigation-crumbs {
+    margin-bottom: 0.5rem;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -717,6 +731,30 @@ body {
 }
 .card-hindi .card-footer {
     color: #e11d48;
+}
+
+/* 6. Formulas Hub (Purple) */
+.card-formulas {
+    border-top: 4px solid #8b5cf6;
+}
+.card-formulas:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 12px 24px -8px rgba(139, 92, 246, 0.2);
+}
+.card-formulas .card-footer {
+    color: #7c3aed;
+}
+
+/* 7. Arcade Games (Pink / Magenta) */
+.card-arcade {
+    border-top: 4px solid #ec4899;
+}
+.card-arcade:hover {
+    border-color: #ec4899;
+    box-shadow: 0 12px 24px -8px rgba(236, 72, 153, 0.2);
+}
+.card-arcade .card-footer {
+    color: #db2777;
 }
 
 /* Student Creator Note Callout */

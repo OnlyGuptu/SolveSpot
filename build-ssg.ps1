@@ -550,6 +550,10 @@ public class SsgBuilder {
                     "<div id=\"" + activeLayer + "\" class=\"view-layer hidden container\">",
                     "<div id=\"" + activeLayer + "\" class=\"view-layer container\">"
                 );
+                html = html.Replace(
+                    "<div class=\"container\" id=\"homepage-view\">",
+                    "<div class=\"container hidden\" id=\"homepage-view\">"
+                );
             }
         }
 
@@ -610,11 +614,23 @@ public class SsgBuilder {
             "Get in touch with the SolveSpot academic team to report textbook errata, request solution clarifications, or send feedback.",
             "none", "contact-view"
         ));
+        WriteRoutePage("games", BuildPageHtml(
+            "games",
+            "Arcade & Break Zone - 10 Free Mini-Games - SolveSpot",
+            "Take a quick study break with 10 free arcade games: Neon Snake, 2048, Flappy Bird, Brick Breaker, Tower Stacker, Space Shooter, Cyber Runner, Knife Hit, 3-Lane Runner, and Minesweeper.",
+            "games", "games-view"
+        ));
         WriteRoutePage("formulas", BuildPageHtml(
             "formulas",
             "NCERT Solutions for Class 9 Maths & Science Formulas Cheat Sheet - SolveSpot",
             "Complete NCERT Class 9 Mathematics (Ganita Prakash) and Science (Physics & Chemistry) formula sheet: algebraic identities, mensuration tables, motion equations, gravitation, work-energy, and sound formulas.",
             "formulas", "formulas-view"
+        ));
+        WriteRoutePage("gk", BuildPageHtml(
+            "gk",
+            "Test Your GK - 50 Class 6th to 9th GK Questions & Answers - SolveSpot",
+            "Test your general knowledge with 50 fun, interactive GK questions and verified answers for Class 6th to 9th students. Science, History, Geography, Civics, and Inventions.",
+            "gk", "gk-view"
         ));
 
         // 3. Subjects, Parts, Branches, Chapters, and Exercises

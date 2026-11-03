@@ -16428,6 +16428,16 @@ function showLayer(layerId) {
     const target = getLayerElement(layerId);
     if (target) target.classList.remove('hidden');
 
+    // Manage #homepage-view container visibility so it never leaves empty space
+    const hp = document.getElementById('homepage-view');
+    if (hp) {
+        if (['subject-view', 'chapter-view', 'solution-view'].includes(layerId)) {
+            hp.classList.remove('hidden');
+        } else {
+            hp.classList.add('hidden');
+        }
+    }
+
     // Scroll to top on layer transition
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -16657,6 +16667,20 @@ function handleRoute() {
         return;
     }
 
+    if (first === 'games' || first === 'arcade') {
+        updateActiveTab('games');
+        showLayer('games-view');
+        updateSeoMeta(
+            "Arcade & Break Zone - 10 Free Mini-Games - SolveSpot",
+            "Take a quick study break with 10 free arcade games: Neon Snake, 2048, Flappy Bird, Brick Breaker, Tower Stacker, Space Shooter, Cyber Runner, Knife Hit, 3-Lane Runner, and Minesweeper.",
+            "games"
+        );
+        if (typeof window.initGamesHub === 'function') {
+            window.initGamesHub(segments[1]);
+        }
+        return;
+    }
+
     if (first === 'formulas') {
         updateActiveTab('formulas');
         showLayer('formulas-view');
@@ -16667,6 +16691,20 @@ function handleRoute() {
         );
         const fView = document.getElementById('formulas-view');
         if (fView) renderMathInContainer(fView);
+        return;
+    }
+
+    if (first === 'gk' || first === 'quiz') {
+        updateActiveTab('gk');
+        showLayer('gk-view');
+        updateSeoMeta(
+            "Test Your GK - 50 Class 6th to 9th GK Questions & Answers - SolveSpot",
+            "Test your general knowledge with 50 fun, interactive GK questions and verified answers for Class 6th to 9th students. Science, History, Geography, Civics, and Inventions.",
+            "gk"
+        );
+        if (typeof window.initGkQuiz === 'function') {
+            window.initGkQuiz();
+        }
         return;
     }
 

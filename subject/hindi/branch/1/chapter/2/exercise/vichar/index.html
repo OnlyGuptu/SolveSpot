@@ -72,6 +72,8 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/mobile.css" media="(max-width: 768px)">
     <link rel="stylesheet" href="/dark-mode.css">
+    <link rel="stylesheet" href="/games.css">
+    <link rel="stylesheet" href="/gk.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
@@ -188,6 +190,12 @@
             </a>
             <a class="nav-tab" data-tab="formulas" href="/formulas/">
                 <span class="tab-icon">&#128208;</span> Formulas Hub
+            </a>
+            <a class="nav-tab" data-tab="games" href="/games/">
+                <span class="tab-icon">&#127918;</span> Arcade
+            </a>
+            <a class="nav-tab" data-tab="gk" href="/gk/">
+                <span class="tab-icon">&#129504;</span> Test Your GK
             </a>
         </div>
     </div>
@@ -312,6 +320,54 @@
                     </div>
                     <div class="card-footer">
                         <span>Explore Chapters</span>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Formulas Hub Card -->
+                <a class="subject-card-btn card-formulas" href="/formulas/" style="border-top: 4px solid #8b5cf6;">
+                    <div class="card-header">
+                        <div class="card-icon-wrapper" style="background: rgba(139, 92, 246, 0.15); color: #8b5cf6;">&#128208;</div>
+                        <span class="card-tag" style="background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;">Formula Sheet</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Formulas Hub</h3>
+                        <p class="card-desc">All Maths algebraic identities, mensuration tables, motion equations, gravitation, and physics formulas in one place.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Open Formulas</span>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Arcade & Break Zone Card -->
+                <a class="subject-card-btn card-arcade" href="/games/" style="border-top: 4px solid #ec4899;">
+                    <div class="card-header">
+                        <div class="card-icon-wrapper" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">&#127918;</div>
+                        <span class="card-tag" style="background: #fdf2f8; color: #db2777; border-color: #fbcfe8;">10 Mini-Games</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Arcade Games</h3>
+                        <p class="card-desc">Take a quick 2-minute study break! Play Neon Snake, 2048, Flappy Bird, Brick Breaker, Cyber Runner, and more.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Play Games</span>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Test Your GK Card -->
+                <a class="subject-card-btn card-gk" href="/gk/" style="border-top: 4px solid #10b981;">
+                    <div class="card-header">
+                        <div class="card-icon-wrapper" style="background: rgba(16, 185, 129, 0.15); color: #059669;">&#129504;</div>
+                        <span class="card-tag" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;">Classes 6–9</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Test Your GK</h3>
+                        <p class="card-desc">50 curated General Knowledge questions with interactive quiz mode, streak tracker, and complete exam revision sheet.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Start GK Quiz</span>
                         <span class="card-arrow">&rarr;</span>
                     </div>
                 </a>
@@ -795,7 +851,299 @@
     <!-- ========================================== -->
     <!-- PRIVACY POLICY LAYER                       -->
     <!-- ========================================== -->
-    <div id="privacy-view" class="view-layer hidden container">
+    <!-- ========================================== -->
+    <!-- LAYER: Arcade & Break Zone (10 Mini Games) -->
+    <!-- ========================================== -->
+    <div id="games-view" class="view-layer hidden container">
+        <div class="navigation-crumbs">
+            <a class="btn-back" href="/">&larr; Back to Subjects</a>
+        </div>
+
+        <div class="games-hero">
+            <div class="games-hero-pill">&#127918; Study Break Zone</div>
+            <h1 class="games-hero-title">SolveSpot Arcade</h1>
+            <p class="games-hero-desc">Take a quick 2-minute brain break with 10 free, fun mini-games. No downloads, no lag, full touch and keyboard controls!</p>
+        </div>
+
+        <!-- Active Game Stage (Hidden by default, shown when playing a game) -->
+        <div id="active-game-stage" class="game-stage-wrapper hidden">
+            <div class="game-stage-header">
+                <div class="game-stage-title-wrap">
+                    <span class="game-stage-icon" id="current-game-icon">&#127918;</span>
+                    <h2 class="game-stage-title" id="current-game-title">Game Title</h2>
+                </div>
+                <div class="game-scoreboard">
+                    <div class="score-pill">
+                        <span class="score-pill-label">Score</span>
+                        <span class="score-pill-val" id="stage-current-score">0</span>
+                    </div>
+                    <div class="score-pill">
+                        <span class="score-pill-label">High</span>
+                        <span class="score-pill-val" id="stage-high-score">0</span>
+                    </div>
+                </div>
+                <div class="game-stage-controls">
+                    <button class="btn-game-action btn-fullscreen-toggle" onclick="toggleFullscreenGame()" title="Play in Fullscreen mode" id="btn-fullscreen-toggle">
+                        <span id="fullscreen-btn-icon">&#x26F6;</span> <span id="fullscreen-btn-text">Fullscreen</span>
+                    </button>
+                    <button class="btn-game-action" onclick="toggleSound()" title="Toggle retro audio effects">
+                        <span id="sound-toggle-icon">&#128266;</span> <span id="sound-toggle-text">Sound ON</span>
+                    </button>
+                    <button class="btn-game-action" onclick="restartCurrentGame()" title="Restart current game">
+                        <span>&#128260;</span> Restart
+                    </button>
+                    <button class="btn-game-action" onclick="closeGameStage()" title="Return to Arcade selection">
+                        <span>&#10006;</span> Exit
+                    </button>
+                </div>
+            </div>
+
+            <!-- Canvas Viewport for 2D Canvas Games (Tap anywhere to jump/action) -->
+            <div id="game-canvas-container" class="game-canvas-container" onclick="if(window.triggerCanvasTap) window.triggerCanvasTap(event)">
+                <canvas id="game-main-canvas" class="game-canvas"></canvas>
+                <!-- Game Over / Pause Overlay -->
+                <div id="game-stage-overlay" class="game-overlay hidden">
+                    <h3 class="overlay-title" id="overlay-title">Game Over</h3>
+                    <p class="overlay-subtitle" id="overlay-subtitle">Final Score: 0</p>
+                    <button class="btn-overlay-start" id="overlay-btn" onclick="restartCurrentGame()">Play Again</button>
+                </div>
+            </div>
+
+            <!-- 2048 Dedicated Grid Container -->
+            <div id="game-2048-container" class="hidden" style="margin-bottom: 1.5rem;">
+                <div id="grid-2048-board" class="grid-2048-container"></div>
+            </div>
+
+            <!-- Minesweeper Dedicated Grid Container -->
+            <div id="game-minesweeper-container" class="minesweeper-board hidden" style="margin-bottom: 1.5rem;"></div>
+
+            <!-- Mobile Directional D-Pad (For Snake, Space Shooter, Dodge Runner) -->
+            <div id="mobile-dpad-controls" class="mobile-dpad">
+                <div class="dpad-row">
+                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('up')">&#9650;</button>
+                </div>
+                <div class="dpad-row">
+                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('left')">&#9664;</button>
+                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('down')">&#9660;</button>
+                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('right')">&#9654;</button>
+                </div>
+            </div>
+
+            <!-- Mobile Action Tap Bar (For Flappy, Runner, Stacker, Knife Hit) -->
+            <div id="mobile-tap-controls" class="mobile-tap-bar">
+                <button class="btn-mobile-tap" onclick="if(window.triggerMobileTap) window.triggerMobileTap()">TAP TO JUMP / ACTION</button>
+            </div>
+        </div>
+
+        <!-- 10 Games Catalog Grid -->
+        <div id="games-catalog-grid" class="games-grid">
+            <div class="game-card" onclick="launchGame('snake')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#128013;</div>
+                    <span class="game-tag">Classic Arcade</span>
+                </div>
+                <h3 class="game-card-title">Neon Snake</h3>
+                <p class="game-card-desc">Guide the glowing snake, eat neon pellets, grow longer, and avoid walls and your own tail!</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-snake">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('snake')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('2048')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#128290;</div>
+                    <span class="game-tag">Puzzle &amp; Chill</span>
+                </div>
+                <h3 class="game-card-title">2048 Challenge</h3>
+                <p class="game-card-desc">Swipe or slide tiles to combine identical numbers. Can you reach the legendary 2048 tile?</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-2048">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('2048')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('flappy')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#128038;</div>
+                    <span class="game-tag">Reflex Tapper</span>
+                </div>
+                <h3 class="game-card-title">Flappy Solv</h3>
+                <p class="game-card-desc">Tap or press Space to flap wings and navigate through floating pipe obstacles.</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-flappy">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('flappy')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('runner')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#129430;</div>
+                    <span class="game-tag">Infinite Runner</span>
+                </div>
+                <h3 class="game-card-title">Endless Cyber Runner</h3>
+                <p class="game-card-desc">Sprint through a neon desert, jump over barriers and dodge airborne drones!</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-runner">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('runner')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('breaker')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#129521;</div>
+                    <span class="game-tag">Arcade Smash</span>
+                </div>
+                <h3 class="game-card-title">Neon Brick Breaker</h3>
+                <p class="game-card-desc">Bounce laser balls, smash colorful brick layers, and collect power-ups!</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-breaker">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('breaker')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('stacker')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#127959;</div>
+                    <span class="game-tag">Timing &amp; Zen</span>
+                </div>
+                <h3 class="game-card-title">Tower Stacker</h3>
+                <p class="game-card-desc">Stack sliding blocks with pinpoint accuracy. Overhanging edges get trimmed!</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-stacker">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('stacker')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('knife')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#128481;</div>
+                    <span class="game-tag">Target Precision</span>
+                </div>
+                <h3 class="game-card-title">Knife Hit</h3>
+                <p class="game-card-desc">Throw blades into the spinning timber wheel without hitting previously lodged knives.</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-knife">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('knife')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('shooter')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#128640;</div>
+                    <span class="game-tag">Action Arcade</span>
+                </div>
+                <h3 class="game-card-title">Retro Space Shooter</h3>
+                <p class="game-card-desc">Command your starfighter, blast alien invaders, and dodge hostile laser bombardments.</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-shooter">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('shooter')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('dodge')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#127939;</div>
+                    <span class="game-tag">Fast Reflexes</span>
+                </div>
+                <h3 class="game-card-title">3-Lane Dodge Runner</h3>
+                <p class="game-card-desc">Switch lanes at breakneck speed to evade barricades and hoard golden bonus coins.</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-dodge">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('dodge')">Play &#9658;</button>
+                </div>
+            </div>
+            <div class="game-card" onclick="launchGame('minesweeper')">
+                <div class="game-card-top">
+                    <div class="game-icon-badge">&#128163;</div>
+                    <span class="game-tag">Logic Grid</span>
+                </div>
+                <h3 class="game-card-title">Neon Minesweeper</h3>
+                <p class="game-card-desc">Analyze numeric clues to safely flag hidden mines and clear the grid.</p>
+                <div class="game-card-footer">
+                    <span class="game-high-score">&#127942; Best: <span id="hs-val-minesweeper">0</span></span>
+                    <button class="btn-play-card" onclick="event.stopPropagation(); launchGame('minesweeper')">Play &#9658;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- LAYER: Test Your GK (50 Q&As Classes 6-9)  -->
+    <!-- ========================================== -->
+    <div id="gk-view" class="view-layer hidden container">
+        <div class="navigation-crumbs">
+            <a class="btn-back" href="/">&larr; Back to Subjects</a>
+        </div>
+
+        <div class="gk-hero">
+            <div class="gk-hero-pill">&#129504; Knowledge Booster</div>
+            <h1 class="gk-hero-title">Test Your GK</h1>
+            <p class="gk-hero-desc">50 curated General Knowledge questions and verified answers for Classes 6th, 7th, 8th &amp; 9th. Challenge yourself in interactive Quiz Mode or revise with the Full Study Sheet!</p>
+            
+            <div class="gk-mode-switcher">
+                <button class="gk-mode-btn active" id="gk-btn-quiz-mode" onclick="switchGkMode('quiz')">
+                    <span>&#127918;</span> Quiz Mode
+                </button>
+                <button class="gk-mode-btn" id="gk-btn-sheet-mode" onclick="switchGkMode('sheet')">
+                    <span>&#128203;</span> All 50 Questions Sheet
+                </button>
+            </div>
+        </div>
+
+        <!-- 1. Interactive Quiz Mode Arena -->
+        <div id="gk-quiz-mode-container">
+            <div class="gk-quiz-card">
+                <div class="gk-quiz-top-bar">
+                    <span class="gk-q-counter-pill" id="gk-q-counter-pill">Question 1 of 50</span>
+                    <div class="gk-scoreboard-bar">
+                        <span class="gk-score-tag">Score: <strong id="gk-current-score">0 / 50</strong></span>
+                        <span class="gk-streak-tag"><strong id="gk-current-streak">&#128293; 0</strong></span>
+                    </div>
+                </div>
+
+                <div class="gk-quiz-progress-track">
+                    <div class="gk-quiz-progress-fill" id="gk-quiz-progress-fill" style="width: 2%;"></div>
+                </div>
+
+                <div class="gk-quiz-question-box">
+                    <span class="gk-quiz-cat-tag" id="gk-quiz-cat-tag">Science &amp; Nature</span>
+                    <h2 class="gk-quiz-q-text" id="gk-quiz-q-text">Loading question...</h2>
+                </div>
+
+                <div class="gk-quiz-options-grid" id="gk-quiz-options-grid">
+                    <!-- 4 Multiple choice options rendered dynamically -->
+                </div>
+
+                <div class="gk-explanation-box" id="gk-explanation-box" style="display: none;">
+                    <!-- Instant feedback & explanation rendered here -->
+                </div>
+
+                <div class="gk-quiz-footer-actions">
+                    <button class="btn-gk-next" id="btn-gk-next" onclick="nextGkQuestion()">Next Question &rarr;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Full 50 Questions Study Sheet Mode -->
+        <div id="gk-sheet-mode-container" class="hidden">
+            <div class="gk-filter-bar">
+                <button class="gk-filter-pill active" onclick="filterGkByCategory('all', this)">All (50)</button>
+                <button class="gk-filter-pill" onclick="filterGkByCategory('science', this)">&#128300; Science &amp; Nature (10)</button>
+                <button class="gk-filter-pill" onclick="filterGkByCategory('history', this)">&#127963; History &amp; Heritage (10)</button>
+                <button class="gk-filter-pill" onclick="filterGkByCategory('geography', this)">&#127757; Geography &amp; Earth (10)</button>
+                <button class="gk-filter-pill" onclick="filterGkByCategory('civics', this)">&#9878;&#65039; Civics &amp; Polity (10)</button>
+                <button class="gk-filter-pill" onclick="filterGkByCategory('trivia', this)">&#128640; Trivia &amp; Inventions (10)</button>
+            </div>
+
+            <div class="gk-search-box">
+                <span class="gk-search-icon">&#128269;</span>
+                <input type="text" id="gk-search-input" class="gk-search-input" placeholder="Search any question, answer or concept (e.g. cell, desert, constitution)..." oninput="handleGkSearch(this.value)">
+            </div>
+
+            <div style="text-align: center; margin-bottom: 1.25rem;">
+                <span id="gk-filtered-count" style="font-size: 0.85rem; font-weight: 700; color: #64748b; background: #f1f5f9; padding: 0.3rem 0.8rem; border-radius: 9999px;">50 of 50 Questions</span>
+            </div>
+
+            <div id="gk-qa-list-container" class="gk-qa-list">
+                <!-- 50 Q&A Cards generated dynamically by gk.js -->
+            </div>
+        </div>
+    </div>
+
+        <div id="privacy-view" class="view-layer hidden container">
         <div class="navigation-crumbs">
             <a class="btn-back" href="/">&larr; Back to Subjects</a>
         </div>
@@ -927,6 +1275,8 @@
         <p style="font-weight: 600; color: #334155;">&copy; 2026 SolveSpot &bull; Independent Educational Resource for Class 9 Students</p>
         <p style="margin-top: 0.4rem;">
             <a href="/formulas/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Formulas Hub</a> | 
+            <a href="/games/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Arcade</a> | 
+            <a href="/gk/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Test Your GK</a> | 
             <a href="/about/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">About Us</a> | 
             <a href="/privacy/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Privacy Policy</a> | 
             <a href="/terms/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Terms of Service</a> | 
@@ -965,5 +1315,7 @@
         }
     </script>
     <script src="/script.js?v=4.0" charset="UTF-8"></script>
+    <script src="/games.js?v=1.0" charset="UTF-8"></script>
+    <script src="/gk.js?v=1.0" charset="UTF-8"></script>
 </body>
 </html>
