@@ -632,6 +632,18 @@ public class SsgBuilder {
             "Test your general knowledge with 50 fun, interactive GK questions and verified answers for Class 6th to 9th students. Science, History, Geography, Civics, and Inventions.",
             "gk", "gk-view"
         ));
+        WriteRoutePage("periodic-table", BuildPageHtml(
+            "periodic-table",
+            "Interactive Class 9 Periodic Table - Bohr-Bury Shells, Valency & Formulas - SolveSpot",
+            "Explore the interactive Class 9 Science Periodic Table! Tap any element to see Atomic Number (Z), Mass Number (A), animated Bohr-Bury Electron Shell Diagram (K, L, M, N), Valency, and Chemical Formulas.",
+            "periodic-table", "periodic-view"
+        ));
+        WriteRoutePage("calculator", BuildPageHtml(
+            "calculator",
+            "CBSE Class 9 Marks, Percentage & Grade (A1 to E) Calculator - SolveSpot",
+            "Instant CBSE Class 9 Marks & Percentage Calculator! Enter your marks in Science, Maths, Social Science, English, and Hindi to calculate Percentage, CBSE Grades (A1 to E), CGPA, and Remarks.",
+            "calculator", "calculator-view"
+        ));
 
         // 3. Subjects, Parts, Branches, Chapters, and Exercises
         string[] subjectOrder = new string[] { "science", "maths", "sst", "english", "hindi" };

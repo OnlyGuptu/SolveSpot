@@ -258,12 +258,20 @@
     color: #0f172a;
 }
 
-/* Canvas Container */
+/* Unified Viewport & Canvas Container */
+.game-stage-viewport {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 0.75rem;
+    border-radius: 12px;
+}
+
 .game-canvas-container {
     position: relative;
     width: 100%;
     max-width: 500px;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     background: #0f172a;
     border-radius: 12px;
     overflow: hidden;
@@ -272,6 +280,8 @@
     align-items: center;
     justify-content: center;
     touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .game-canvas {
@@ -279,22 +289,26 @@
     max-width: 100%;
     height: auto;
     background: transparent;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-/* Overlay overlay message */
+/* Overlay message */
 .game-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(4px);
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     text-align: center;
-    padding: 1rem;
-    z-index: 10;
+    padding: 1.25rem;
+    z-index: 30;
 }
 
 .game-overlay.hidden {
@@ -477,6 +491,20 @@
 #active-game-stage.is-fullscreen .btn-game-action:hover {
     background: #334155 !important;
     color: #ffffff !important;
+}
+
+#active-game-stage:fullscreen .game-stage-viewport,
+#active-game-stage:-webkit-full-screen .game-stage-viewport,
+#active-game-stage.is-fullscreen .game-stage-viewport {
+    flex: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: calc(100vh - 150px) !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 #active-game-stage:fullscreen .game-canvas-container,

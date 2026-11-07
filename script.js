@@ -16708,6 +16708,31 @@ function handleRoute() {
         return;
     }
 
+    if (first === 'periodic-table' || first === 'periodic') {
+        updateActiveTab('periodic-table');
+        showLayer('periodic-view');
+        updateSeoMeta(
+            "Interactive Class 9 Periodic Table - Bohr-Bury Shells, Valency & Formulas - SolveSpot",
+            "Explore the interactive Class 9 Science Periodic Table! Tap any element to see Atomic Number (Z), Mass Number (A), animated Bohr-Bury Electron Shell Diagram (K, L, M, N), Valency, and Chemical Formulas.",
+            "periodic-table"
+        );
+        if (typeof window.renderPeriodicGrid === 'function') {
+            window.renderPeriodicGrid();
+        }
+        return;
+    }
+
+    if (first === 'calculator' || first === 'marks-calculator') {
+        updateActiveTab('calculator');
+        showLayer('calculator-view');
+        updateSeoMeta(
+            "CBSE Class 9 Marks, Percentage & Grade (A1 to E) Calculator - SolveSpot",
+            "Instant CBSE Class 9 Marks & Percentage Calculator! Enter your marks in Science, Maths, Social Science, English, and Hindi to calculate Percentage, CBSE Grades (A1 to E), CGPA, and Remarks.",
+            "calculator"
+        );
+        return;
+    }
+
     // 3. Subject-specific routes: /subject/:subjectKey/...
     if (first === 'subject' && segments[1]) {
         const subKey = segments[1].toLowerCase();

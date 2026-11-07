@@ -74,6 +74,7 @@
     <link rel="stylesheet" href="/dark-mode.css">
     <link rel="stylesheet" href="/games.css">
     <link rel="stylesheet" href="/gk.css">
+    <link rel="stylesheet" href="/tools.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
@@ -196,6 +197,12 @@
             </a>
             <a class="nav-tab" data-tab="gk" href="/gk/">
                 <span class="tab-icon">&#129504;</span> Test Your GK
+            </a>
+            <a class="nav-tab" data-tab="periodic-table" href="/periodic-table/">
+                <span class="tab-icon">&#129514;</span> Periodic Table
+            </a>
+            <a class="nav-tab" data-tab="calculator" href="/calculator/">
+                <span class="tab-icon">&#128202;</span> Marks Calculator
             </a>
         </div>
     </div>
@@ -368,6 +375,38 @@
                     </div>
                     <div class="card-footer">
                         <span>Start GK Quiz</span>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Interactive Class 9 Periodic Table Card -->
+                <a class="subject-card-btn card-periodic" href="/periodic-table/" style="border-top: 4px solid #06b6d4;">
+                    <div class="card-header">
+                        <div class="card-icon-wrapper" style="background: rgba(6, 182, 212, 0.15); color: #0891b2;">&#129514;</div>
+                        <span class="card-tag" style="background: #ecfeff; color: #0e7490; border-color: #a5f3fc;">Atoms &amp; Shells</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Interactive Periodic Table</h3>
+                        <p class="card-desc">Tap any element to inspect Atomic Number (Z), Mass (A), animated Bohr-Bury Electron Shells (K, L, M, N), Valency &amp; Class 9 Formulas!</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Explore Elements</span>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Instant CBSE Marks & Percentage Calculator Card -->
+                <a class="subject-card-btn card-calculator" href="/calculator/" style="border-top: 4px solid #f59e0b;">
+                    <div class="card-header">
+                        <div class="card-icon-wrapper" style="background: rgba(245, 158, 11, 0.15); color: #d97706;">&#128202;</div>
+                        <span class="card-tag" style="background: #fffbeb; color: #b45309; border-color: #fde68a;">Grades A1–E</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">CBSE Marks Calculator</h3>
+                        <p class="card-desc">Enter your 5 subject marks to instantly calculate Percentage, CBSE Grades (A1 to E), CGPA, and Remarks with celebratory confetti!</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Calculate Marks</span>
                         <span class="card-arrow">&rarr;</span>
                     </div>
                 </a>
@@ -901,10 +940,22 @@
                 </div>
             </div>
 
-            <!-- Canvas Viewport for 2D Canvas Games (Tap anywhere to jump/action) -->
-            <div id="game-canvas-container" class="game-canvas-container" onclick="if(window.triggerCanvasTap) window.triggerCanvasTap(event)">
-                <canvas id="game-main-canvas" class="game-canvas"></canvas>
-                <!-- Game Over / Pause Overlay -->
+            <!-- Unified Viewport for Canvas, 2048 & Minesweeper Games -->
+            <div class="game-stage-viewport">
+                <!-- Canvas Viewport for 2D Canvas Games -->
+                <div id="game-canvas-container" class="game-canvas-container">
+                    <canvas id="game-main-canvas" class="game-canvas"></canvas>
+                </div>
+
+                <!-- 2048 Dedicated Grid Container -->
+                <div id="game-2048-container" class="hidden" style="width: 100%; margin-bottom: 0.5rem;">
+                    <div id="grid-2048-board" class="grid-2048-container"></div>
+                </div>
+
+                <!-- Minesweeper Dedicated Grid Container -->
+                <div id="game-minesweeper-container" class="minesweeper-board hidden" style="width: 100%; margin-bottom: 0.5rem;"></div>
+
+                <!-- Game Over / Victory Overlay (works across all 10 games) -->
                 <div id="game-stage-overlay" class="game-overlay hidden">
                     <h3 class="overlay-title" id="overlay-title">Game Over</h3>
                     <p class="overlay-subtitle" id="overlay-subtitle">Final Score: 0</p>
@@ -912,29 +963,21 @@
                 </div>
             </div>
 
-            <!-- 2048 Dedicated Grid Container -->
-            <div id="game-2048-container" class="hidden" style="margin-bottom: 1.5rem;">
-                <div id="grid-2048-board" class="grid-2048-container"></div>
-            </div>
-
-            <!-- Minesweeper Dedicated Grid Container -->
-            <div id="game-minesweeper-container" class="minesweeper-board hidden" style="margin-bottom: 1.5rem;"></div>
-
-            <!-- Mobile Directional D-Pad (For Snake, Space Shooter, Dodge Runner) -->
+            <!-- Mobile Directional D-Pad (For Snake, Space Shooter, Dodge Runner, 2048) -->
             <div id="mobile-dpad-controls" class="mobile-dpad">
                 <div class="dpad-row">
-                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('up')">&#9650;</button>
+                    <button class="btn-dpad" type="button" onclick="if(window.triggerDpad) window.triggerDpad('up')">&#9650;</button>
                 </div>
                 <div class="dpad-row">
-                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('left')">&#9664;</button>
-                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('down')">&#9660;</button>
-                    <button class="btn-dpad" onclick="if(window.triggerDpad) window.triggerDpad('right')">&#9654;</button>
+                    <button class="btn-dpad" type="button" onclick="if(window.triggerDpad) window.triggerDpad('left')">&#9664;</button>
+                    <button class="btn-dpad" type="button" onclick="if(window.triggerDpad) window.triggerDpad('down')">&#9660;</button>
+                    <button class="btn-dpad" type="button" onclick="if(window.triggerDpad) window.triggerDpad('right')">&#9654;</button>
                 </div>
             </div>
 
-            <!-- Mobile Action Tap Bar (For Flappy, Runner, Stacker, Knife Hit) -->
+            <!-- Action Tap Bar (For Flappy, Runner, Brick Tower, Knife Hit) -->
             <div id="mobile-tap-controls" class="mobile-tap-bar">
-                <button class="btn-mobile-tap" onclick="if(window.triggerMobileTap) window.triggerMobileTap()">TAP TO JUMP / ACTION</button>
+                <button class="btn-mobile-tap" type="button" onclick="if(window.triggerMobileTap) window.triggerMobileTap()">TAP TO JUMP / ACTION</button>
             </div>
         </div>
 
@@ -1146,6 +1189,263 @@
         </div>
     </div>
 
+    <!-- ========================================================== -->
+    <!-- LAYER: Interactive Class 9 Periodic Table (/periodic-table/) -->
+    <!-- ========================================================== -->
+    <div id="periodic-view" class="view-layer hidden container">
+        <div class="navigation-crumbs">
+            <a class="btn-back" href="/">&larr; Back to Subjects</a>
+        </div>
+
+        <div class="tool-hero">
+            <div class="tool-hero-pill">&#129514; Class 9 Chemistry Lab</div>
+            <h1 class="tool-hero-title">Interactive Class 9 Periodic Table</h1>
+            <p class="tool-hero-desc">Tap any element below to inspect its Atomic Number (Z), Mass Number (A), live orbiting Bohr-Bury Electron Shell Diagram (K, L, M, N), Valency, and Class 9 Chemical Formulas!</p>
+        </div>
+
+        <!-- Live Element Inspector & Bohr-Bury Shell Visualizer -->
+        <div class="pt-inspector-card" id="pt-inspector-card">
+            <div class="pt-bohr-box">
+                <canvas id="pt-bohr-canvas" class="pt-bohr-canvas" width="220" height="220"></canvas>
+                <div class="pt-bohr-caption" id="pt-bohr-caption">Bohr-Bury Shells: K=2, L=8, M=1</div>
+            </div>
+
+            <div class="pt-details-pane">
+                <div class="pt-details-top">
+                    <div class="pt-symbol-hero">
+                        <div class="pt-big-symbol" id="pt-insp-sym"><small>Z=11</small>Na</div>
+                        <div class="pt-element-titles">
+                            <h2 id="pt-insp-name">Sodium (Natrium) (Na)</h2>
+                            <span class="pt-category-badge" id="pt-insp-cat">Alkali Metal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-stats-grid">
+                    <div class="pt-stat-box">
+                        <span class="pt-stat-label">Atomic Number (Z)</span>
+                        <span class="pt-stat-val accent-cyan" id="pt-insp-z">11</span>
+                    </div>
+                    <div class="pt-stat-box">
+                        <span class="pt-stat-label">Mass Number (A)</span>
+                        <span class="pt-stat-val accent-amber" id="pt-insp-a">23 u</span>
+                    </div>
+                    <div class="pt-stat-box">
+                        <span class="pt-stat-label">Subatomic Particles</span>
+                        <span class="pt-stat-val" id="pt-insp-pne">11 p⁺ | 12 n⁰ | 11 e⁻</span>
+                    </div>
+                    <div class="pt-stat-box">
+                        <span class="pt-stat-label">Electron Shells (K,L,M,N)</span>
+                        <span class="pt-stat-val accent-emerald" id="pt-insp-shells">(2, 8, 1) &rarr; K=2, L=8, M=1</span>
+                    </div>
+                    <div class="pt-stat-box">
+                        <span class="pt-stat-label">Valency</span>
+                        <span class="pt-stat-val accent-purple" id="pt-insp-valency">1</span>
+                    </div>
+                    <div class="pt-stat-box">
+                        <span class="pt-stat-label">Common Ion / State</span>
+                        <span class="pt-stat-val" id="pt-insp-ion">Na⁺ (Cation)</span>
+                    </div>
+                </div>
+
+                <div class="pt-compounds-section">
+                    <h4 class="pt-compounds-title">&#9879;&#65039; Common Class 9 Chemical Formula Combinations:</h4>
+                    <div class="pt-compounds-list" id="pt-insp-compounds">
+                        <span class="pt-compound-pill"><strong>NaCl</strong> Sodium Chloride</span>
+                        <span class="pt-compound-pill"><strong>NaOH</strong> Sodium Hydroxide</span>
+                        <span class="pt-compound-pill"><strong>Na₂CO₃</strong> Sodium Carbonate</span>
+                    </div>
+                </div>
+
+                <p class="pt-exam-note" id="pt-insp-note">💡 NCERT Concept Note: Latin name: Natrium (symbol Na). Has 1 electron in M-shell (2, 8, 1), which it readily loses to form Na⁺ with a stable (2, 8) octet!</p>
+            </div>
+        </div>
+
+        <!-- Search & View Mode Controls -->
+        <div class="pt-controls-bar">
+            <div class="pt-search-wrap">
+                <input type="text" id="pt-search-input" class="pt-search-input" placeholder="🔍 Search element by name, symbol, or Atomic Number (e.g. Carbon, Cl, 17, Noble)..." oninput="renderPeriodicGrid()">
+            </div>
+            <div class="pt-mode-btns">
+                <button type="button" class="btn-pt-mode active" id="btn-pt-mode-class9" onclick="setPeriodicMode('class9')">&#11088; Class 9 Focus Grid</button>
+                <button type="button" class="btn-pt-mode" id="btn-pt-mode-full" onclick="setPeriodicMode('periodic18')">&#127760; 18-Group Table Layout</button>
+            </div>
+        </div>
+
+        <!-- Category Filter Chips -->
+        <div class="pt-legend-bar">
+            <span class="pt-legend-chip" style="background:#f1f5f9; color:#334155; border-color:#cbd5e1;" onclick="filterPeriodicCategory('all')">All Elements</span>
+            <span class="pt-legend-chip pt-cat-nonmetal" onclick="filterPeriodicCategory('nonmetal')"><span class="pt-legend-dot" style="background:#10b981;"></span> Non-Metals</span>
+            <span class="pt-legend-chip pt-cat-noble" onclick="filterPeriodicCategory('noble')"><span class="pt-legend-dot" style="background:#8b5cf6;"></span> Noble Gases (Valency 0)</span>
+            <span class="pt-legend-chip pt-cat-alkali" onclick="filterPeriodicCategory('alkali')"><span class="pt-legend-dot" style="background:#ef4444;"></span> Alkali Metals</span>
+            <span class="pt-legend-chip pt-cat-alkaline" onclick="filterPeriodicCategory('alkaline')"><span class="pt-legend-dot" style="background:#f97316;"></span> Alkaline Earth</span>
+            <span class="pt-legend-chip pt-cat-halogen" onclick="filterPeriodicCategory('halogen')"><span class="pt-legend-dot" style="background:#06b6d4;"></span> Halogens</span>
+            <span class="pt-legend-chip pt-cat-metalloid" onclick="filterPeriodicCategory('metalloid')"><span class="pt-legend-dot" style="background:#eab308;"></span> Metalloids</span>
+            <span class="pt-legend-chip pt-cat-transition" onclick="filterPeriodicCategory('transition')"><span class="pt-legend-dot" style="background:#3b82f6;"></span> Important Metals (Fe, Cu, Zn, Au)</span>
+        </div>
+
+        <!-- Periodic Table Grid Mount -->
+        <div class="pt-scroll-wrapper">
+            <div id="pt-grid-mount" class="pt-class9-grid"></div>
+        </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- LAYER: Instant CBSE Marks & Percentage Calculator (/calculator/) -->
+    <!-- ========================================================== -->
+    <div id="calculator-view" class="view-layer hidden container">
+        <div class="navigation-crumbs">
+            <a class="btn-back" href="/">&larr; Back to Subjects</a>
+        </div>
+
+        <div class="tool-hero">
+            <div class="tool-hero-pill">&#128202; Instant Result &amp; Grade Tool</div>
+            <h1 class="tool-hero-title">CBSE Marks &amp; Percentage Calculator</h1>
+            <p class="tool-hero-desc">Enter your marks across your 5 core subjects (Science, Maths, Social Science, English &amp; Hindi) to instantly calculate your Percentage, CBSE 9-Point Grades (A1 to E), CGPA, and Remarks!</p>
+        </div>
+
+        <div class="calc-layout">
+            <!-- Left Column: Subject Marks Input Card -->
+            <div class="calc-card">
+                <div class="calc-card-header">
+                    <h2 class="calc-card-title">&#9997;&#65039; Enter Subject Marks</h2>
+                    <div class="calc-preset-bar">
+                        <span class="calc-preset-label">Exam Out Of:</span>
+                        <button type="button" class="btn-calc-preset active" onclick="setCalcMaxPreset(80, this)">80</button>
+                        <button type="button" class="btn-calc-preset" onclick="setCalcMaxPreset(100, this)">100</button>
+                        <button type="button" class="btn-calc-preset" onclick="setCalcMaxPreset(40, this)">40</button>
+                        <button type="button" class="btn-calc-preset" onclick="setCalcMaxPreset(20, this)">20</button>
+                    </div>
+                </div>
+
+                <div class="calc-subjects-list">
+                    <div class="calc-subject-row">
+                        <div class="calc-sub-name"><span class="calc-sub-icon">&#128300;</span> Science</div>
+                        <div class="calc-input-group">
+                            <input type="number" class="calc-marks-input" placeholder="Marks" min="0" max="100" step="0.5" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-input-group">
+                            <span style="color:#64748b; font-weight:700;">/</span>
+                            <input type="number" class="calc-max-input" value="80" min="1" max="500" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-sub-grade-pill">&mdash;</div>
+                    </div>
+
+                    <div class="calc-subject-row">
+                        <div class="calc-sub-name"><span class="calc-sub-icon">&#128208;</span> Mathematics</div>
+                        <div class="calc-input-group">
+                            <input type="number" class="calc-marks-input" placeholder="Marks" min="0" max="100" step="0.5" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-input-group">
+                            <span style="color:#64748b; font-weight:700;">/</span>
+                            <input type="number" class="calc-max-input" value="80" min="1" max="500" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-sub-grade-pill">&mdash;</div>
+                    </div>
+
+                    <div class="calc-subject-row">
+                        <div class="calc-sub-name"><span class="calc-sub-icon">&#127757;</span> Social Science (SST)</div>
+                        <div class="calc-input-group">
+                            <input type="number" class="calc-marks-input" placeholder="Marks" min="0" max="100" step="0.5" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-input-group">
+                            <span style="color:#64748b; font-weight:700;">/</span>
+                            <input type="number" class="calc-max-input" value="80" min="1" max="500" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-sub-grade-pill">&mdash;</div>
+                    </div>
+
+                    <div class="calc-subject-row">
+                        <div class="calc-sub-name"><span class="calc-sub-icon">&#128214;</span> English</div>
+                        <div class="calc-input-group">
+                            <input type="number" class="calc-marks-input" placeholder="Marks" min="0" max="100" step="0.5" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-input-group">
+                            <span style="color:#64748b; font-weight:700;">/</span>
+                            <input type="number" class="calc-max-input" value="80" min="1" max="500" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-sub-grade-pill">&mdash;</div>
+                    </div>
+
+                    <div class="calc-subject-row">
+                        <div class="calc-sub-name"><span class="calc-sub-icon">&#129718;</span> Hindi / Sanskrit</div>
+                        <div class="calc-input-group">
+                            <input type="number" class="calc-marks-input" placeholder="Marks" min="0" max="100" step="0.5" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-input-group">
+                            <span style="color:#64748b; font-weight:700;">/</span>
+                            <input type="number" class="calc-max-input" value="80" min="1" max="500" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-sub-grade-pill">&mdash;</div>
+                    </div>
+
+                    <!-- Optional 6th Subject -->
+                    <div class="calc-subject-row hidden" id="calc-row-sub6">
+                        <div class="calc-sub-name"><span class="calc-sub-icon">&#129302;</span> AI / IT (6th Sub)</div>
+                        <div class="calc-input-group">
+                            <input type="number" class="calc-marks-input" placeholder="Marks" min="0" max="100" step="0.5" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-input-group">
+                            <span style="color:#64748b; font-weight:700;">/</span>
+                            <input type="number" class="calc-max-input" value="80" min="1" max="500" oninput="calculateCbseMarks(false)">
+                        </div>
+                        <div class="calc-sub-grade-pill">&mdash;</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 0.85rem;">
+                    <button type="button" id="btn-toggle-sub6" class="btn-calc-secondary" style="width:100%; padding:0.55rem;" onclick="toggleSixthSubject()">&#10133; Add 6th Subject (AI / IT / Sanskrit)</button>
+                </div>
+
+                <div class="calc-actions-row">
+                    <button type="button" class="btn-calc-celebrate" onclick="calculateCbseMarks(true)">&#127881; Calculate &amp; Celebrate!</button>
+                    <button type="button" class="btn-calc-secondary" onclick="fillSampleTopperMarks()">&#9889; Demo Topper</button>
+                    <button type="button" class="btn-calc-secondary" onclick="resetCalculatorMarks()">&#128260; Clear</button>
+                </div>
+            </div>
+
+            <!-- Right Column: Live CBSE Scorecard & Confetti -->
+            <div class="calc-result-card">
+                <canvas id="calc-confetti-canvas" class="calc-confetti-canvas"></canvas>
+
+                <div style="text-align:center;">
+                    <span style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:#38bdf8;">Official CBSE 9-Point Grading Scale</span>
+                </div>
+
+                <div class="calc-percentage-circle" id="calc-pct-circle">
+                    <span class="calc-pct-num" id="calc-res-pct">0%</span>
+                    <span class="calc-pct-sub">Overall %</span>
+                </div>
+
+                <div class="calc-remark-banner">
+                    <div class="calc-remark-grade" id="calc-res-grade">Enter Marks Above</div>
+                    <div class="calc-remark-text" id="calc-res-remark">Type your marks in Science, Maths, SST, English &amp; Hindi to see your instant CBSE Scorecard!</div>
+                </div>
+
+                <div class="calc-summary-grid">
+                    <div class="calc-sum-box">
+                        <span class="calc-sum-label">Total Marks</span>
+                        <span class="calc-sum-val" id="calc-res-total">0 / 0</span>
+                    </div>
+                    <div class="calc-sum-box">
+                        <span class="calc-sum-label">Estimated CGPA</span>
+                        <span class="calc-sum-val" id="calc-res-cgpa">0.0</span>
+                    </div>
+                    <div class="calc-sum-box">
+                        <span class="calc-sum-label">Result Status</span>
+                        <span class="calc-sum-val" id="calc-res-status">Waiting...</span>
+                    </div>
+                    <div class="calc-sum-box">
+                        <span class="calc-sum-label">Division / Rank</span>
+                        <span class="calc-sum-val" id="calc-res-division">&mdash;</span>
+                    </div>
+                </div>
+
+                <button type="button" id="btn-copy-scorecard" class="btn-calc-secondary" style="width:100%; background:rgba(255,255,255,0.08); color:#f8fafc; border-color:#475569;" onclick="copyCbseScorecard()">&#128203; Copy Scorecard Summary</button>
+            </div>
+        </div>
+    </div>
+
         <div id="privacy-view" class="view-layer hidden container">
         <div class="navigation-crumbs">
             <a class="btn-back" href="/">&larr; Back to Subjects</a>
@@ -1278,6 +1578,8 @@
         <p style="font-weight: 600; color: #334155;">&copy; 2026 SolveSpot &bull; Independent Educational Resource for Class 9 Students</p>
         <p style="margin-top: 0.4rem;">
             <a href="/formulas/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Formulas Hub</a> | 
+            <a href="/periodic-table/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Periodic Table</a> | 
+            <a href="/calculator/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Marks Calculator</a> | 
             <a href="/games/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Arcade</a> | 
             <a href="/gk/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">Test Your GK</a> | 
             <a href="/about/" style="color: #2563eb; text-decoration: none; margin: 0 0.6rem; font-weight: 500;">About Us</a> | 
@@ -1320,5 +1622,6 @@
     <script src="/script.js?v=4.0" charset="UTF-8"></script>
     <script src="/games.js?v=1.0" charset="UTF-8"></script>
     <script src="/gk.js?v=1.0" charset="UTF-8"></script>
+    <script src="/tools.js?v=1.0" charset="UTF-8"></script>
 </body>
 </html>
