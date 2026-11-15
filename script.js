@@ -2457,7 +2457,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — How I Taught My Grandmother to Read (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Complete the cause and effect table given below based on Part I of the story.</strong><br>\n<table style=\"width: 100%; border-collapse: collapse; font-size: 13px;\">\n    <thead><tr style=\"background: #eedcb6; text-align: left;\">\n            <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Cause</th>\n            <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Effect</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">1. ________________</td>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(i) The morning papers arrived late in the day and weekly magazines would come one day late.</td>\n        </tr>\n        <tr>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">2. The grandmother, Krishtakka, never went to school.</td>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(ii) ________________</td>\n        </tr>\n        <tr>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">3. ________________</td>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(iii) She was deeply interested in the story and discussed it with her friends.</td>\n        </tr>\n        <tr>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">4. The narrator went to a wedding for a week.</td>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(iv) ________________</td>\n        </tr>\n        <tr>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">5. ________________</td>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(v) The grandmother never went to school.</td>\n        </tr>\n        <tr>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">6. The grandmother regretted not going to school.</td>\n            <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(vi) ________________</td>\n        </tr>\n    </tbody>\n</table>\n</div>",
@@ -2476,7 +2476,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — How I Taught My Grandmother to Read (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Read the extracts given below and answer the questions that follow.</strong><br><br>\n<em>1. When I came back to my village, I saw my grandmother in tears. I was surprised, for I had never seen her cry even in the most difficult situations. What had happened? I was worried.<br>\n'Avva, is everything all right? Are you okay?'<br>\nI used to call her Avva, which means mother in the Kannada spoken in north Karnataka.<br>\nShe nodded but did not reply. I did not understand and forgot about it. In the night, after dinner, we were sleeping in the open terrace of our house. It was a summer night and there was a full moon. Avva came and sat next to me. Her affectionate hands touched my forehead.</em><br><br>\n<strong>(i)</strong> Complete the following sentence with the appropriate option.<br>\nThe phrase 'never seen her cry in the most difficult situations' tells us that the grandmother was ________________.<br>\nA. strong-willed<br>\nB. understanding<br>\nC. considerate<br>\nD. bold<br><br>\n<strong>(ii)</strong> Complete the following with the correct option from those given in the brackets.<br>\nGrandmother did not reply when the narrator asked if she was alright because she might have been too ________________ (emotional/tired) to respond.<br>\n<strong>(iii)</strong> Identify the clue from the extract that indicates a rural setting with traditional customs.<br>\n<strong>(iv)</strong> Which lines of the extract establish a tender atmosphere?<br>\n<strong>(v)</strong> Which of the following aspect is NOT emphasised in the given extract?<br>\nA. the emotional turmoil of the grandmother<br>\nB. the affectionate bond between the narrator and her grandmother<br>\nC. the grandmother's regret over her lack of education<br>\nD. the narrator's concern for her grandmother\n</div>",
@@ -2491,7 +2491,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — How I Taught My Grandmother to Read (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>1. Why do you think the grandmother felt embarrassed to ask someone else to read to her while the narrator was away?</strong>\n</div>",
@@ -2531,7 +2531,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — The Pot Maker (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Do you think pot making is easy? If yes, why? If no, why not?</strong><br>\n<strong>II Would Sentila be able to fulfil her dream of becoming a pot maker? Explain.</strong><br>\n<strong>III Do you think Mesoba and Arenla would support Sentila? Give a reason.</strong>\n</div>",
@@ -2550,7 +2550,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — The Pot Maker (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Read the extracts given below and answer the questions that follow.</strong><br><br>\n<em>1. Pounding the stubborn clay inside bamboo cylinders to soften it, is also tedious. So many times I've dropped the mould out of sheer exhaustion and have had to start all over again. It takes months to bring out a batch of pots after so much labour. And the reward? A few rupees. But if Sentila learns weaving, she can make much more money besides providing enough cloth for the family. Weaving is not messy like pot making and can be done indoors in all seasons. Also, the time spent on weaving one shawl is much less and the return is handsome.</em><br><br>\n<strong>(i)</strong> Choose the correct reason for the given assertion.<br>\n(A): The effort in making pots is far greater than the returns.<br>\nA. The process of pot making is quite tiresome and long, and one hardly earns much.<br>\nB. The process of pot making is exhausting, takes a long time, yet gives a sense of satisfaction.<br><br>\n<strong>(ii)</strong> Why does Arenla want Sentila to learn weaving?<br>\n<strong>(iii)</strong> State one advantage that weaving has over pot making, as per the extract.<br>\n<strong>(iv)</strong> Choose the sentence that uses the word 'handsome' in the same way as in the extract.<br>\nA. My father is a handsome man.<br>\nB. They will make a handsome profit selling this property.<br><br>\n<strong>(v)</strong> 'And the reward?' What is the author's purpose of using a question mark here?\n</div>",
@@ -2565,7 +2565,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — The Pot Maker (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>1. Describe the process of pot making followed by expert pot makers, as observed by Sentila.</strong>\n</div>",
@@ -2605,7 +2605,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Winds of Change (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Work in pairs to complete the table on pankha. Share your answers with your classmates and teacher.</p>\n    <table style=\"width: 100%; border-collapse: collapse; font-size: 13px;\">\n        <thead>\n            <tr style=\"background: #eedcb6; text-align: left;\">\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">State</th>\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Type of Fan</th>\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Material Used</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\" rowspan=\"3\">Rajasthan</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">appliqué hand fan</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">gold thread</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">temple hand fans</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\" rowspan=\"3\">Gujarat</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">mirror work hand fans</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">beads</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">leather, decorated with thread and wool</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">West Bengal</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">sola hand fans</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">Uttar Pradesh</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">pure gold, silver zari, silk and satin frills</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">Bihar</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">________________</td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">bamboo</td>\n            </tr>\n        </tbody>\n    </table>\n</div>",
@@ -2616,7 +2616,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Winds of Change (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. Over time, pankhas became significant cultural goods distributed through trade routes. They were considered exotic and stylish. Although there was substantial commonality in their use across India, different villages and towns developed their own varieties of traditional pankhas. Each place developed pankhas with distinct materials or a variety of intricate designs, that set them apart from one another.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> State whether the following sentence is true or false.<br>Pankhas were one of the most popular items of commerce.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Why has the word 'traditional' been used to describe pankhas?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Complete the following statement.<br>The sentence 'They were considered exotic and stylish' is an opinion and not a fact because ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Infer one reason for commonality in the use of pankhas across India.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Select which one of the two statements is the correct assertion for the given reason.<br>Reason: Pankhas were made of indigenous materials, unique to the region, with elaborate designs.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. Each kind of pankha could be distinguished from the other.<br>\n                B. Pankhas were used by many people.\n            </div>\n        </li>\n    </ul>\n</div>",
@@ -2631,7 +2631,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Winds of Change (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. How does the title 'Winds of Change' capture the essence of the chapter?</p>\n</div>",
@@ -2667,7 +2667,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Vitamin-M (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <ol style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333;\">\n        <li style=\"margin-bottom: 6px;\">Why did Grandpa dislike living in the city with his daughter?</li>\n        <li style=\"margin-bottom: 6px;\">Why did Vidya not want her father to go out alone?</li>\n        <li style=\"margin-bottom: 6px;\">Was Ravi in favour of his mother treating Grandpa like a child? How can you say so?</li>\n        <li style=\"margin-bottom: 0;\">Would Ravi be able to keep up his promise to his mother?</li>\n    </ol>\n</div>",
@@ -2690,7 +2690,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Vitamin-M (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. Grandpa hated the noise and bustle of city life and when they were on their own, he often spoke longingly of his small brick house in town. \"Such a wonderful place...! With that big mango tree in the garden! It is so quiet that at dusk you can even hear a leaf fall!\" But then Grandpa had slipped and fallen in the garden late one evening while he was pottering around and lain outside all night because there was no one at home to help him up.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Choose the emotion displayed by the Grandfather.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. regretful<br>\n                B. apologetic<br>\n                C. nostalgic<br>\n                D. wistful\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Complete the following sentence with a reason.<br>Grandpa hated the busy and noisy city life because ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Why did Grandpa come to the city despite his dislike for city life?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Choose an expression similar in meaning to, 'you can even hear a leaf fall'.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. end of one's life<br>\n                B. arrival of autumn<br>\n                C. sign of good luck<br>\n                D. pin drop silence\n            </div>\n        </li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> State one advantage and one disadvantage of the Grandfather living in the house in town.</li>\n    </ul>\n</div>",
@@ -2705,7 +2705,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Vitamin-M (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. Grandpa is portrayed as a person with failing memory in the beginning of the story. Give two evidences to disprove the statement.</p>\n</div>",
@@ -2749,7 +2749,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — The World of Limitless Possibilities (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Fill in the fact table given below based on the interview with Dr. Deepa Malik. Discuss your answers with your classmates and teacher.</p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: disc;\">\n        <li>1. diagnosed with spinal tumour at the age of: ________________</li>\n        <li>2. result of the surgery: ________________</li>\n        <li>3. named as one of the 10 most effective para-athletes by: ________________</li>\n        <li>4. first successful Paralympic event: ________________</li>\n        <li>5. list of 'firsts': ________________</li>\n        <li>6. awards won: ________________</li>\n        <li>7. two things supported by her: ________________</li>\n    </ul>\n</div>",
@@ -2764,7 +2764,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — The World of Limitless Possibilities (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. I had two choices—squander my life in remorse or transform it to a world of limitless possibilities. I love sports and had been a swimmer too, so I decided to switch to para-athletics. This is how my Paralympics journey began. My breakthrough moment came in the 2016 Rio Paralympic Games, when I secured the silver medal in the shot-put event. In hindsight, I feel it was a moment of personal victory and a step forward in changing perceptions.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Give a reason for the following statement.<br>The speaker's decision to transform her life can be likened to the concept of a caterpillar transforming into a butterfly.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Why could the speaker switch to para-athletics quite comfortably?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Complete the sentence with an appropriate reason.<br>The speaker calls 2016 Rio Paralympic Games as a 'breakthrough moment' because ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Select the correct option to complete the sentence.<br>The phrase 'in hindsight' indicates the speaker is ________________.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. curious<br>\n                B. reflective<br>\n                C. determined<br>\n                D. courageous\n            </div>\n        </li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> The speaker uses the phrase 'changing perceptions'. List one likely perception the speaker might have changed.</li>\n    </ul>\n</div>",
@@ -2779,7 +2779,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — The World of Limitless Possibilities (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. Explain how Dr. Malik's achievements challenge societal perceptions.</p>\n</div>",
@@ -2819,7 +2819,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Twin Melodies (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Complete the table given below based on Act I of the play. Check your answers with the teacher.</p>\n    <table style=\"width: 100%; border-collapse: collapse; font-size: 13px;\">\n        <thead>\n            <tr style=\"background: #eedcb6; text-align: left;\">\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Category</th>\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Details</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\"><strong>Setting</strong></td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">Where: Iqbal's room<br>Description of the room: a small rack, a wooden table stacked with books<br>On the wall: Posters of Pandit Hariprasad Chaurasia and Shashank Subramanyam</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\"><strong>Children and their instruments</strong></td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">1. Iqbal: flute<br>2. Avinash: tabla<br>3. Peter: keyboard<br>4. Shruti: violin</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\"><strong>Words of the Speaker & Reason</strong></td>\n                <td style=\"padding: 6px; border: 1px solid #d4c2a8;\">\n                    <strong>Speaker:</strong> Avinash<br>\n                    <strong>Words:</strong> \"Oh ho! Wow Shruti! You are a sensation now! The least you can do is throw a party!\"<br>\n                    <strong>Reason:</strong> Shruti's performance with her father was praised in the newspaper 'Parbatpuri Daily Clarion'.<br><br>\n                    <strong>Speaker:</strong> Shruti<br>\n                    <strong>Words:</strong> \"There is need to worry Iqbal! You don't know papa.\"<br>\n                    <strong>Reason:</strong> Her father is very strict and considers playing violin to Western fusion tunes a desecration of the art.<br><br>\n                    <strong>Speaker:</strong> Peter<br>\n                    <strong>Words:</strong> \"That's the spirit!\"<br>\n                    <strong>Reason:</strong> Shruti finally gathers the courage to talk to her parents at dinner.\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>",
@@ -2846,7 +2846,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Twin Melodies (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. SHRUTI: There is need to worry Iqbal! You don't know papa. He is very strict about these things. He will think it a desecration of the violin to be played to Western tunes. Papa firmly believes that Classical Hindustani music, with its ragas and aalaaps, is the only kind of music that an artist of any worth should play. I don't want papa to feel that I don't care about his opinions, because I do. It's just that I want to give this a try too. I just don't know how to tell him in the right way!<br>\n        IQBAL: All ways are right ways, Shruti. He is your father, he will understand.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Select the option that correctly identifies Shruti's situation.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. in denial<br>\n                B. indifferent<br>\n                C. confident<br>\n                D. in a dilemma\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> What does Shruti mean by 'the right way', in the sentence, \"I just don't know how to tell him in the right way!\"?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Complete the following with a suitable reason.<br>We can say that the extract reflects the generational gap in understanding art and tradition because ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Explain how Iqbal's words were meant as an assurance to Shruti.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Fill in the blank with a phrase from the extract.<br>The critics argued that only films which provoke thoughtful discussion are ________________.</li>\n    </ul>\n</div>",
@@ -2861,7 +2861,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Twin Melodies (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. Justify the title 'Twin Melodies'. How does the play explore the theme of tradition and modernity?</p>\n</div>",
@@ -2897,7 +2897,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Carrier of Words (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Khetaram needs to submit information about himself for getting an identity card. While reading the text, fill up the following information sheet for Khetaram.</p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: disc;\">\n        <li>Name: Khetaram</li>\n        <li>Position: ________________</li>\n        <li>Employer: ________________</li>\n        <li>Official address: ________________</li>\n        <li>Mode of transport used: ________________</li>\n        <li>Key responsibilities: ________________</li>\n    </ul>\n</div>",
@@ -2924,7 +2924,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Carrier of Words (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. \"Akaal or famine is a way of life here. In a good year, I get one crop of bajra. That cannot feed my family of five. We would starve without this job,\" he says. And for each family which resides in this arid land, survival is partly dependent on money orders remitted by a relative.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Complete the sentence given below with an appropriate reason.<br>One crop of bajra makes a little difference for people like Khetaram because ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Why did Khetaram term famine as 'a way of life'?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Give one reason why Khetaram had to take up a job to help his family to survive.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Complete the analogy given below with a word from the extract.<br>Other families: Money orders:: Khetaram: ________________</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> What would 'a good year' signify?</li>\n    </ul>\n</div>",
@@ -2939,7 +2939,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Carrier of Words (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. Justify the statement made by Postmaster-General, Rajasthan Western Region stating that the role of GDS is 'invaluable'.</p>\n</div>",
@@ -2971,7 +2971,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Follow That Dream (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I State whether the following sentences are true or false. Share your answers with your classmates and teacher.</p>\n    <ol style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333;\">\n        <li style=\"margin-bottom: 5px;\">Reaching the peak of skill in a field typically demands a focused and intense dedication for about a decade.</li>\n        <li style=\"margin-bottom: 5px;\">The mother believes that significant effort and personal sacrifices are essential for turning aspirations into reality.</li>\n        <li style=\"margin-bottom: 5px;\">The path to achieving the deepest desires has very little difficulty or a few obstacles.</li>\n        <li style=\"margin-bottom: 5px;\">The mother is of the opinion that a person's life goals and hopes can evolve over time.</li>\n        <li style=\"margin-bottom: 5px;\">Having a strong network of individuals can be a hurdle in pursuing one's ambition.</li>\n        <li style=\"margin-bottom: 5px;\">The mother feels that pursuing a major life goal will not involve any financial expense or sacrifice.</li>\n        <li style=\"margin-bottom: 0;\">For many individuals, their aspirations remain just wishes because they don't move beyond mere daydreaming.</li>\n    </ol>\n</div>",
@@ -2982,7 +2982,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Follow That Dream (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. It starts with a passion for a particular interest, then comes the conviction that it is imperative to realise it. Count the cost in years of effort, financial investments and sacrifice. Then if it is still burning in your blood and you are ready to commit yourself to the task, plunge. It could be in any field—sports, science, arts, business, or design. The road may be uphill most of the way and often you are buoyed up only by the knowledge that you are doing what you love best and are doing the right thing. When stamina is running out, the prospect of success will keep you on track.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Complete the analogy with a suitable word from the extract.<br>enthusiasm: passion:: belief: ________________</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Choose the correct option to complete the following sentence appropriately.<br>The author says that a realistic assessment of effort, investment and sacrifice is crucial for preventing ________________.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. the need for external support network<br>\n                B. an early abandonment of the dream<br>\n                C. initial excitement from fading over time<br>\n                D. others from questioning one's commitment\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Complete the following with the correct option from those given in the brackets.<br>The word 'plunge' as used in the extract indicates a ________________ (complete/gradual) involvement in a task.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Complete the sentence with an appropriate reason.<br>The author's emphasis on 'when you are doing what you love best and are doing the right thing' works as a form of intrinsic motivation because ________________.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Mention one motivating factor besides 'prospect of success', that might keep a person on track, despite running out of stamina.</li>\n    </ul>\n</div>",
@@ -2997,7 +2997,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Follow That Dream (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">(i) The letter begins thus, 'By all means follow that dream'. What do you think Ming must have written to her mother about?</p>\n</div>",
@@ -3037,12 +3037,12 @@ given in Table 5.5. Mixtures:
             "name": "Poetry (Poems)",
             "chapters": [
                 {
-                    "name": "Poem: Bharat Our Land",
+                    "name": "Poem 1: Bharat Our Land",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Bharat Our Land (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Fill in the blanks by choosing appropriate words from the box given below to complete the summary of the poem.</strong><br>\n(warriors | peerless | Upanishads | Ganga | Buddha | Himavant | sages | praise | historical greatness | Brahma-knowledge)<br><br>\nThe poem is a tribute to India, celebrating its natural beauty, spiritual heritage, and 1. ________________. The poet praises the 2. ________________, describing it as mighty and unparalleled. The 3. ________________ is depicted as generous and graceful, while the 4. ________________ are honoured as sacred and unmatched. The poem highlights the contributions of 5. ________________ and 6. ________________, who have enriched the land with their bravery and wisdom. It also acknowledges the presence of 7. ________________ and the teachings of 8. ________________, highlighting India's deep-rooted spiritual and philosophical traditions. The poet repeatedly asserts that India is 9. ________________, urging everyone to 10. ________________ her.\n</div>",
@@ -3065,7 +3065,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Bharat Our Land (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Read the extract given below and answer the questions that follow.</strong><br><br>\n<em>The mighty Himavant is ours—<br>\nthere's no equal anywhere on earth.<br>\nThe generous Ganga is ours—<br>\nwhich other river can match her grace?<br>\nThe sacred Upanishads are ours—<br>\nwhat scriptures else to name with them?</em><br><br>\n<strong>1.</strong> Complete the sentence: The word 'mighty' refers to the ________________ of the Himavant.<br>\n<strong>2.</strong> The question mark at the end of the fourth and sixth line of the extract is used to ________________.<br>\n(i) show doubt and uncertainty<br>\n(ii) emphasise a point<br>\n(iii) highlight confusion and hesitation<br>\n(iv) reveal inquiry and curiosity<br><br>\n<strong>3.</strong> The poet uses the word 'generous' to describe the Ganga. Why?<br>\n<strong>4.</strong> Why has the movement of the river been described as graceful?<br>\n<strong>5.</strong> Fill in the blank: The poet is implying that the Upanishads are ________________ (unmatched/abundant) in their wisdom and spiritual depth.\n</div>",
@@ -3076,7 +3076,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Bharat Our Land (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>1. How does the poem reflect a strong connection to cultural identity and heritage?</strong>\n</div>",
@@ -3103,12 +3103,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: Gifts of Grace: Honouring Our Vocations",
+                    "name": "Poem 2: Gifts of Grace: Honouring Our Vocations",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Gifts of Grace: Honouring Our Vocations (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Based on your understanding of the poem, state whether the following statements are true or false. Also, rectify the false statements.</strong><br>\n1. The poem highlights the skilled work of craftsperson.<br>\n2. The poet shares that musicians express emotions through their instruments.<br>\n3. The carpenters in the poem are admired for their logical work.<br>\n4. The electricians in the poem are recognised for their crucial role in lighting up lives.<br>\n5. The poem pays homage to shoemakers who manufacture quality footwear.<br>\n6. The poem celebrates the patriotism of the people of Bharat.<br>\n7. The poet feels that each vocation deserves to be respected.\n</div>",
@@ -3123,7 +3123,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Gifts of Grace: Honouring Our Vocations (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>I Read the extract given below and answer the questions that follow.</strong><br><br>\n<em>The shoemakers affirming the quality of their work, for the feet that walk, dance, run, jump, return home.<br>\nThe delicious singing of the cook, or the rhythm of designer, mason, each celebrating what belongs to them and to none else,</em><br><br>\n<strong>1.</strong> The poet says that the shoemakers 'affirm' the quality of their work. What does 'affirm' refer to here?<br>\n(i) to make adjustments in<br>\n(ii) to declare with confidence<br>\n(iii) to label the goods<br>\n(iv) to justify the efforts<br><br>\n<strong>2.</strong> What do quality shoes help with, according to the poet?<br>\n<strong>3.</strong> What does 'return home' symbolise besides the literal act of returning?<br>\n<strong>4.</strong> Identify the phrase that tells us that every worker's contribution is distinct.<br>\n<strong>5.</strong> Complete the following with suitable words:<br>\n...for the feet that walk, dance, run, jump, return home refers to ________________.\n</div>",
@@ -3134,7 +3134,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Gifts of Grace: Honouring Our Vocations (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <strong>1. Why does the poet say, 'I hear Bharat celebrating, the varied vocations I hear'?</strong>\n</div>",
@@ -3165,12 +3165,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: Canvas of Soil",
+                    "name": "Poem 3: Canvas of Soil",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Canvas of Soil (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the poem again and complete the summary of each stanza by filling in the blanks.</p>\n    <ol style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333;\">\n        <li style=\"margin-bottom: 6px;\">The ________________ is portrayed as a rich palette where gardeners' ________________ flourish in the form of ________________ awaiting spring.</li>\n        <li style=\"margin-bottom: 6px;\">The garden flowers ________________ into a beautiful display of different ________________, resembling ________________ by Mother Nature, in the light of morning.</li>\n        <li style=\"margin-bottom: 0;\">Each garden ________________ is likened to a wide ________________, integrating art and ________________. Through the efforts of gardeners, gardens transform into still-life ________________.</li>\n    </ol>\n</div>",
@@ -3189,7 +3189,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Canvas of Soil (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the given extracts from the poem and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. Brushstrokes of seeds, planted true,<br>\n        Awaiting spring's vibrant hue.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> The poet has used a metaphor in 'Brushstrokes of seeds'. Which option from those given below uses a metaphor?<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. Her mother's heart heard her heartfelt request with kindness.<br>\n                B. She has a heart of gold.<br>\n                C. Her heart did a dance of joy on seeing the new doll.<br>\n                D. She has a very kind heart.\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Complete the sentence appropriately.<br>The phrase 'planted true' is significant because it implies ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Why has the poet used the word 'hue' instead of 'colours' in the extract?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Complete the following analogy correctly with a word from the extract.<br>Summer: hot :: Spring: ________________</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Read the Assertion (A) and the Reason (R) and select the option that is correctly suited.<br>\n            (A): Gardeners wait for Spring.<br>\n            (R): Gardens are worth painting in Spring.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. Both (A) and (R) are true and (R) is the correct explanation of (A).<br>\n                B. Both (A) and (R) are true but (R) is not the correct explanation of (A).<br>\n                C. (A) is true but (R) is false.<br>\n                D. (A) is false but (R) is true.\n            </div>\n        </li>\n    </ul>\n</div>",
@@ -3208,7 +3208,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Canvas of Soil (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. How does the metaphor 'Brushstrokes of seeds', enhance the understanding of gardening as an art form?</p>\n</div>",
@@ -3239,12 +3239,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: I Cannot Remember My Mother",
+                    "name": "Poem 4: I Cannot Remember My Mother",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — I Cannot Remember My Mother (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Fill in the blanks with appropriate words.</p>\n    <div style=\"margin-bottom: 10px; line-height: 1.6; color: #333;\">\n        <strong>Stanza 1</strong><br>\n        1. The poet remembers his mother while he ________________.<br>\n        2. The poet remembers the ________________ but not the ________________.<br>\n        Setting: ________________ (outdoor/indoor)\n    </div>\n    <div style=\"margin-bottom: 10px; line-height: 1.6; color: #333;\">\n        <strong>Stanza 2</strong><br>\n        1. The poet remembers his mother in the ________________ season.<br>\n        2. The poet remembers his mother by the smell of ________________.<br>\n        Setting: ________________ (outdoor/indoor)\n    </div>\n    <div style=\"margin-bottom: 0; line-height: 1.6; color: #333;\">\n        <strong>Stanza 3</strong><br>\n        1. The poet feels that his mother ________________ at him from the ________________.<br>\n        Setting: ________________ (outdoor/indoor)\n    </div>\n</div>",
@@ -3263,7 +3263,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — I Cannot Remember My Mother (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. I cannot remember my mother<br>\n        only sometimes in the midst of my play<br>\n        a tune seems to hover over my playthings,\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Complete the following sentence appropriately.<br>The poet is reminded of his mother during his ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> What is the primary emotion conveyed by the line 'a tune seems to hover over my playthings'?<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. It enhances the joy of play.<br>\n                B. It disrupts the playtime atmosphere.<br>\n                C. It activates memories of the mother.<br>\n                D. It symbolises the carefree nature of childhood.\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> In the context of the poem, what role does the hovering tune play during the speaker's playtime?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> State whether the following sentence is true or false.<br>The poet experiences the tune lingering over playthings only occasionally during playtime.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> How could the poet feel his mother's presence, even though she isn't there?</li>\n    </ul>\n</div>",
@@ -3278,7 +3278,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — I Cannot Remember My Mother (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. What is the emotional impact of the refrain, 'I cannot remember my mother'?</p>\n</div>",
@@ -3301,12 +3301,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: Nine Gold Medals",
+                    "name": "Poem 5: Nine Gold Medals",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Nine Gold Medals (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Match the words and phrases in Column 1 with their meanings in Column 2.</p>\n    <table style=\"width: 100%; border-collapse: collapse; font-size: 13px;\">\n        <thead>\n            <tr style=\"background: #eedcb6; text-align: left;\">\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Column 1</th>\n                <th style=\"padding: 6px; border: 1px solid #d4c2a8;\">Column 2</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">1. dashed in the dirt</td><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(i) walk or move with difficulty</td></tr>\n            <tr><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">2. stumbled</td><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(ii) destroyed</td></tr>\n            <tr><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">3. staggered</td><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(iii) a hard black substance used to make roads and paths</td></tr>\n            <tr><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">4. anguish</td><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(iv) step awkwardly, lose balance and almost fall</td></tr>\n            <tr><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">5. asphalt</td><td style=\"padding: 6px; border: 1px solid #d4c2a8;\">(v) extreme pain or suffering</td></tr>\n        </tbody>\n    </table>\n</div>",
@@ -3325,7 +3325,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Nine Gold Medals (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. The eight other runners pulled up on their heels<br>\n        The ones who had trained for so long to compete<br>\n        One by one they all turned round and went back to help him<br>\n        And brought the young boy to his feet.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> The phrase 'pulled up on their heels' means that the runners ________________.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. moved aside<br>\n                B. stopped running<br>\n                C. tried to run faster<br>\n                D. jumped ahead\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Mention one character trait common to all the eight other runners.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> What is the tone of the poet in these lines?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> How might the young athlete have felt on being helped by the others?</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Would you consider this incident as a turning point in the poem? If yes, why? If no, why not?</li>\n    </ul>\n</div>",
@@ -3340,7 +3340,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Nine Gold Medals (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. Describe how the setting established in the first two stanzas of the poem create a vivid atmosphere for the events that follow.</p>\n</div>",
@@ -3375,12 +3375,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: A Friend Found in Music",
+                    "name": "Poem 6: A Friend Found in Music",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — A Friend Found in Music (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the poem again to complete the poet's diary about her feelings on music. Fill in the blanks with words from the poem.</p>\n    <p style=\"margin: 0; line-height: 1.6; color: #333;\">Today, I've been thinking about how essential music is to me. It is like an ocean that calls me to its 1. ________________. Music is the 2. ________________ that harmonises with my 3. ________________, moving me in ways I can't explain. When I feel sad or upset about things, music is the 4. ________________ that eases the ache. It is amazing how music has the power to lift my 5. ________________ and give me strength to pull through difficult times. I know that it is the effect of music whenever I feel 6. ________________. Music is the much 7. ________________ friend when there is no one to 8. ________________. Thank you, my dear music, for being my all-time comfort.</p>\n</div>",
@@ -3395,7 +3395,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — A Friend Found in Music (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extract given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        Music is the therapy<br>\n        I need when I feel blue.<br>\n        Music lifts my spirits<br>\n        To make sure I pull through.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Complete the following sentence suitably.<br>The phrase 'feel blue' indicates ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Identify the line which shows music makes the poet happy.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> What does the last line of the extract signify?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> State whether the following sentence is true or false.<br>Music plays a vital role in the poet's life.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Select the central idea of the extract from the following options.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. Music brings comfort during sadness.<br>\n                B. Music is a necessity in times of happiness.<br>\n                C. Music improves our ability to pull heavy loads.<br>\n                D. Music is a source of knowledge and excitement.\n            </div>\n        </li>\n    </ul>\n</div>",
@@ -3406,7 +3406,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — A Friend Found in Music (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. How is music able to move the poet 'to the core'?</p>\n</div>",
@@ -3433,12 +3433,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: Words",
+                    "name": "Poem 7: Words",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Words (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Fill in the blanks with one word from the poem. One example has been done for you.</p>\n    <p style=\"margin: 0; line-height: 1.6; color: #333;\">In this poem, the poet reflects that words fail to truly satisfy what the heart wants to convey. Words are compared to summer birds who 1. ________________ leaving nothing behind. The heart, is equated to a 2. ________________ who finds that words are as worthless as 3. ________________ when needed. He feels that a few sincere words can bring more 4. ________________ than many meaningless ones. He adds that a voice that brings happiness to a 5. ________________ place does not say much, but the few words it does, are very precious. Moreover, if words could satisfy us, the 6. ________________ would celebrate but words often fail to do that. The poem ends on the note that empty words may look impressive with lots of flowers, but they cannot produce anything valuable, like a 7. ________________.</p>\n</div>",
@@ -3457,7 +3457,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Words (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the following lines and answer the questions.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. The heart, a pilgrim upon earth,<br>\n        Finds often, when it needs,<br>\n        That words are of as little worth<br>\n        As just so many weeds.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Why has the poet referred to the heart as 'a pilgrim'?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> When would a heart 'need' words?</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Complete the sentence with an appropriate reason.<br>The words are like weeds because ________________.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Mention two emotions the heart might be experiencing when it finds words to be of 'little worth'.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> What do these lines suggest about the nature of communication?</li>\n    </ul>\n</div>",
@@ -3472,7 +3472,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Words (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">1. What is the comparison that the poet draws between words and 'empty air'?</p>\n</div>",
@@ -3499,12 +3499,12 @@ given in Table 5.5. Mixtures:
                     ]
                 },
                 {
-                    "name": "Poem: Believe in Yourself",
+                    "name": "Poem 8: Believe in Yourself",
                     "exercises": [
                         {
                             "id": "understanding",
                             "name": "Check Your Understanding",
-                            "title": "Check Your Understanding",
+                            "title": "Check Your Understanding — Believe in Yourself (Comprehension & True/False)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I State whether the following sentences are true or false. Share your answers with your classmates and teacher.</p>\n    <ol style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333;\">\n        <li style=\"margin-bottom: 5px;\">Reaching the peak of skill in a field typically demands a focused and intense dedication for about a decade.</li>\n        <li style=\"margin-bottom: 5px;\">The mother believes that significant effort and personal sacrifices are essential for turning aspirations into reality.</li>\n        <li style=\"margin-bottom: 5px;\">The path to achieving the deepest desires has very little difficulty or a few obstacles.</li>\n        <li style=\"margin-bottom: 5px;\">The mother is of the opinion that a person's life goals and hopes can evolve over time.</li>\n        <li style=\"margin-bottom: 5px;\">Having a strong network of individuals can be a hurdle in pursuing one's ambition.</li>\n        <li style=\"margin-bottom: 5px;\">The mother feels that pursuing a major life goal will not involve any financial expense or sacrifice.</li>\n        <li style=\"margin-bottom: 0;\">For many individuals, their aspirations remain just wishes because they don't move beyond mere daydreaming.</li>\n    </ol>\n</div>",
@@ -3515,7 +3515,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "reflection",
                             "name": "Critical Reflection",
-                            "title": "Critical Reflection",
+                            "title": "Critical Reflection — Believe in Yourself (Extract Questions & Answers)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0 0 12px 0; color: #333; font-weight: bold;\">I Read the extracts given below and answer the questions that follow.</p>\n    <p style=\"margin: 0 0 12px 0; color: #555; font-style: italic; line-height: 1.5; background-color: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; border-left: 3px solid #666;\">\n        1. It starts with a passion for a particular interest, then comes the conviction that it is imperative to realise it. Count the cost in years of effort, financial investments and sacrifice. Then if it is still burning in your blood and you are ready to commit yourself to the task, plunge. It could be in any field—sports, science, arts, business, or design. The road may be uphill most of the way and often you are buoyed up only by the knowledge that you are doing what you love best and are doing the right thing. When stamina is running out, the prospect of success will keep you on track.\n    </p>\n    <ul style=\"margin: 0; padding-left: 20px; line-height: 1.6; color: #333; list-style-type: none;\">\n        <li style=\"margin-bottom: 10px;\"><strong>(i)</strong> Complete the analogy with a suitable word from the extract.<br>enthusiasm: passion:: belief: ________________</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(ii)</strong> Choose the correct option to complete the following sentence appropriately.<br>The author says that a realistic assessment of effort, investment and sacrifice is crucial for preventing ________________.<br>\n            <div style=\"padding-left: 15px; margin-top: 4px; font-weight: normal; color: #555;\">\n                A. the need for external support network<br>\n                B. an early abandonment of the dream<br>\n                C. initial excitement from fading over time<br>\n                D. others from questioning one's commitment\n            </div>\n        </li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iii)</strong> Complete the following with the correct option from those given in the brackets.<br>The word 'plunge' as used in the extract indicates a ________________ (complete/gradual) involvement in a task.</li>\n        <li style=\"margin-bottom: 10px;\"><strong>(iv)</strong> Complete the sentence with an appropriate reason.<br>The author's emphasis on 'when you are doing what you love best and are doing the right thing' works as a form of intrinsic motivation because ________________.</li>\n        <li style=\"margin-bottom: 0;\"><strong>(v)</strong> Mention one motivating factor besides 'prospect of success', that might keep a person on track, despite running out of stamina.</li>\n    </ul>\n</div>",
@@ -3530,7 +3530,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "questions",
                             "name": "Answer the Following Questions",
-                            "title": "Answer the Following Questions",
+                            "title": "Answer the Following Questions — Believe in Yourself (Textual & Extra Questions)",
                             "questions": [
                                 {
                                     "q": "<div style=\"font-family: Arial, sans-serif; padding: 12px 15px; background-color: #fbfbfb; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 8px;\">\n    <p style=\"margin: 0; color: #333; font-weight: bold;\">(i) The letter begins thus, 'By all means follow that dream'. What do you think Ming must have written to her mother about?</p>\n</div>",
@@ -3772,7 +3772,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "2.1",
                             "name": "Exercise Set 2.1",
-                            "title": "Exercise Set 2.1",
+                            "title": "Exercise Set 2.1: Degrees & Terms of Polynomials",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -3804,7 +3804,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "2.2",
                             "name": "Exercise Set 2.2",
-                            "title": "Exercise Set 2.2",
+                            "title": "Exercise Set 2.2: Evaluating Linear Polynomials & Zeroes",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -3846,7 +3846,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "2.3",
                             "name": "Exercise Set 2.3",
-                            "title": "Exercise Set 2.3",
+                            "title": "Exercise Set 2.3: Linear Growth & Savings Word Problems",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -3878,7 +3878,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "2.4",
                             "name": "Exercise Set 2.4",
-                            "title": "Exercise Set 2.4",
+                            "title": "Exercise Set 2.4: Plant Growth & Rate of Change Models",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -3905,7 +3905,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "2.5",
                             "name": "Exercise Set 2.5",
-                            "title": "Exercise Set 2.5",
+                            "title": "Exercise Set 2.5: Linear Cost Functions & Platform Fees",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -3927,7 +3927,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "2.6",
                             "name": "Exercise Set 2.6",
-                            "title": "Exercise Set 2.6",
+                            "title": "Exercise Set 2.6: Graphing Linear Polynomials & Slopes",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -3939,7 +3939,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Linear Polynomials & Graphs",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4179,7 +4179,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "3.1",
                             "name": "Exercise Set 3.1",
-                            "title": "Exercise Set 3.1",
+                            "title": "Exercise Set 3.1: Trade Ratios & Fractional Quantities",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4206,7 +4206,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "3.2",
                             "name": "Exercise Set 3.2",
-                            "title": "Exercise Set 3.2",
+                            "title": "Exercise Set 3.2: Negative Numbers & Temperature Changes",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4233,7 +4233,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "3.3",
                             "name": "Exercise Set 3.3",
-                            "title": "Exercise Set 3.3",
+                            "title": "Exercise Set 3.3: Equivalent Rational Numbers & Proofs",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4280,7 +4280,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "3.4",
                             "name": "Exercise Set 3.4",
-                            "title": "Exercise Set 3.4",
+                            "title": "Exercise Set 3.4: Rational Numbers on the Number Line",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4312,7 +4312,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "3.5",
                             "name": "Exercise Set 3.5",
-                            "title": "Exercise Set 3.5",
+                            "title": "Exercise Set 3.5: Terminating & Recurring Decimal Expansions",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4344,7 +4344,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Rational & Irrational Numbers",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4600,7 +4600,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "4.1",
                             "name": "Exercise Set 4.1",
-                            "title": "Exercise Set 4.1",
+                            "title": "Exercise Set 4.1: Expanding Squares Using (a + b)²",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4617,7 +4617,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "4.2",
                             "name": "Exercise Set 4.2",
-                            "title": "Exercise Set 4.2",
+                            "title": "Exercise Set 4.2: Factorising Perfect Square Trinomials",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4634,7 +4634,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "4.3",
                             "name": "Exercise Set 4.3",
-                            "title": "Exercise Set 4.3",
+                            "title": "Exercise Set 4.3: Difference of Squares & Mental Math",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4646,7 +4646,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "4.4",
                             "name": "Exercise Set 4.4",
-                            "title": "Exercise Set 4.4",
+                            "title": "Exercise Set 4.4: Completing Identities & Missing Terms",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4663,7 +4663,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "4.5",
                             "name": "Exercise Set 4.5",
-                            "title": "Exercise Set 4.5",
+                            "title": "Exercise Set 4.5: Simplifying Rational Algebraic Expressions",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -4675,7 +4675,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Algebraic Identities & Factorisation",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -5019,7 +5019,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Circle Theorems, Chords & Arcs",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -5540,7 +5540,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "6.1",
                             "name": "Exercise Set 6.1",
-                            "title": "Exercise Set 6.1",
+                            "title": "Exercise Set 6.1: Circumference & Area of Circles",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -5591,7 +5591,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "6.2",
                             "name": "Exercise Set 6.2",
-                            "title": "Exercise Set 6.2",
+                            "title": "Exercise Set 6.2: Area of Trapeziums & Polygons",
                             "questions": [
                                 {
                                     "qNum": "Q2",
@@ -5642,7 +5642,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "6.3",
                             "name": "Exercise Set 6.3",
-                            "title": "Exercise Set 6.3",
+                            "title": "Exercise Set 6.3: Arc Length & Area of Circular Sectors",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -5682,7 +5682,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Heron's Formula, Circles & Mensuration",
                             "questions": [
                                 {
                                     "qNum": "Q2",
@@ -5927,7 +5927,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "7.1",
                             "name": "Exercise Set 7.1",
-                            "title": "Exercise Set 7.1",
+                            "title": "Exercise Set 7.1: Probability Scale (Impossible to Certain)",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -5945,7 +5945,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "7.2",
                             "name": "Exercise Set 7.2",
-                            "title": "Exercise Set 7.2",
+                            "title": "Exercise Set 7.2: Empirical Probability & Random Sampling",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -5996,7 +5996,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "7.3",
                             "name": "Exercise Set 7.3",
-                            "title": "Exercise Set 7.3",
+                            "title": "Exercise Set 7.3: Sample Space, Dice & Coin Outcomes",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -6036,7 +6036,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "7.4",
                             "name": "Exercise Set 7.4",
-                            "title": "Exercise Set 7.4",
+                            "title": "Exercise Set 7.4: Comparing Probabilities & Fair Games",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -6054,7 +6054,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Theoretical & Experimental Probability",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -6343,7 +6343,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "8.1",
                             "name": "Exercise Set 8.1",
-                            "title": "Exercise Set 8.1",
+                            "title": "Exercise Set 8.1: Number Sequences & nth Term Formulas",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -6416,7 +6416,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "8.2",
                             "name": "Exercise Set 8.2",
-                            "title": "Exercise Set 8.2",
+                            "title": "Exercise Set 8.2: Arithmetic Progressions (AP) & Common Difference",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -6500,7 +6500,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "8.3",
                             "name": "Exercise Set 8.3",
-                            "title": "Exercise Set 8.3",
+                            "title": "Exercise Set 8.3: Geometric Progressions (GP) & Common Ratio",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -6584,7 +6584,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: AP, GP & Sequence Patterns",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -7154,7 +7154,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "9.1",
                             "name": "Exercise Set 9.1",
-                            "title": "Exercise Set 9.1",
+                            "title": "Exercise Set 9.1: Conditional Statements, Converses & Proofs",
                             "questions": [
                                 {
                                     "q": "<p>If two lines are parallel, then the corresponding angles formed by a transversal are equal.</p>",
@@ -7542,7 +7542,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "10.1",
                             "name": "Exercise Set 10.1",
-                            "title": "Exercise Set 10.1",
+                            "title": "Exercise Set 10.1: Combined Means & Group Averages",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -7604,7 +7604,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "10.2",
                             "name": "Exercise Set 10.2",
-                            "title": "Exercise Set 10.2",
+                            "title": "Exercise Set 10.2: Weighted Averages & Exam Score Analysis",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -7622,7 +7622,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "10.3",
                             "name": "Exercise Set 10.3",
-                            "title": "Exercise Set 10.3",
+                            "title": "Exercise Set 10.3: Profit Percentages & Combined Rates",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -7717,7 +7717,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "10.4",
                             "name": "Exercise Set 10.4",
-                            "title": "Exercise Set 10.4",
+                            "title": "Exercise Set 10.4: Stacked Bar Charts & IUCN Data Analysis",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -7746,7 +7746,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "10.5",
                             "name": "Exercise Set 10.5",
-                            "title": "Exercise Set 10.5",
+                            "title": "Exercise Set 10.5: Interpreting Multi-Variable Data Tables",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -7764,7 +7764,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Statistics, Weighted Means & Data Graphs",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8229,7 +8229,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "11.1",
                             "name": "Exercise Set 11.1",
-                            "title": "Exercise Set 11.1",
+                            "title": "Exercise Set 11.1: Step-by-Step Addition & Arithmetic Algorithms",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8291,7 +8291,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "11.2",
                             "name": "Exercise Set 11.2",
-                            "title": "Exercise Set 11.2",
+                            "title": "Exercise Set 11.2: Merging Sorted Lists & Search Algorithms",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8331,7 +8331,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "11.3",
                             "name": "Exercise Set 11.3",
-                            "title": "Exercise Set 11.3",
+                            "title": "Exercise Set 11.3: Divisor Algorithms & Primality Testing",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8360,7 +8360,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Euclid's & Āryabhaṭa's Division Algorithms",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8594,7 +8594,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "12.1",
                             "name": "Exercise Set 12.1",
-                            "title": "Exercise Set 12.1",
+                            "title": "Exercise Set 12.1: Vertices, Sides, Angles & Non-Convex Quadrilaterals",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8645,7 +8645,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "12.2",
                             "name": "Exercise Set 12.2",
-                            "title": "Exercise Set 12.2",
+                            "title": "Exercise Set 12.2: Properties of Parallelograms, Rhombuses & Rectangles",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8696,7 +8696,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "12.3",
                             "name": "Exercise Set 12.3",
-                            "title": "Exercise Set 12.3",
+                            "title": "Exercise Set 12.3: Midpoint Theorem & Triangle-Parallelogram Proofs",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8736,7 +8736,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "12.4",
                             "name": "Exercise Set 12.4",
-                            "title": "Exercise Set 12.4",
+                            "title": "Exercise Set 12.4: Plane Tiling & Regular Polygons",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -8754,7 +8754,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Quadrilateral Proofs & Constructions",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9054,7 +9054,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "13.1",
                             "name": "Exercise Set 13.1",
-                            "title": "Exercise Set 13.1",
+                            "title": "Exercise Set 13.1: Standard Form of Linear Equations (ax + by + c = 0)",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9094,7 +9094,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "13.2",
                             "name": "Exercise Set 13.2",
-                            "title": "Exercise Set 13.2",
+                            "title": "Exercise Set 13.2: Verifying Ordered Pair Solutions",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9145,7 +9145,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "13.3",
                             "name": "Exercise Set 13.3",
-                            "title": "Exercise Set 13.3",
+                            "title": "Exercise Set 13.3: Slope, Steepness & Rate of Change",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9185,7 +9185,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "13.4",
                             "name": "Exercise Set 13.4",
-                            "title": "Exercise Set 13.4",
+                            "title": "Exercise Set 13.4: Framing Simultaneous Linear Equations",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9225,7 +9225,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "13.5",
                             "name": "Exercise Set 13.5",
-                            "title": "Exercise Set 13.5",
+                            "title": "Exercise Set 13.5: Solving Word Problems in Two Variables",
                             "questions": [
                                 {
                                     "qNum": "Q1(i)",
@@ -9298,7 +9298,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Linear Graphs, Intercepts & Simultaneous Equations",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9653,7 +9653,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "14.1",
                             "name": "Exercise Set 14.1",
-                            "title": "Exercise Set 14.1",
+                            "title": "Exercise Set 14.1: Surface Area & Volume of Cubes and Cuboids",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9737,7 +9737,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "14.2",
                             "name": "Exercise Set 14.2",
-                            "title": "Exercise Set 14.2",
+                            "title": "Exercise Set 14.2: Right Circular Cylinders (CSA, TSA & Volume)",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9788,7 +9788,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "14.3",
                             "name": "Exercise Set 14.3",
-                            "title": "Exercise Set 14.3",
+                            "title": "Exercise Set 14.3: Right Circular Cones & Slant Height",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9839,7 +9839,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "14.4",
                             "name": "Exercise Set 14.4",
-                            "title": "Exercise Set 14.4",
+                            "title": "Exercise Set 14.4: Surface Area & Volume of Spheres and Hemispheres",
                             "questions": [
                                 {
                                     "qNum": "Q1",
@@ -9890,7 +9890,7 @@ given in Table 5.5. Mixtures:
                         {
                             "id": "end-of-chapter",
                             "name": "End-of-Chapter Exercises",
-                            "title": "End-of-Chapter Exercises",
+                            "title": "End-of-Chapter Exercises: Combined Solids & Mensuration Word Problems",
                             "questions": [
                                 {
                                     "qNum": "Q4",
@@ -10629,9 +10629,7 @@ given in Table 5.5. Mixtures:
             {   
                 name: "Part 1 - History",     
                 chapters: [
-                { name: `Chapter 4: Early Humans and Beginning
-of Civilisation
-` , solutions: [// Q1 & A1
+                { name: `Chapter 4: Early Humans and Beginning of Civilisation`, solutions: [// Q1 & A1
   {
     q: `<div class="q-block">
   <p>1. Do you think life became easier or more challenging after humans started farming? Give two reasons for your answer.</p>
@@ -16424,9 +16422,15 @@ function getLayerElement(rawId) {
 
 function showLayer(layerId) {
     if (layerId === 'homepage-view') layerId = 'subject-view';
-    document.querySelectorAll('.view-layer').forEach(layer => layer.classList.add('hidden'));
     const target = getLayerElement(layerId);
-    if (target) target.classList.remove('hidden');
+    if (!target) {
+        if (window.location.protocol !== 'file:') {
+            window.location.href = window.location.pathname + window.location.search;
+        }
+        return;
+    }
+    document.querySelectorAll('.view-layer').forEach(layer => layer.classList.add('hidden'));
+    target.classList.remove('hidden');
 
     // Manage #homepage-view container visibility so it never leaves empty space
     const hp = document.getElementById('homepage-view');
@@ -16497,10 +16501,10 @@ function findChapterIndex(chapters, cNum) {
     return -1;
 }
 
-function updateSeoMeta(title, description, routePath = '') {
+function updateSeoMeta(title, description, routePath = '', keywords = '') {
     document.title = title;
     const cleanRoute = (routePath || '').replace(/^\/+|\/+$/g, '');
-    const canonicalUrl = cleanRoute ? `https://solvespot.in/${cleanRoute}` : 'https://solvespot.in/';
+    const canonicalUrl = cleanRoute ? `https://solvespot.in/${cleanRoute}/` : 'https://solvespot.in/';
 
     let canonicalEl = document.querySelector('link[rel="canonical"]');
     if (!canonicalEl) {
@@ -16524,10 +16528,63 @@ function updateSeoMeta(title, description, routePath = '') {
         setMeta('meta[name="description"]', 'name', 'description', description);
         setMeta('meta[property="og:description"]', 'property', 'og:description', description);
     }
+    if (keywords) {
+        setMeta('meta[name="keywords"]', 'name', 'keywords', keywords);
+    }
     setMeta('meta[property="og:title"]', 'property', 'og:title', title);
     setMeta('meta[name="twitter:title"]', 'name', 'twitter:title', title);
     setMeta('meta[name="twitter:description"]', 'name', 'twitter:description', description);
     setMeta('meta[property="og:url"]', 'property', 'og:url', canonicalUrl);
+}
+
+function buildChapterSeoData(subjectKey, branchName, cleanTitle, exName = '', qCount = 0, firstQSnippet = '') {
+    const subKey = (subjectKey || '').toLowerCase();
+    const topicOnly = cleanTitle.replace(/^(?:Chapter|Poem|\u092A\u093E\u0920)\s*\d*\s*:\s*/i, '').trim() || cleanTitle;
+    const exSuffix = exName ? ` (${exName})` : '';
+    const snipPart = firstQSnippet ? ` Includes: ${firstQSnippet}...` : '';
+
+    if (subKey === 'english') {
+        const title = exName
+            ? `${topicOnly} (${exName}) Questions and Answers | Class 9 English ${cleanTitle} Extra Questions & Solutions - SolveSpot`
+            : `${topicOnly} Questions and Answers | Class 9 English ${cleanTitle} Extra Questions & NCERT Solutions - SolveSpot`;
+        const desc = `${topicOnly} Questions and Answers for Class 9 English (${cleanTitle}${exSuffix}): ${qCount} verified textbook & extra questions and answers, extract-based RTC, summary & hints.${snipPart}`.trim();
+        const kw = `${topicOnly} question answers, ${topicOnly} extra questions and answers, ${topicOnly} questions and answers class 9, ${cleanTitle} solutions, Class 9 English ${branchName || ''} solutions, SolveSpot`;
+        return { title, desc, kw };
+    }
+    if (subKey === 'science') {
+        const title = `Class 9 Science ${cleanTitle}${exSuffix} Questions and Answers | NCERT Solutions & Extra Questions - SolveSpot`;
+        const desc = `Free Class 9 Science ${cleanTitle}${exSuffix} Questions and Answers (NCERT Solutions & Extra Questions). All ${qCount} step-by-step solved exercises, formulas, diagrams & exam notes.${snipPart}`.trim();
+        const kw = `${topicOnly} question answers, ${topicOnly} extra questions and answers, ${cleanTitle} class 9 science solutions, Class 9 Science ${topicOnly} notes and formulas, SolveSpot`;
+        return { title, desc, kw };
+    }
+    if (subKey === 'maths') {
+        const bookLabel = branchName || 'Ganita Prakash';
+        const title = exName
+            ? `Class 9 Maths ${cleanTitle} (${exName}) Solutions | ${bookLabel} Questions and Answers - SolveSpot`
+            : `Class 9 Maths ${cleanTitle} Solutions | ${bookLabel} Questions and Answers - SolveSpot`;
+        const desc = `NCERT Class 9 Maths (${bookLabel}) ${cleanTitle}${exSuffix} step-by-step solutions (${qCount} solved questions with hints & formulas).${snipPart}`.trim();
+        const kw = `${topicOnly} class 9 solutions, ${cleanTitle} question answers, ${bookLabel} ${cleanTitle} solutions, Class 9 Maths ${topicOnly} extra questions and answers, Ganita Prakash Class 9 solutions, SolveSpot`;
+        return { title, desc, kw };
+    }
+    if (subKey === 'sst') {
+        const bLabel = branchName || 'Social Science';
+        const title = `${topicOnly} Questions and Answers | Class 9 Social Science (${bLabel}) ${cleanTitle} NCERT & Gateway Solutions - SolveSpot`;
+        const desc = `${topicOnly} Questions and Answers for Class 9 Social Science (${bLabel} - ${cleanTitle}): ${qCount} verified NCERT & Gateway to Social Science solutions, extra questions and exam notes.${snipPart}`.trim();
+        const kw = `${topicOnly} question answers, ${topicOnly} extra questions and answers, ${cleanTitle} class 9 social science solutions, class 9 social science ${bLabel.toLowerCase()} solutions, gateway to social science class 9 solutions, SolveSpot`;
+        return { title, desc, kw };
+    }
+    if (subKey === 'hindi') {
+        const title = exName
+            ? `Class 9 Hindi ${cleanTitle} (${exName}) \u092A\u094D\u0930\u0936\u094D\u0928-\u0909\u0924\u094D\u0924\u0930 | ${topicOnly} Question Answers & Solutions - SolveSpot`
+            : `Class 9 Hindi ${cleanTitle} \u092A\u094D\u0930\u0936\u094D\u0928-\u0909\u0924\u094D\u0924\u0930 (Question Answers) | NCERT Solutions & Extra Questions - SolveSpot`;
+        const desc = `NCERT Class 9 Hindi (${branchName || ''}) ${cleanTitle}${exSuffix} \u0915\u0947 \u0938\u092D\u0940 \u092A\u094D\u0930\u0936\u094D\u0928-\u0909\u0924\u094D\u0924\u0930 (Question Answers), \u092C\u0939\u0941\u0935\u093F\u0915\u0932\u094D\u092A\u0940\u092F \u092A\u094D\u0930\u0936\u094D\u0928 (MCQs), \u092D\u093E\u0935\u093E\u0930\u094D\u0925 \u090F\u0935\u0902 \u0935\u094D\u092F\u093E\u0915\u0930\u0923 \u0939\u0932 (${qCount} Q&As).${snipPart}`.trim();
+        const kw = `${topicOnly} \u092A\u094D\u0930\u0936\u094D\u0928 \u0909\u0924\u094D\u0924\u0930, ${topicOnly} question answers class 9 hindi, ${cleanTitle} solutions, Class 9 Hindi ${branchName || ''} solutions, SolveSpot`;
+        return { title, desc, kw };
+    }
+    const title = `Class 9 ${cleanTitle}${exSuffix} Questions and Answers | NCERT Solutions - SolveSpot`;
+    const desc = `NCERT Class 9 ${cleanTitle}${exSuffix} step-by-step solutions (${qCount} Q&As).${snipPart}`.trim();
+    const kw = `${topicOnly} question answers, ${cleanTitle} solutions, Class 9 NCERT solutions, SolveSpot`;
+    return { title, desc, kw };
 }
 
 function stripHtmlForSeo(htmlStr) {
@@ -16538,6 +16595,74 @@ function stripHtmlForSeo(htmlStr) {
         .replace(/\$[^$]+\$/g, '')
         .replace(/\s+/g, ' ')
         .trim();
+}
+
+function escapeOverviewHtml(str) {
+    return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function buildSubjectOverviewHtml(title, description, badgeText, statsList) {
+    const pills = Array.isArray(statsList)
+        ? statsList.filter(Boolean).map(s => `<span>${escapeOverviewHtml(s)}</span>`).join('')
+        : '';
+    return `
+        <div class="subject-overview-banner" style="grid-column: 1 / -1;">
+            <span class="chapter-overview-badge">${escapeOverviewHtml(badgeText)}</span>
+            <h2>${escapeOverviewHtml(title)}</h2>
+            <p>${escapeOverviewHtml(description)}</p>
+            ${pills ? `<div class="chapter-overview-meta">${pills}</div>` : ''}
+        </div>
+    `;
+}
+
+function buildChapterOverviewHtml(subjectKey, branchName, cleanTitle, exName, qCount, exCount, solutions) {
+    const subjectNames = {
+        science: 'Science',
+        maths: 'Mathematics',
+        sst: 'Social Science',
+        english: 'English',
+        hindi: 'Hindi'
+    };
+    const subLabel = subjectNames[subjectKey] || 'Class 9';
+    const topicText = cleanTitle || `${subLabel} Chapter`;
+    const unitScope = branchName ? `${subLabel} (${branchName})` : `Class 9 ${subLabel}`;
+    const safeEx = exName ? ` — ${exName}` : '';
+
+    let conceptItems = '';
+    if (Array.isArray(solutions) && solutions.length > 0) {
+        const picked = [];
+        for (let i = 0; i < solutions.length && picked.length < 3; i++) {
+            const raw = stripHtmlForSeo(solutions[i].q || '');
+            if (!raw) continue;
+            const trimmed = raw.length > 125 ? raw.slice(0, 122).trim() + '...' : raw;
+            picked.push(`<li>${escapeOverviewHtml(trimmed)}</li>`);
+        }
+        if (picked.length > 0) {
+            conceptItems = `<ul class="chapter-overview-concepts">${picked.join('')}</ul>`;
+        }
+    }
+
+    const exSummary = exCount > 1
+        ? ` organized across ${exCount} exercise sets`
+        : '';
+
+    return `
+        <div class="chapter-overview-card" style="grid-column: 1 / -1;">
+            <span class="chapter-overview-badge">Chapter Study Guide &bull; CBSE Class 9</span>
+            <h2>${escapeOverviewHtml(topicText + safeEx)} — Overview &amp; Key Topics</h2>
+            <p>This ${escapeOverviewHtml(unitScope)} study module provides ${qCount} verified textbook &amp; extra questions with detailed step-by-step explanations${exSummary}. Review core definitions, formulas, and practice questions covered in this chapter below.</p>
+            ${conceptItems}
+            <div class="chapter-overview-meta">
+                <span>CBSE Class 9 Syllabus</span>
+                <span>${qCount} Verified Q&amp;A${qCount === 1 ? '' : 's'}</span>
+                <span>Step-by-Step + Hints</span>
+            </div>
+        </div>
+    `;
 }
 
 function handleRoute() {
@@ -16762,6 +16887,14 @@ function handleRoute() {
                 if (branchData) {
                     const cIdx = findChapterIndexInBranch(branchData, cNum);
                     if (cIdx !== -1) {
+                        const chapterData = branchData.chapters[cIdx];
+                        if (exId.toLowerCase() === 'all' && chapterData.exercises && chapterData.exercises.length > 0) {
+                            if (window.location.protocol !== 'file:' && window.history && window.history.replaceState) {
+                                window.history.replaceState(null, '', `/subject/${subKey}/branch/${bNum}/chapter/${cNum}/` + (window.location.search || ''));
+                            }
+                            renderBranchExerciseList(subKey, bIdx, cIdx, questionTarget);
+                            return;
+                        }
                         renderBranchChapter(subKey, bIdx, cIdx, questionTarget, exId);
                         return;
                     }
@@ -16787,8 +16920,8 @@ function handleRoute() {
                             renderBranchView(subKey, bIdx);
                             return;
                         }
-                        if (chapterData.exercises && chapterData.exercises.length > 0 && questionTarget === null) {
-                            renderBranchExerciseList(subKey, bIdx, cIdx);
+                        if (chapterData.exercises && chapterData.exercises.length > 0) {
+                            renderBranchExerciseList(subKey, bIdx, cIdx, questionTarget);
                         } else {
                             renderBranchChapter(subKey, bIdx, cIdx, questionTarget, 'all');
                         }
@@ -16839,11 +16972,20 @@ function handleRoute() {
                                 renderBranchView(subKey, b);
                                 return;
                             }
-                            if (exId) {
+                            if (exId && exId.toLowerCase() !== 'all') {
+                                if (window.location.protocol !== 'file:' && window.history && window.history.replaceState) {
+                                    window.history.replaceState(null, '', `/subject/${subKey}/branch/${b + 1}/chapter/${cNum}/exercise/${encodeURIComponent(exId)}/` + (window.location.search || ''));
+                                }
                                 renderBranchChapter(subKey, b, cIdx, questionTarget, exId);
-                            } else if (chapterData.exercises && chapterData.exercises.length > 0 && questionTarget === null) {
-                                renderBranchExerciseList(subKey, b, cIdx);
+                            } else if (chapterData.exercises && chapterData.exercises.length > 0) {
+                                if (window.location.protocol !== 'file:' && window.history && window.history.replaceState) {
+                                    window.history.replaceState(null, '', `/subject/${subKey}/branch/${b + 1}/chapter/${cNum}/` + (window.location.search || ''));
+                                }
+                                renderBranchExerciseList(subKey, b, cIdx, questionTarget);
                             } else {
+                                if (window.location.protocol !== 'file:' && window.history && window.history.replaceState) {
+                                    window.history.replaceState(null, '', `/subject/${subKey}/branch/${b + 1}/chapter/${cNum}/` + (window.location.search || ''));
+                                }
                                 renderBranchChapter(subKey, b, cIdx, questionTarget, 'all');
                             }
                             return;
@@ -17093,7 +17235,41 @@ function renderSubjectView(subjectKey) {
 
     const grid = getLayerElement('chapters-list-grid');
     if (!grid) return;
-    grid.innerHTML = '';
+
+    const subjectGuideMeta = {
+        science: {
+            title: 'CBSE Class 9 Science — Complete Syllabus Overview (Chapters 1–13)',
+            desc: 'Master Physics, Chemistry, and Biology with step-by-step solutions covering Cell Biology, Tissues, Laws of Motion, Work & Energy, Atomic Structure, Sound Waves, Reproduction, and Ecosystems.',
+            badge: 'Science Syllabus Guide',
+            stats: ['Physics • Chemistry • Biology', '12 Solved Units', 'Diagrams & Formulas']
+        },
+        maths: {
+            title: 'CBSE Class 9 Mathematics — Ganita Prakash Parts 1 & 2 Syllabus',
+            desc: 'Build problem-solving speed across Coordinate Geometry, Linear Polynomials, Number Systems, Algebraic Identities, Area & Perimeter, Probability, Sequences, Quadrilaterals, and Surface Area & Volume.',
+            badge: 'Mathematics Syllabus Guide',
+            stats: ['14 Solved Chapters', 'Step-by-Step Proofs', 'KaTeX Formulas']
+        },
+        sst: {
+            title: 'CBSE Class 9 Social Science — Parts 1 & 2 Complete Guide',
+            desc: 'Explore Geography, History, Political Science, and Economics across both volumes, covering Earth’s Surface, Climate, Civilisations, Democracy, Elections, Public Policy, and Personal Finance.',
+            badge: 'Social Science Guide',
+            stats: ['Part 1 & Part 2 Books', '8 Subject Branches', 'NCERT + Gateway Solutions']
+        },
+        english: {
+            title: 'CBSE Class 9 English — Prose Chapters & Poetry Study Hub',
+            desc: 'Prepare extract-based questions, comprehension checks, poetic devices, critical reflections, and complete textual question-answers across 8 Prose lessons and 8 Poems.',
+            badge: 'English Literature Guide',
+            stats: ['8 Prose Chapters', '8 Poetry Units', 'Critical Reflection + RTC']
+        },
+        hindi: {
+            title: 'CBSE Class 9 हिन्दी — गद्य खंड एवं पद्य खंड संपूर्ण हल',
+            desc: 'कक्षा 9 हिन्दी पाठ्यपुस्तक के गद्य खंड (पाठ 1 से 7) एवं पद्य खंड (पाठ 8 से 12) के सभी अभ्यास प्रश्नोत्तर, विचार एवं तर्क विश्लेषण, रचना और व्याकरण के हल।',
+            badge: 'हिन्दी पाठ्यक्रम मार्गदर्शिका',
+            stats: ['12 संपूर्ण पाठ', 'गद्य एवं पद्य खंड', 'व्याकरण एवं संवाद']
+        }
+    };
+    const sg = subjectGuideMeta[subjectKey];
+    grid.innerHTML = sg ? buildSubjectOverviewHtml(sg.title, sg.desc, sg.badge, sg.stats) : '';
 
     // SST Special 2-Tier Structure: First show Part 1 & Part 2 Books
     if (subjectKey === 'sst') {
@@ -17289,7 +17465,13 @@ function renderSstPartView(partNum) {
 
     const grid = getLayerElement('chapters-list-grid');
     if (!grid) return;
-    grid.innerHTML = '';
+
+    grid.innerHTML = buildSubjectOverviewHtml(
+        `CBSE Class 9 ${bookTitle} — NCERT & Gateway Solutions`,
+        `Browse chapter-wise Geography, History, Political Science, and Economics solutions for ${bookTitle} with crisp explanations and exam revision points.`,
+        `SST Part ${partNum} Syllabus`,
+        ['Geography • History • Civics • Economics', 'Verified Textbook Answers', 'Exam Notes']
+    );
 
     // Branch indices: Part 1 is 0 to 3, Part 2 is 4 to 7
     const startIdx = isPart1 ? 0 : 4;
@@ -17317,9 +17499,10 @@ function renderSstPartView(partNum) {
 
     showLayer('chapter-view');
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${bookTitle} - SolveSpot`,
-        `NCERT Class 9 ${bookTitle} solutions across Geography, History, Political Science, and Economics with chapter solutions.`,
-        `subject/sst/part/${partNum}`
+        `Class 9 ${bookTitle} Solutions | NCERT & Gateway to Social Science Part ${partNum} Question Answers - SolveSpot`,
+        `Free Class 9 ${bookTitle} (NCERT & Gateway to Social Science Part ${partNum}) chapter-wise Questions and Answers across Geography, History, Political Science, and Economics.`,
+        `subject/sst/part/${partNum}`,
+        `class 9 social science part ${partNum} solutions, gateway to social science class 9 part ${partNum} solutions, ncert class 9 social science part ${partNum} question answers, SolveSpot`
     );
 }
 
@@ -17351,7 +17534,15 @@ function renderBranchView(subjectKey, branchIndex) {
 
     const grid = getLayerElement('chapters-list-grid');
     if (!grid) return;
-    grid.innerHTML = '';
+
+    const subCleanLabel = data.title.replace(/ Sections?/i, '').replace(/ Chapters?/i, '');
+    const branchChapCount = Array.isArray(branchData.chapters) ? branchData.chapters.length : 0;
+    grid.innerHTML = buildSubjectOverviewHtml(
+        `CBSE Class 9 ${branchData.name} (${subCleanLabel}) — Complete Chapter Guide`,
+        `Explore all ${branchChapCount} chapters in ${branchData.name} with verified NCERT textbook solutions, extra exam questions, and quick-revision study notes.`,
+        `${subCleanLabel} • ${branchData.name}`,
+        [`${branchChapCount} Chapters`, 'Step-by-Step Solutions', 'CBSE Class 9']
+    );
 
     if (!branchData.chapters || branchData.chapters.length === 0) {
         grid.innerHTML = `
@@ -17406,14 +17597,16 @@ function renderBranchView(subjectKey, branchIndex) {
 
     showLayer('chapter-view');
     const chapTotal = Array.isArray(branchData.chapters) ? branchData.chapters.length : 0;
+    const subLabel = data.title.replace(/ Sections?/i, '').replace(/ Chapters?/i, '');
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${branchData.name} (${data.title.replace(/ Sections?/i, '')}) - SolveSpot`,
-        `NCERT Class 9 ${branchData.name} (${data.title.replace(/ Sections?/i, '')}) chapter-wise textbook solutions across ${chapTotal} chapters with step-by-step answers and hints.`,
-        `subject/${subjectKey}/branch/${branchIndex + 1}`
+        `Class 9 ${branchData.name} (${subLabel}) Solutions | All ${chapTotal} Chapters Question Answers - SolveSpot`,
+        `Complete Class 9 ${branchData.name} (${subLabel}) chapter-wise Questions and Answers across ${chapTotal} chapters with extra questions, step-by-step solutions and hints.`,
+        `subject/${subjectKey}/branch/${branchIndex + 1}`,
+        `Class 9 ${branchData.name} solutions, ${branchData.name} class 9 question answers, NCERT Class 9 ${subLabel} ${branchData.name} extra questions, SolveSpot`
     );
 }
 
-function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex) {
+function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex, questionTarget = null) {
     currentSubjectKey = subjectKey;
     updateActiveTab(subjectKey);
     const subjectData = ncertDatabase[subjectKey];
@@ -17439,9 +17632,17 @@ function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex) {
 
     const grid = getLayerElement('chapters-list-grid');
     if (!grid) return;
-    grid.innerHTML = '';
 
     const totalQuestions = Array.isArray(chapterData.solutions) ? chapterData.solutions.length : 0;
+    grid.innerHTML = buildChapterOverviewHtml(
+        subjectKey,
+        branchData.name,
+        cleanTitle,
+        '',
+        totalQuestions,
+        chapterData.exercises.length,
+        chapterData.solutions
+    );
 
     chapterData.exercises.forEach((ex, exIdx) => {
         const qCount = Array.isArray(ex.questions) ? ex.questions.length : 0;
@@ -17468,11 +17669,11 @@ function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex) {
 
     if (chapterData.exercises.length > 1) {
         grid.innerHTML += `
-            <a class="chapter-select-btn exercise-all-btn" href="/subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/all/">
+            <a class="chapter-select-btn exercise-all-btn" href="#all-chapter-solutions">
                 <div class="chap-btn-content">
                     <span class="chap-icon-badge exercise-icon-badge">\u{1F4DA}</span>
                     <div class="branch-text-wrapper">
-                        <span class="chap-btn-title">View All Chapter Exercises Together</span>
+                        <span class="chap-btn-title">View All Chapter Exercises Together (${cleanTitle})</span>
                         <span class="branch-chap-count">All ${chapterData.exercises.length} Exercise Sets \u2022 ${totalQuestions} Solved Questions</span>
                     </div>
                 </div>
@@ -17480,11 +17681,61 @@ function renderBranchExerciseList(subjectKey, branchIndex, chapterIndex) {
         `;
     }
 
+    const allSols = chapterData.solutions || [];
+    if (allSols.length > 0) {
+        let previewHtml = `<div id="all-chapter-solutions" style="grid-column: 1 / -1; margin-top: 1.5rem;"><h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary, #1e293b);">${cleanTitle} — Complete Questions and Answers (${allSols.length} Q&As)</h2><div class="solutions-stack">`;
+        allSols.forEach((sol, idx) => {
+            const globalIdx = (sol.globalIndex !== undefined) ? sol.globalIndex : idx;
+            const uniqueId = `ans-list-${globalIdx}`;
+            const hintId = `hint-list-${globalIdx}`;
+            const badgeLabel = sol.qNum || `Q${idx + 1}`;
+            const safeBadge = String(badgeLabel).replace(/'/g, "\\'");
+            const qLinkRoute = `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/?q=${globalIdx + 1}`;
+            const hintHtml = fixAssetPaths(sol.hint || sol.hints || '');
+            const qHtml = fixAssetPaths(sol.q);
+            const aHtml = fixAssetPaths(sol.a);
+            const imgPath = sol.image ? fixAssetPaths(sol.image) : '';
+            previewHtml += `
+                <div class="solution-card" id="card-list-${globalIdx}">
+                    <div class="card-question-header">
+                        <span class="q-badge">${badgeLabel}</span>
+                        <div class="question-text">${qHtml}</div>
+                    </div>
+                    ${imgPath ? `<img src="${imgPath}" class="question-image" alt="Diagram">` : ''}
+                    ${hintHtml ? `<div id="${hintId}" class="hint-box hidden">${hintHtml}</div>` : ''}
+                    <div id="${uniqueId}" class="answer-text">${aHtml}</div>
+                    <div class="card-actions-bar">
+                        ${hintHtml ? `<button class="btn-toggle-hint" onclick="toggleHint('${hintId}', this)" title="Show or hide hint / critical formula"><span>\u{1F4A1}</span> Show Hint / Formula</button>` : ''}
+                        <button class="btn-toggle-solution active" onclick="toggleSolution('${uniqueId}', this)" title="Show or hide step-by-step solution"><span>\u{1F441}\uFE0F</span> Hide Solution</button>
+                        <button class="btn-copy-solution" onclick="copyQuestionLink('${qLinkRoute}', this)" title="Copy direct link to this question"><span>&#128279;</span> Copy Link</button>
+                        <button class="btn-copy-solution" onclick="shareQuestionWhatsApp('${qLinkRoute}', '${safeBadge}')" title="Share this solution on WhatsApp"><span>&#128172;</span> WhatsApp</button>
+                    </div>
+                </div>
+            `;
+        });
+        previewHtml += `</div></div>`;
+        grid.innerHTML += previewHtml;
+        renderMathInContainer(grid);
+    }
+
     showLayer('chapter-view');
+    if (questionTarget !== null && questionTarget !== undefined) {
+        setTimeout(() => {
+            const card = document.getElementById(`card-list-${questionTarget}`);
+            if (card) {
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                card.classList.add('highlight-target');
+                setTimeout(() => card.classList.remove('highlight-target'), 2500);
+            }
+        }, 180);
+    }
+    const firstQ = allSols.length > 0 ? stripHtmlForSeo(allSols[0].q).slice(0, 95) : '';
+    const seo = buildChapterSeoData(subjectKey, branchData.name, cleanTitle, '', totalQuestions, firstQ);
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subjectKey.toUpperCase() === "SST" ? "Social Science" : (subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1))} ${cleanTitle}  - SolveSpot`,
-        `NCERT Class 9 ${branchData.name} ${cleanTitle} textbook solutions: ${chapterData.exercises.length} exercise sets and ${totalQuestions} step-by-step solved questions with hints.`,
-        `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`
+        seo.title,
+        seo.desc,
+        `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`,
+        seo.kw
     );
 }
 
@@ -17531,7 +17782,17 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
 
     const stack = getLayerElement('solutions-content-container');
     if (!stack) return;
-    stack.innerHTML = '';
+    const listToRender = activeExObj ? activeExObj.questions : (chapterData.solutions || []);
+    const exCountNum = hasExercises ? chapterData.exercises.length : 0;
+    stack.innerHTML = buildChapterOverviewHtml(
+        subjectKey,
+        branchData.name,
+        cleanTitle,
+        activeExObj ? (activeExObj.title || activeExObj.name) : '',
+        listToRender.length,
+        exCountNum,
+        listToRender
+    );
 
     // Render interactive Exercise Switcher Pill Bar if chapter has exercises
     if (hasExercises) {
@@ -17546,7 +17807,7 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
         const isAllActive = !activeExObj;
         const totalCount = Array.isArray(chapterData.solutions) ? chapterData.solutions.length : 0;
         const allPillHtml = chapterData.exercises.length > 1
-            ? `<a class="exercise-pill ${isAllActive ? 'active' : ''}" href="/subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/all/">
+            ? `<a class="exercise-pill ${isAllActive ? 'active' : ''}" href="/subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/">
                 All Exercises <span class="pill-count">${totalCount}</span>
             </a>`
             : '';
@@ -17559,12 +17820,9 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
         `;
     }
 
-    const listToRender = activeExObj ? activeExObj.questions : (chapterData.solutions || []);
     const seoRoute = activeExObj
         ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/${encodeURIComponent(activeExObj.id)}`
-        : (hasExercises
-            ? `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}/exercise/all`
-            : `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`);
+        : `subject/${subjectKey}/branch/${branchIndex + 1}/chapter/${chapNum}`;
 
     listToRender.forEach((sol, idx) => {
         const globalIdx = (sol.globalIndex !== undefined) ? sol.globalIndex : idx;
@@ -17603,10 +17861,12 @@ function renderBranchChapter(subjectKey, branchIndex, chapterIndex, questionTarg
 
     showLayer('solution-view');
     const firstQSnippet = listToRender.length > 0 ? stripHtmlForSeo(listToRender[0].q).slice(0, 95) : '';
+    const seo = buildChapterSeoData(subjectKey, branchData.name, cleanTitle, activeExObj ? (activeExObj.title || activeExObj.name) : '', listToRender.length, firstQSnippet);
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subjectKey.toUpperCase() === "SST" ? "Social Science" : (subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1))} ${cleanTitle}${activeExObj ? ' (' + activeExObj.name + ')' : ''} - SolveSpot`,
-        `NCERT Class 9 ${branchData.name} ${cleanTitle}${activeExObj ? ' (' + activeExObj.name + ')' : ''} step-by-step solutions (${listToRender.length} Q&As). ${firstQSnippet ? 'Includes: ' + firstQSnippet + '...' : ''}`.trim(),
-        seoRoute
+        seo.title,
+        seo.desc,
+        seoRoute,
+        seo.kw
     );
 
     renderMathInContainer(stack);
@@ -17648,9 +17908,19 @@ function renderChapter(subjectKey, chapterIndex, questionTarget = null) {
 
     const stack = getLayerElement('solutions-content-container');
     if (!stack) return;
-    stack.innerHTML = '';
+    const sols = Array.isArray(chapterData.solutions) ? chapterData.solutions : [];
+    const subTitleClean = (subjectData.title || '').replace(/ Sections?/i, '').replace(/ Chapters?/i, '');
+    stack.innerHTML = buildChapterOverviewHtml(
+        subjectKey,
+        subTitleClean,
+        cleanTitle,
+        '',
+        sols.length,
+        0,
+        sols
+    );
 
-    chapterData.solutions.forEach((sol, idx) => {
+    sols.forEach((sol, idx) => {
         const uniqueId = `ans-std-${idx}`;
         const hintId = `hint-std-${idx}`;
         const badgeLabel = sol.qNum || `Q${idx + 1}`;
@@ -17684,10 +17954,12 @@ function renderChapter(subjectKey, chapterIndex, questionTarget = null) {
     showLayer('solution-view');
     const subTitle = subjectData.title.replace(' Section', '').replace(' Chapters', '');
     const firstQStd = chapterData.solutions.length > 0 ? stripHtmlForSeo(chapterData.solutions[0].q).slice(0, 95) : '';
+    const seo = buildChapterSeoData(subjectKey, subTitle, cleanTitle, '', chapterData.solutions.length, firstQStd);
     updateSeoMeta(
-        `NCERT Solutions for Class 9 ${subTitle} ${cleanTitle} - SolveSpot`,
-        `NCERT Class 9 ${subTitle} ${cleanTitle} textbook solutions (${chapterData.solutions.length} solved questions). ${firstQStd ? 'Includes: ' + firstQStd + '...' : ''}`.trim(),
-        `subject/${subjectKey}/chapter/${chapNum}`
+        seo.title,
+        seo.desc,
+        `subject/${subjectKey}/chapter/${chapNum}`,
+        seo.kw
     );
 
     renderMathInContainer(stack);
@@ -17940,9 +18212,7 @@ function handleSearch(val) {
             countEl.innerText = `Found ${results.length} result${results.length > 1 ? 's' : ''} for "${query}"`;
             list.innerHTML = results.slice(0, 30).map(r => {
                 const targetHref = r.isBranching
-                    ? (r.hasExercises
-                        ? `/subject/${r.subjectKey}/branch/${r.branchIndex + 1}/chapter/${r.chapterNumber}/exercise/all/?q=${r.questionIndex + 1}`
-                        : `/subject/${r.subjectKey}/branch/${r.branchIndex + 1}/chapter/${r.chapterNumber}/?q=${r.questionIndex + 1}`)
+                    ? `/subject/${r.subjectKey}/branch/${r.branchIndex + 1}/chapter/${r.chapterNumber}/?q=${r.questionIndex + 1}`
                     : `/subject/${r.subjectKey}/chapter/${r.chapterNumber}/?q=${r.questionIndex + 1}`;
                 return `
                 <a class="search-result-card" href="${targetHref}" onclick="clearSearch()">

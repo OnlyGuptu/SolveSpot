@@ -749,3 +749,75 @@ html[data-theme="dark"] .answer-text *[style*="color"],
 html[data-theme="dark"] .question-text *[style*="color"] {
     color: inherit !important;
 }
+
+/* Editorial Study Guides, Directory & Chapter Overview Cards */
+html[data-theme="dark"] .curriculum-directory-section,
+html[data-theme="dark"] .tool-study-guide {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .curriculum-directory-section h2,
+html[data-theme="dark"] .curriculum-directory-section h3,
+html[data-theme="dark"] .tool-study-guide h2,
+html[data-theme="dark"] .tool-study-guide h3,
+html[data-theme="dark"] .chapter-overview-card h2,
+html[data-theme="dark"] .subject-overview-banner h2 {
+    color: #f8fafc !important;
+}
+
+html[data-theme="dark"] .curriculum-directory-section p,
+html[data-theme="dark"] .tool-study-guide p,
+html[data-theme="dark"] .chapter-overview-card p,
+html[data-theme="dark"] .subject-overview-banner p,
+html[data-theme="dark"] .chapter-overview-concepts {
+    color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .directory-card,
+html[data-theme="dark"] .tool-guide-card,
+html[data-theme="dark"] .directory-faq-box {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .directory-links li a {
+    color: #60a5fa !important;
+}
+
+html[data-theme="dark"] .study-guide-table-wrap {
+    border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .study-guide-table {
+    background: #0f172a !important;
+}
+
+html[data-theme="dark"] .study-guide-table th {
+    background: #1e293b !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .study-guide-table td {
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .chapter-overview-card,
+html[data-theme="dark"] .subject-overview-banner {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.14), rgba(14, 165, 233, 0.08)) !important;
+    border-color: rgba(96, 165, 250, 0.3) !important;
+    border-left-color: #60a5fa !important;
+}
+
+html[data-theme="dark"] .chapter-overview-badge {
+    background: rgba(59, 130, 246, 0.22) !important;
+    color: #93c5fd !important;
+}
+
+html[data-theme="dark"] .chapter-overview-meta span {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
