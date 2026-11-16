@@ -1083,6 +1083,9 @@ public class SsgBuilder {
             "Instant CBSE Class 9 Marks & Percentage Calculator! Enter your marks in Science, Maths, Social Science, English, and Hindi to calculate Percentage, CBSE Grades (A1 to E), CGPA, and Remarks.",
             "calculator", "calculator-view"
         ));
+        if (!GeneratedRoutes.Contains("solvelab")) {
+            GeneratedRoutes.Add("solvelab");
+        }
 
         // 3. Subjects, Parts, Branches, Chapters, and Exercises
         string[] subjectOrder = new string[] { "science", "maths", "sst", "english", "hindi" };
@@ -1808,7 +1811,7 @@ public class SsgBuilder {
                 priority = "0.8";
             } else if (cleanR.Contains("/chapter/")) {
                 priority = "0.85";
-            } else if (cleanR == "formulas" || cleanR == "gk" || cleanR == "periodic-table" || cleanR == "calculator" || cleanR.StartsWith("subject/")) {
+            } else if (cleanR == "formulas" || cleanR == "gk" || cleanR == "periodic-table" || cleanR == "calculator" || cleanR == "solvelab" || cleanR.StartsWith("subject/")) {
                 priority = "0.9";
             } else {
                 priority = "0.8";

@@ -16858,6 +16858,20 @@ function handleRoute() {
         return;
     }
 
+    if (first === 'solvelab') {
+        if (window.location.protocol === 'file:') {
+            const hrefLower = window.location.href.toLowerCase();
+            const marker = hrefLower.includes('aura%20farming/') ? 'aura%20farming/' : 'aura farming/';
+            const idx = hrefLower.indexOf(marker);
+            window.location.href = idx !== -1
+                ? window.location.href.slice(0, idx + marker.length) + 'solvelab/index.html'
+                : 'solvelab/index.html';
+        } else {
+            window.location.href = '/solvelab/index.html';
+        }
+        return;
+    }
+
     // 3. Subject-specific routes: /subject/:subjectKey/...
     if (first === 'subject' && segments[1]) {
         const subKey = segments[1].toLowerCase();
@@ -18372,6 +18386,21 @@ document.addEventListener('click', (e) => {
     // Ignore external URLs, javascript:, mailto:, tel:, #anchors
     if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('//') ||
         href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:') || href.startsWith('#')) return;
+
+    if (href === '/solvelab' || href === '/solvelab/' || href.startsWith('/solvelab/')) {
+        e.preventDefault();
+        if (window.location.protocol === 'file:') {
+            const hrefLower = window.location.href.toLowerCase();
+            const marker = hrefLower.includes('aura%20farming/') ? 'aura%20farming/' : 'aura farming/';
+            const idx = hrefLower.indexOf(marker);
+            window.location.href = idx !== -1
+                ? window.location.href.slice(0, idx + marker.length) + 'solvelab/index.html'
+                : 'solvelab/index.html';
+        } else {
+            window.location.href = '/solvelab/';
+        }
+        return;
+    }
 
     e.preventDefault();
 

@@ -38,6 +38,9 @@ Welcome back! This document permanently preserves the memory, context, and proje
    * Driven by `games.js` & `games.css`.
    * 10 retro browser games (Brick Tower, Space Shooter, Knife Hit, Brick Breaker, 2048, Minesweeper, Neon Snake, Flappy Solv, etc.).
    * Optimized with debounced touch controls, touch-swipe support, and responsive canvas coordinate scaling for mobile and PC.
+4. **SolveLab Interactive Physics & Chemistry Simulations (`/solvelab/`):**
+   * Self-contained HTML5 Canvas portal (`solvelab/index.html`, `solvelab/css/styles.css`, `solvelab/js/core.js`, `solvelab/js/app.js`, and 10 modules in `solvelab/js/sims/`).
+   * Features 5 Physics sims (Projectile, Pendulum, Waves, Gravity Orbits, DC Circuits) and 5 Chemistry sims (Ideal Gas Law, States of Matter, pH Titration, Build an Atom, Reaction Kinetics) with slow-motion time scaling (`0.1x–2x`), `+1` frame stepping, mobile-responsive layout, and fullscreen mode.
 
 ---
 

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolveLab — Interactive Physics & Chemistry Simulations</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand" id="brand-home" title="Return to Simulation Hub">
+        <span class="brand-icon" aria-hidden="true">⚛</span>
+        <div class="brand-text">
+          <span class="brand-title">SolveLab <span class="brand-badge">HTML5</span></span>
+          <span class="brand-sub">Interactive Physics &amp; Chemistry</span>
+        </div>
+      </div>
+      <a href="../index.html" id="solvespot-home-link" class="btn btn-ghost" title="Return to SolveSpot Home">
+        🏠 SolveSpot
+      </a>
+      <button id="back-hub-btn" class="btn btn-ghost hidden" type="button">
+        ← All Simulations
+      </button>
+    </div>
+
+    <div class="topbar-center" id="hub-filters">
+      <div class="filter-pills" role="tablist" aria-label="Simulation Categories">
+        <button class="pill active" data-category="all" type="button">All (10)</button>
+        <button class="pill" data-category="physics" type="button">Physics (5)</button>
+        <button class="pill" data-category="chemistry" type="button">Chemistry (5)</button>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input
+          id="sim-search"
+          type="search"
+          placeholder="Search simulations (e.g. pendulum, pH, gas, orbits)..."
+          aria-label="Search simulations"
+        />
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <button id="app-fullscreen-btn" class="btn btn-icon" type="button" title="Toggle Fullscreen (F)">
+        <span id="app-fs-icon">⛶</span>
+        <span class="btn-label" id="app-fs-label">Fullscreen</span>
+      </button>
+      <button id="sound-toggle-btn" class="btn btn-icon" type="button" title="Toggle Web Audio sound effects">
+        <span id="sound-icon">🔊</span>
+        <span class="btn-label">Sound On</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="hub-view" class="hub-view">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-kicker">SolveLab Interactive Science Portal</div>
+        <h1>Explore Physics &amp; Chemistry in Real Time</h1>
+        <p>
+          10 self-contained HTML5 Canvas simulations engineered for slow-motion inspection,
+          frame-by-frame stepping, interactive probes, and live scientific plots.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-chip"><strong>10</strong> HTML5 Canvas Sims</div>
+          <div class="stat-chip"><strong>0.1× – 2×</strong> Time Scaling &amp; +1 Step</div>
+          <div class="stat-chip"><strong>Live</strong> Vector &amp; Plot Overlays</div>
+          <div class="stat-chip"><strong>Zero</strong> Dependencies / Works Offline</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hub-grid-section">
+      <div id="sim-grid" class="sim-grid" aria-live="polite"></div>
+      <div id="empty-search" class="empty-search hidden">
+        <p>No simulations match your filter. Try clearing the search box.</p>
+      </div>
+    </section>
+  </main>
+
+  <main id="workbench-view" class="workbench-view hidden">
+    <div class="workbench-header">
+      <div class="wb-title-group">
+        <span id="wb-category-badge" class="cat-badge">Physics</span>
+        <div>
+          <h2 id="wb-title">Simulation Title</h2>
+          <p id="wb-subtitle" class="wb-subtitle">Subtitle</p>
+        </div>
+      </div>
+
+      <div class="wb-presets" id="wb-presets"></div>
+
+      <div class="wb-actions">
+        <button id="theory-toggle-btn" class="btn btn-secondary" type="button">
+          📘 Theory &amp; Challenges
+        </button>
+        <button id="screenshot-btn" class="btn btn-secondary" type="button" title="Save canvas snapshot as PNG">
+          📷 Snapshot
+        </button>
+        <button id="stage-fullscreen-btn" class="btn btn-primary" type="button" title="Immersive Fullscreen Simulation">
+          ⛶ Fullscreen Sim
+        </button>
+      </div>
+    </div>
+
+    <div class="workbench-body">
+      <div class="stage-column">
+        <div class="canvas-stage" id="canvas-stage">
+          <canvas id="sim-canvas"></canvas>
+          <div id="sim-hud" class="sim-hud"></div>
+          <div id="sim-hint" class="sim-hint"></div>
+          <div class="canvas-fs-toolbar">
+            <button id="fs-controls-toggle-btn" class="btn btn-secondary btn-sm hidden" type="button" title="Show/Hide Lab Controls in Fullscreen">
+              ⚙ Controls
+            </button>
+            <button id="canvas-fs-btn" class="btn btn-secondary btn-sm" type="button" title="Toggle Immersive Fullscreen (F)">
+              ⛶ Fullscreen
+            </button>
+          </div>
+        </div>
+
+        <div class="time-dock" role="region" aria-label="Simulation Time Controls">
+          <div class="time-dock-group">
+            <button id="play-pause-btn" class="btn btn-primary play-btn" type="button" title="Play or Pause (Space)">
+              ⏸ Pause
+            </button>
+            <button id="step-btn" class="btn btn-secondary" type="button" title="Step forward 1 frame">
+              ⏭ +1 Frame
+            </button>
+          </div>
+
+          <div class="speed-group" role="radiogroup" aria-label="Simulation Speed">
+            <button class="speed-pill" data-speed="0.1" type="button">0.1× Ultra Slow</button>
+            <button class="speed-pill" data-speed="0.25" type="button">0.25× Slow-Mo</button>
+            <button class="speed-pill active" data-speed="1" type="button">1× Normal</button>
+            <button class="speed-pill" data-speed="2" type="button">2× Fast</button>
+          </div>
+
+          <div class="time-dock-right">
+            <div class="sim-clock" id="sim-clock">t = 0.00 s</div>
+            <button id="reset-sim-btn" class="btn btn-danger" type="button" title="Reset simulation">
+              ↺ Reset All
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="controls-sidebar" aria-label="Simulation Parameters">
+        <div class="sidebar-header">
+          <h3>Lab Controls</h3>
+          <span class="sidebar-tip">Drag &amp; inspect canvas directly</span>
+        </div>
+        <div id="sim-controls" class="sim-controls"></div>
+      </aside>
+    </div>
+
+    <aside id="sim-theory" class="theory-drawer hidden" aria-label="Theory and Challenges">
+      <div class="theory-header">
+        <h3>Scientific Theory &amp; Guided Lab Challenges</h3>
+        <button id="theory-close-btn" class="btn btn-ghost" type="button">✕ Close</button>
+      </div>
+      <div id="theory-content" class="theory-content"></div>
+    </aside>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/sims/projectile.js"></script>
+  <script src="js/sims/pendulum.js"></script>
+  <script src="js/sims/waves.js"></script>
+  <script src="js/sims/gravity.js"></script>
+  <script src="js/sims/circuits.js"></script>
+  <script src="js/sims/gas.js"></script>
+  <script src="js/sims/states.js"></script>
+  <script src="js/sims/acidbase.js"></script>
+  <script src="js/sims/atom.js"></script>
+  <script src="js/sims/kinetics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
